@@ -1,0 +1,153 @@
+/* Top bar */
+
+
+a{
+    color: white;
+    text-decoration: none;
+}  
+
+a:hover{
+    color: yellow;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.9;
+}
+
+.header_nav {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* Top bar */
+
+/*home page*/
+@keyframes scroll {
+    0% { transform: translateX(0); opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 0; } 
+        }
+
+
+ @keyframes fadeOut {
+    0%, 80% { opacity: 1; }
+    100% { opacity: 0; }
+        }
+
+.slider_img {background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: #222;
+    padding: 20px 0;
+}
+
+.slide-track {
+    display: flex;
+    gap: 15px;
+    animation: scroll 15s linear infinite;
+}
+
+.slide-track img {
+    width: 20%;
+    height: 12%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    bottom: 0;
+}
+
+li, p {
+    color: whitesmoke;
+}
+/*home page*/
+
+/*entire page*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+/*entire page*/
+
+/*profile page*/
+.profile {
+    display: flex;
+    gap: 50px;
+}
+
+.pfp {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 35%;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.profile_info {
+    margin-top: 7%;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_profile {
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.Lower_Profile {
+    display: flex;
+    gap: 50%;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 5%;
+}
+
+.center_line {
+    margin-top: 5%;
+    height: 3px;
+    background-color: black;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+/*Profile page*/
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    color: white;
+}
