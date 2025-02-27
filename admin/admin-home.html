@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AniBox</title>
-    <link rel="stylesheet" href="USER.css">
+    <link rel="stylesheet" href="admin/admin-home.css">
 </head>
+
 <body>
-    <div class="header">
-    <a href="USER_HOME.html"><h3>Home</h3></a>
-    <a href="USER_BROWSE.html">
-        <img src="image/search-icon.png" alt="browse" width="15px" height="15px">
-    </a>
-    <h3>MyAnime</h3>
-    <a href="USER_REVIEW.html"><h3>Reviews</h3></a>
-    <a href="USER_PROFILE.html"><h3>Profile</h3></a>
-    <h3>Logout</h3>
-    </div>
-    <div>
-        <h1>HOME</h1>
-    </div>
+
+    <nav>
+        <div>
+            <ul>
+                <li>
+                    <a class="active-menu" href="inventory.php"><i class="fa fa-archive"></i> Inventory</a>
+                </li>
+                <li>
+                    <a href="order.php"><i class="fa fa-truck"></i> Orders</a>
+                </li>
+                <li>
+                    <a href="customer.php"><i class="fa fa-users"></i> Customer Database </a>
+                </li>
+                <li>
+                    <a href="analytics.php"><i class="fa fa-bar-chart-o"></i> Analytics</a>
+                </li>
+                <li>
+                    <a href="feedbacks.php"><i class="fa fa-comments"></i> Feedbacks</a>
+                </li>
+                <li>
+                    <a href="profile.php"><i class="fa fa-user-circle"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="logout.php"><i class="fa fa-sign-out"></i> Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
 </body>
+
 </html>
