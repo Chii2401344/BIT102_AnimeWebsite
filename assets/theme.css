@@ -1,0 +1,26 @@
+/* Theme Color Variables */
+:root {
+    /* Main Colors */
+    --primary-color: #8FBC8F;    /* Soft Green - Main brand color */
+    --secondary-color: #D2B48C;   /* Tan Beige - Secondary elements */
+    --accent-color: #E9967A;      /* Salmon Pink - Highlights and accents */
+    --background-color: #F5F5DC;  /* Cream White - Background color */
+    --text-color: #4B3D2A;        /* Deep Brown - Text color */
+
+    /* Hover/Active States */
+    --primary-hover: #6B8E6B;     /* Darker version of primary for hover states */
+    --secondary-hover: #BEA17C;   /* Darker version of secondary for hover states */
+    --accent-hover: #D5785C;      /* Darker version of accent for hover states */
+
+    /* Additional Variations */
+    --primary-light: #A8D1A8;     /* Lighter version of primary */
+    --primary-transparent: rgba(143, 188, 143, 0.9); /* Semi-transparent primary */
+    --background-transparent: rgba(245, 245, 220, 0.95); /* Semi-transparent background */
+}
+
+/* Usage Example:
+   .element {
+       background-color: var(--primary-color);
+       color: var(--text-color);
+   }
+*/ 
