@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <div class="login-credentials">
+                <input type="text" name="username" placeholder="Username" required/><br>
+                <p>New to AniBox? <a href="user-sign-up.html">Sign up</a> here.</p>
+            </div>
+            <div class="login-credentials">
+                <input type="password" name="password" placeholder="Password" required/><br>
+                <p><a href="#">Forgot Password</a><br></p>
+            </div>
+            <button type="submit" id="login">Login</button>
+        </form>
+        <p class="home-page"><a href="#">Back to Home Page</a></p>
+    </div>
+</body>
+</html>
