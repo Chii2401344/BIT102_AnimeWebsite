@@ -33,7 +33,7 @@ body {
 h1 {
     font-family: 'RapierZero', sans-serif;
     text-align: left;
-    margin-left: 8px;
+    margin: 0;
 }
 
 /* Header styling */
@@ -42,7 +42,7 @@ h1 {
     justify-content: left;
     align-items: left;
     text-align: left;
-    background-color: #8FBC8F;
+    background-color: var(--primary-color);  /* Darker primary color */
     color: black;
     padding: 10px;
     position: fixed;          /* Keep header fixed at top */
@@ -55,7 +55,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8FBC8F;
+    background-color: var(--primary-color);  /* Primary color */
     color: black;
     padding: 10px;
     position: fixed;
@@ -66,32 +66,59 @@ h1 {
 
 /* Navbar toggler (hamburger) icon */
 .navbar-toggler {
-    color: black;
-    border-color: black;
+    color: #4A4A4A;
+    border-color: #4A4A4A;
+    transition: all 0.3s ease;
+    border-width: 0.5px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    color: #2A2A2A;
+    border-color: #2A2A2A;
+    border-width: 0.5px !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(74, 74, 74, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    transition: background-image 0.3s ease;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(42, 42, 42, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 /* Brand text in navbar */
 .navbar-brand {
     font-family: 'RapierZero', sans-serif;
     color: black !important;
+    background-color: var(--primary-color);
+    padding: 5px;
+    padding-left: 0px;
 }
 
 /* Sidebar styling */
 .sidebar {
-    width: 180px;
+    width: 200px;
     height: 100%;
-    background: #8FBC8F;
+    background: var(--primary-color);
     color: black;
-    padding: 76px 20px 20px;  /* Top padding accounts for header */
+    padding: 0;
     position: fixed;
-    transform: translateZ(0); /* Hardware acceleration for smooth animations */
-    z-index: 1050;           /* Below header but above content */
+    transform: translateZ(0);
+    z-index: 1050;
     transition: transform 0.3s ease-in-out;
     top: 0;
+}
+
+/* Sidebar header */
+.sidebar-header {
+    background: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 /* Sidebar heading style */
@@ -105,14 +132,21 @@ h1 {
     display: block;
     color: black;
     padding: 10px;
+    padding-left: 20px;
     text-decoration: none;
     margin-bottom: 10px;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 /* Hover effect for sidebar links */
 .sidebar a:hover {
-    background: #6B8E6B; /* Darker shade for hover effect */
+    background: var(--primary-hover);
+}
+
+/* Active state for sidebar links */
+.sidebar a.active {
+    background: var(--primary-hover);
 }
 
 /* Icons in sidebar */
@@ -122,13 +156,13 @@ h1 {
 
 /* Main content area */
 .content {
-    margin-left: 180px;      /* Space for sidebar */
-    padding: 76px 20px 20px; /* Top padding for header */
+    margin-left: 200px;
+    padding: 20px;
     width: 100%;
     overflow-y: auto;
-    background-color: white; /* Beige background color */
-    -ms-overflow-style: none;  /* Hide scrollbar in IE/Edge */
-    scrollbar-width: none;     /* Hide scrollbar in Firefox */
+    background-color: white;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 /* Hide scrollbar in Webkit browsers */
@@ -143,11 +177,13 @@ h1 {
         width: 100%;
         height: auto;
         position: absolute;
+        padding-top: 4rem;
     }
     
     /* Remove sidebar margin in mobile view */
     .content {
         margin-left: 0;
+        margin-top: 56px;
     }
     
     /* Smooth transition for collapsible elements */
@@ -159,13 +195,12 @@ h1 {
     .navbar {
         height: 56px;
         position: fixed;
-        z-index: 1100;
-        background-color: #8FBC8F;
+        background-color: var(--primary-color);  /* Primary color */
     }
     
     /* Also update the navbar-dark class to ensure proper styling */
     .navbar-dark {
-        background-color: #8FBC8F !important;
+        background-color: var(--primary-hover) !important;  /* Primary color */
     }
     
     /* Animation for collapsing sidebar */
@@ -176,6 +211,10 @@ h1 {
     /* Animation for expanding sidebar */
     .sidebar.show {
         transform: translateY(0);
+    }
+
+    .navbar-brand {
+        background-color: var(--primary-hover);
     }
 }
 
