@@ -3,161 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AniBox - Admin View</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        h1 {
-            text-align: left;
-            margin-left: 20px;
-        }
-        .sidebar {
-            width: 180px;
-            height: 100vh;
-            background: #212529;
-            color: white;
-            padding: 20px;
-            position: fixed;
-            transform: translateZ(0);
-            z-index: 1050;
-        }
-        .sidebar h2 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-        .sidebar a {
-            display: block;
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-        .sidebar a:hover {
-            background: #495057;
-        }
-        .sidebar a i {
-            margin-right: 8px;
-        }
-        .content {
-            margin-left: 200px;
-            padding: 20px;
-            width: 100%;
-        }
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: absolute;
-            }
-            .content {
-                margin-left: 0;
-            }
-            .collapse {
-                transition: all 0.5s ease;
-            }
-            .navbar {
-                height: 56px;
-                position: fixed;
-            }
-        }
-        .d-flex {
-            flex-direction: row;
-        }
-    </style>
+    <title>AniBox</title>
+    <link rel="stylesheet" href="USER.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark d-md-none fixed-top">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1" style="text-align: left;">AniBox</span>
-            <button class="navbar-toggler position-fixed top-0 end-0 m-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
-    <header class="bg-dark text-white text-center py-2 w-100">
-        <h1>AniBox</h1>
-    </header>
-    <div class="d-flex w-100">
-        <div class="collapse d-md-block sidebar" id="sidebarMenu">
-            <a href="#"><i class="fas fa-tv"></i> Animes</a>
-            <a href="#"><i class="fas fa-users"></i> Users</a>
-            <a href="#"><i class="fas fa-star"></i> Reviews</a>
-            <a href="#"><i class="fas fa-user"></i> Profile</a>
-            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
-        </div>
-        <div class="content">
-            <h3>Anime List</h3>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Title</th>
-                        <th>Status</th>
-                        <th>Episodes</th>
-                        <th>Release Date</th>
-                        <th>Studio</th>
-                        <th>Genre</th>
-                        <th>Popularity</th>
-                        <th>Rating</th>
-                        <th>Description</th>
-                        <th>Update</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>One Piece</td>
-                        <td>Airing</td>
-                        <td>1123</td>
-                        <td>1999-10-20</td>
-                        <td>Toei Animation</td>
-                        <td>Action</td>
-                        <td>583912</td>
-                        <td>88%</td>
-                        <td>A story about pirates searching for the One Piece.</td>
-                        <td><button class="btn btn-primary">Update</button></td>
-                        <td><button class="btn btn-danger">Delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Bocchi The Rock!</td>
-                        <td>Finished</td>
-                        <td>12</td>
-                        <td>2022-10-08</td>
-                        <td>CloverWorks</td>
-                        <td>Comedy</td>
-                        <td>184669</td>
-                        <td>87%</td>
-                        <td>A shy girl finds confidence through playing in a band.</td>
-                        <td><button class="btn btn-primary">Update</button></td>
-                        <td><button class="btn btn-danger">Delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Kimi No Na Wa</td>
-                        <td>Finished</td>
-                        <td>1</td>
-                        <td>2016-08-26</td>
-                        <td>CoMix Wave Films</td>
-                        <td>Romance</td>
-                        <td>574037</td>
-                        <td>85%</td>
-                        <td>A boy and a girl mysteriously swap bodies.</td>
-                        <td><button class="btn btn-primary">Update</button></td>
-                        <td><button class="btn btn-danger">Delete</button></td>
-                    </tr>
-                </tbody>
-            </table>
-            <button class="btn btn-success">+ Add Anime</button>
-        </div>
+    <div class="header">
+    <a href="USER_HOME.html"><h3>Home</h3></a>
+    <a href="USER_BROWSE.html">
+        <img src="image/search-icon.png" alt="browse" width="15px" height="15px">
+    </a>
+    <h3>MyAnime</h3>
+    <a href="USER_REVIEW.html"><h3>Reviews</h3></a>
+    <a href="USER_PROFILE.html"><h3>Profile</h3></a>
+    <h3>Logout</h3>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div>
+        <h1>HOME</h1>
+    </div>
 </body>
 </html>
