@@ -1,1 +1,8 @@
-h1 {background-color:aliceblue;}
+h1 { color: white;
+letter-spacing: 5px;
+text-align: center;
+font-size: 0.8rem;}
+
+p {margin: 5px;}
+
+.bocchi-the-rock {background-color: red;}

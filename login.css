@@ -1,0 +1,67 @@
+html, body {
+    background-image: url(anime\ poster.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container {
+    border: none;
+    background-image: none;
+    width: 300px;
+    background-color: rgb(250, 234, 238);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px 5px rgb(141, 107, 153);
+    max-width: 400px;
+    max-height: 500px;
+    overflow: hidden;
+}
+header {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+a:link {
+    text-decoration: none;
+    color: #438dd7;
+}
+a:visited {
+    color: #438dd7;
+}
+a:hover {
+    color: hotpink;
+}
+a:active {
+    color: #438dd7;
+}
+button {
+    width: 97%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(153, 220, 253);
+}
+button:hover {
+    background-color: rgb(177, 226, 250);
+}
+button:active {
+    background-color: rgb(133, 209, 247);
+}
