@@ -1,0 +1,115 @@
+/* Theme Color Variables */
+:root {
+    /* Main Colors */
+    --primary-color: #8FBC8F;    /* Soft Green - Main brand color */
+    --secondary-color: #D2B48C;   /* Tan Beige - Secondary elements */
+    --accent-color: #E9967A;      /* Salmon Pink - Highlights and accents */
+    --background-color: #F5F5DC;  /* Cream White - Background color */
+    --text-color: #4B3D2A;        /* Deep Brown - Text color */
+
+    /* Hover/Active States */
+    --primary-hover: #6B8E6B;     /* Darker version of primary for hover states */
+    --secondary-hover: #BEA17C;   /* Darker version of secondary for hover states */
+    --accent-hover: #D5785C;      /* Darker version of accent for hover states */
+
+    /* Additional Variations */
+    --primary-light: #A8D1A8;     /* Lighter version of primary */
+    --primary-transparent: rgba(143, 188, 143, 0.9); /* Semi-transparent primary */
+    --background-transparent: rgba(245, 245, 220, 0.95); /* Semi-transparent background */
+}
+
+/* Usage Example:
+   .element {
+       background-color: var(--primary-color);
+       color: var(--text-color);
+   }
+*/
+
+html, body {
+    background-image: url(Images/Login\ Background4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: var(--text-color);
+}
+.container {
+    border: none;
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px var(--text-color);
+    margin: 0;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container > p {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.input-group > input {
+    width: 93%;
+    padding: 5px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: var(--secondary-color) solid 1px;
+    margin-bottom: 20px;
+}
+#sign-up {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondary-color);
+    margin-bottom: 0px;
+}
+.input-group > p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+a:link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+a:visited {
+    color: var(--primary-color);
+}
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+a:active {
+    color: var(--primary-color);
+}
+#sign-up:hover {
+    background-color: var(--secondary-hover);
+}
+#sign-up:active {
+    background-color: var(--secondary-color);
+}
+#sign-up {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondary-color);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.container > .home-page {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
