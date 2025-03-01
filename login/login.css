@@ -1,5 +1,32 @@
+/* Theme Color Variables */
+:root {
+    /* Main Colors */
+    --primary-color: #8FBC8F;    /* Soft Green - Main brand color */
+    --secondary-color: #D2B48C;   /* Tan Beige - Secondary elements */
+    --accent-color: #E9967A;      /* Salmon Pink - Highlights and accents */
+    --background-color: #F5F5DC;  /* Cream White - Background color */
+    --text-color: #4B3D2A;        /* Deep Brown - Text color */
+
+    /* Hover/Active States */
+    --primary-hover: #6B8E6B;     /* Darker version of primary for hover states */
+    --secondary-hover: #BEA17C;   /* Darker version of secondary for hover states */
+    --accent-hover: #D5785C;      /* Darker version of accent for hover states */
+
+    /* Additional Variations */
+    --primary-light: #A8D1A8;     /* Lighter version of primary */
+    --primary-transparent: rgba(143, 188, 143, 0.9); /* Semi-transparent primary */
+    --background-transparent: rgba(245, 245, 220, 0.95); /* Semi-transparent background */
+}
+
+/* Usage Example:
+   .element {
+       background-color: var(--primary-color);
+       color: var(--text-color);
+   }
+*/ 
+
 html, body {
-    background-image: url(login\ background.webp);
+    background-image: url(Images/Login\ Background4.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -9,15 +36,16 @@ html, body {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    
+    color: var(--text-color);
 }
 .container {
     border: none;
     width: 300px;
-    background-color: rgb(250, 234, 238);
+    background-color: white;
     padding: 30px;
-    border-radius: 30px;
-    box-shadow: 1px 1px 10px 5px rgb(141, 107, 153);
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px var(--text-color);
+    margin: 0;
 }
 h2 {
     font-size: 20px;
@@ -25,83 +53,50 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-.login-credentials input {
+.login-credentials > input {
     width: 93%;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5px;
+    border-radius: 0px;
     border: none;
+    border-bottom: var(--secondary-color) solid 1px;
+    margin-bottom: 5px;
 }
-.login-credentials p, form[action="sign-up.php"] > p, #instruction {
+.login-credentials > p {
     margin-top: 0px;
     margin-bottom: 20px;
     margin-left: 5px;
+}
+a:link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+a:visited {
+    color: var(--primary-color);
+}
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+a:active {
+    color: var(--primary-color);
+}
+#login {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondary-color);
+    margin-bottom: 0px;
+}
+#login:hover {
+    background-color: var(--secondary-hover);
+}
+#login:active {
+    opacity: 1;
+    background-color: var(--secondary-color);
 }
 .home-page {
     text-align: center;
     margin-bottom: 0px;
-    margin-top: 0px;
-}
-a:link {
-    text-decoration: none;
-    color: #438dd7;
-}
-a:visited {
-    color: #438dd7;
-}
-a:hover {
-    color: hotpink;
-    text-decoration: underline;
-}
-a:active {
-    color: #438dd7;
-}
-#login {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(153, 220, 253);
-    margin-bottom: 20px;
-}
-#sign-up {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(153, 220, 253);
-    margin-bottom: 0px;
-}
-button:hover {
-    opacity: 0.7;
-}
-button:active {
-    background-color: rgb(133, 209, 247);
-}
-.input-group input {
-    width: 93%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
-}
-.input-group button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(153, 220, 253);
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-.container {
-    border: none;
-    width: 300px;
-    background-color: rgb(250, 234, 238);
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 1px 1px 10px 5px rgb(141, 107, 153);
-    margin: 0;
-}
-.input-group label {
-    margin-left: 5px;
+    margin-top: 20px;
 }
