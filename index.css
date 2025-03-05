@@ -295,10 +295,6 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.3rem;
-    }
-
     .hero-content {
         margin: 1rem;
         padding: 2rem;
@@ -327,11 +323,6 @@ body {
 
     .anime-card {
         max-width: 200px;
-    }
-
-    .nav-link {
-        padding: 0.4rem 1rem;
-        font-size: 0.9rem;
     }
 }
 

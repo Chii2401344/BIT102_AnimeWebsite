@@ -1,53 +1,36 @@
-/* Import custom font */
-@font-face {
-    font-family: 'RapierZero';
-    src: url('../assets/fonts/RapierZero-325M.ttf') format('truetype');
-}
-
-/* Global scrollbar hiding for all elements */
 * {
-    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
-    scrollbar-width: none;     /* For Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-/* Hide scrollbar for Webkit browsers (Chrome, Safari, Opera) */
 *::-webkit-scrollbar {
     display: none;
 }
 
 /* Base HTML and Body setup */
-html, body {
-    overflow-x: hidden;        /* Prevent horizontal scrolling */
-    overflow-y: auto;         /* Allow vertical scrolling */
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 100%;
     height: 100%;
+    background-color: var(--warm-beige);
+    color: var(--earthy-brown);
+    font-family: var(--body-font);
 }
 
 /* Main body layout */
 body {
     display: flex;
-    flex-direction: column;    /* Stack children vertically */
+    flex-direction: column;
 }
 
 /* Main heading style */
 h1 {
-    font-family: 'RapierZero', sans-serif;
+    font-family: var(--heading-font);
     text-align: left;
     margin: 0;
-}
-
-/* Header styling */
-.header {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-    background-color: var(--primary-color);  /* Darker primary color */
-    color: black;
-    padding: 10px;
-    position: fixed;          /* Keep header fixed at top */
-    z-index: 1100;           /* Ensure header stays above other elements */
-    width: 100%;
+    color: var(--earthy-brown);
 }
 
 /* Navigation bar styling */
@@ -55,19 +38,19 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);  /* Primary color */
-    color: black;
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
+    color: var(--earthy-brown);
     padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1100;           /* Keep navbar above other elements */
+    z-index: 1100;
 }
 
 /* Navbar toggler (hamburger) icon */
 .navbar-toggler {
-    color: #4A4A4A;
-    border-color: #4A4A4A;
+    color: var(--earthy-brown);
+    border-color: var(--earthy-brown);
     transition: all 0.3s ease;
     border-width: 0.5px;
 }
@@ -75,27 +58,26 @@ h1 {
 .navbar-toggler:hover,
 .navbar-toggler:focus,
 .navbar-toggler:active {
-    color: #2A2A2A;
-    border-color: #2A2A2A;
+    color: var(--earthy-brown);
+    border-color: var(--earthy-brown);
     border-width: 0.5px !important;
     box-shadow: none !important;
     outline: none !important;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(74, 74, 74, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(139, 91, 41, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     transition: background-image 0.3s ease;
 }
 
 .navbar-toggler:hover .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(42, 42, 42, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(139, 91, 41, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 /* Brand text in navbar */
 .navbar-brand {
-    font-family: 'RapierZero', sans-serif;
-    color: black !important;
-    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    color: var(--earthy-brown) !important;
     padding: 5px;
     padding-left: 0px;
 }
@@ -104,8 +86,8 @@ h1 {
 .sidebar {
     width: 200px;
     height: 100%;
-    background: var(--primary-color);
-    color: black;
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
+    color: var(--earthy-brown);
     padding: 0;
     position: fixed;
     transform: translateZ(0);
@@ -116,37 +98,39 @@ h1 {
 
 /* Sidebar header */
 .sidebar-header {
-    background: var(--primary-color);
     padding: 20px;
     margin-bottom: 20px;
 }
 
 /* Sidebar heading style */
 .sidebar h2 {
+    font-family: var(--heading-font);
     font-size: 1.5rem;
     margin-bottom: 20px;
+    color: var(--earthy-brown);
 }
 
 /* Sidebar navigation links */
 .sidebar a {
     display: block;
-    color: black;
+    color: var(--earthy-brown);
     padding: 10px;
     padding-left: 20px;
     text-decoration: none;
     margin-bottom: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-family: var(--body-font);
 }
 
 /* Hover effect for sidebar links */
 .sidebar a:hover {
-    background: var(--primary-hover);
+    background: var(--soft-green-hover);
 }
 
 /* Active state for sidebar links */
 .sidebar a.active {
-    background: var(--primary-hover);
+    background: var(--soft-green-hover);
 }
 
 /* Icons in sidebar */
@@ -161,66 +145,41 @@ h1 {
     width: 100%;
     overflow-y: auto;
     background-color: white;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-/* Hide scrollbar in Webkit browsers */
-.content::-webkit-scrollbar {
-    display: none;
 }
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
-    /* Adjust sidebar for mobile */
     .sidebar {
         width: 100%;
         height: auto;
         position: absolute;
         padding-top: 4rem;
     }
-    
-    /* Remove sidebar margin in mobile view */
+
     .content {
         margin-left: 0;
         margin-top: 56px;
     }
-    
-    /* Smooth transition for collapsible elements */
+
     .collapse {
         transition: all 0.5s ease;
     }
-    
-    /* Mobile navbar adjustments */
+
     .navbar {
         height: 56px;
-        position: fixed;
-        background-color: var(--primary-color);  /* Primary color */
     }
-    
-    /* Also update the navbar-dark class to ensure proper styling */
+
     .navbar-dark {
-        background-color: var(--primary-hover) !important;  /* Primary color */
+        background-color: var(--soft-green-hover) !important;
     }
-    
-    /* Animation for collapsing sidebar */
+
     .sidebar.collapsing {
         transform: translateY(-100%);
     }
-    
-    /* Animation for expanding sidebar */
+
     .sidebar.show {
         transform: translateY(0);
     }
-
-    .navbar-brand {
-        background-color: var(--primary-hover);
-    }
-}
-
-/* Flex container direction */
-.d-flex {
-    flex-direction: row;
 }
 
 /* Table styling */
@@ -230,11 +189,17 @@ h1 {
 
 .table th,
 .table td {
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--earthy-brown);
     vertical-align: middle;
 }
 
 .table thead th {
-    border-bottom: 2px solid #dee2e6;
-    background-color: #f8f9fa;
+    border-bottom: 2px solid var(--earthy-brown);
+    background-color: var(--soft-green);
+    color: var(--earthy-brown);
+    font-family: var(--heading-font);
+}
+
+.table td {
+    font-family: var(--body-font);
 }
