@@ -18,53 +18,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar styles */
-.navbar {
-    padding: 0.5rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-}
-
-/* Navbar toggler (hamburger) icon */
-.navbar-toggler {
-    color: var(--earthy-brown);
-    border-color: var(--earthy-brown);
-    transition: all 0.3s ease;
-    border-width: 0.5px;
-}
-
-.navbar-toggler:hover,
-.navbar-toggler:focus,
-.navbar-toggler:active {
-    color: var(--white);
-    border-color: var(--white);
-    border-width: 0.5px !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(139, 91, 41, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-    transition: background-image 0.3s ease;
-}
-
-.navbar-toggler:hover .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(253, 246, 227, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    padding: 0;
-}
-
-.nav-link {
-    padding: 0.5rem 1rem;
-    margin: 0 5px;
-    font-size: 0.95rem;
-}
-
 /* Hero section styles */
 .hero-section {
     min-height: 100vh;
@@ -153,12 +106,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
 }
 
 .about-card {
     padding: 3rem;
     max-width: 800px;
     margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(168, 213, 186, 0.3);
 }
 
 .about-card h2 {
@@ -186,6 +145,11 @@ body {
 }
 
 .anime-card {
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 250px;
     margin: 0 auto;
 }
