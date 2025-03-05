@@ -1,102 +1,326 @@
-/* Theme Color Variables */
-:root {
-    /* Main Colors */
-    --primary-color: #8FBC8F;    /* Soft Green - Main brand color */
-    --secondary-color: #D2B48C;   /* Tan Beige - Secondary elements */
-    --accent-color: #E9967A;      /* Salmon Pink - Highlights and accents */
-    --background-color: #F5F5DC;  /* Cream White - Background color */
-    --text-color: #4B3D2A;        /* Deep Brown - Text color */
 
-    /* Hover/Active States */
-    --primary-hover: #6B8E6B;     /* Darker version of primary for hover states */
-    --secondary-hover: #BEA17C;   /* Darker version of secondary for hover states */
-    --accent-hover: #D5785C;      /* Darker version of accent for hover states */
 
-    /* Additional Variations */
-    --primary-light: #A8D1A8;     /* Lighter version of primary */
-    --primary-transparent: rgba(143, 188, 143, 0.9); /* Semi-transparent primary */
-    --background-transparent: rgba(245, 245, 220, 0.95); /* Semi-transparent background */
+/* same for all */
+@font-face {
+    font-family: "Rapier Zero";
+    src: url(Fonts/RapierZero-325M.ttf);
 }
 
-/* Usage Example:
-   .element {
-       background-color: var(--primary-color);
-       color: var(--text-color);
-   }
-*/ 
-
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v22/pxiAyp8kv8JHgFVrJJLmE0tMMPKzSQ.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 200 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0OMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t3NeCAAFOvV9SNjBw3uBZFI.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
 html, body {
-    background-image: url(Images/Login\ Background4.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
     margin: 0;
+    display: flex;
+    color: var(--text-color);
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    object-fit: cover; /* Ensures the whole video is visible */
+    z-index: -1;
+    background: var(--background-color); /* Optional background if video doesn't cover everything */
+}
+
+.container {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    border: none;
+    width: 700px;
+    background-color: white;
+    padding: 0px;
+    border-radius: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    opacity: 0.85;
+}
+
+.image {
+    border-radius: 30px 0px 0px 30px;
+    background: linear-gradient(135deg, #a8d5ba, #a7c6ed);
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    opacity: 1;
+}
+.image > h1 {
+    font-family: "Rapier Zero", sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
     color: var(--text-color);
+    text-align: center;
+    margin: 0px;
 }
-.container {
-    border: none;
-    width: 300px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 20px 5px var(--text-color);
-    margin: 0;
+.input-box {
+    padding: 0px;
+    margin: 20px;
+    opacity: 1;
 }
-h2 {
-    font-size: 20px;
+.input-box > h1 {
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
 }
+
+button, #submit {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #a8d5ba;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+.home-page {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 80%;
+        max-width: 350px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+    }
+    .image {
+        border-radius: 30px 30px 0px 0px;
+    }
+    .image > h1 {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    .container {
+        width: 60%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+    }
+    .image {
+        border-radius: 30px 30px 0px 0px;
+    }
+    .image > h1 {
+        font-size: 3rem;
+    }
+}
+
+/* login form */
 .login-credentials > input {
-    width: 93%;
-    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 3px;
+    padding-left: 5px;
     border-radius: 0px;
     border: none;
-    border-bottom: var(--secondary-color) solid 1px;
-    margin-bottom: 5px;
+    border-bottom: #f2b2a1 solid 1px;
+    margin-bottom: 3px;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+.login-credentials > input:focus {
+    outline: none;
+    border-bottom: #f2b2a1 solid 2px;
 }
 .login-credentials > p {
     margin-top: 0px;
     margin-bottom: 20px;
     margin-left: 5px;
 }
-a:link {
-    text-decoration: none;
-    color: var(--primary-color);
+
+/* sign-up and forgot password form */
+#instruction {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-top: 0px;
 }
-a:visited {
-    color: var(--primary-color);
-}
-a:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
-a:active {
-    color: var(--primary-color);
-}
-#login {
+.input-group > input {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
     width: 100%;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 3px;
+    padding-left: 5px;
+    border-radius: 0px;
     border: none;
-    background-color: var(--secondary-color);
+    border-bottom: #f2b2a1 solid 1px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+.input-group > input:focus {
+    outline: none;
+    border-bottom: #f2b2a1 solid 2px;
+}
+.input-group > p {
+    margin-top: 5px;
+    margin-left: 5px;
     margin-bottom: 0px;
 }
-#login:hover {
-    background-color: var(--secondary-hover);
+
+/* Login page styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
 }
-#login:active {
-    opacity: 1;
-    background-color: var(--secondary-color);
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
 }
-.home-page {
+
+.footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.login-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 76px 0 60px; /* Account for navbar and footer */
+    position: relative;
+    width: 100%;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(168, 213, 186, 0.3);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--earthy-brown);
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
     text-align: center;
-    margin-bottom: 0px;
-    margin-top: 20px;
+    margin-bottom: 2rem;
+}
+
+.login-form h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--earthy-brown);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--soft-green);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    border-color: var(--peach-pink);
+    box-shadow: 0 0 0 0.2rem rgba(242, 178, 161, 0.25);
+}
+
+.login-form p {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.login-form a {
+    color: var(--earthy-brown);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-form a:hover {
+    color: var(--peach-pink);
+}
+
+.btn-primary {
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .login-container h1 {
+        font-size: 2rem;
+    }
+
+    .login-form h2 {
+        font-size: 1.5rem;
+    }
 }
