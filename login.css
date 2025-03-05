@@ -1,0 +1,289 @@
+/* Theme Color Variables */
+:root {
+    /* Main Colors */
+    --primary-color: #8FBC8F;    /* Soft Green - Main brand color */
+    --secondary-color: #D2B48C;   /* Tan Beige - Secondary elements */
+    --accent-color: #E9967A;      /* Salmon Pink - Highlights and accents */
+    --background-color: #F5F5DC;  /* Cream White - Background color */
+    --text-color: #4B3D2A;        /* Deep Brown - Text color */
+
+    /* Hover/Active States */
+    --primary-hover: #6B8E6B;     /* Darker version of primary for hover states */
+    --secondary-hover: #BEA17C;   /* Darker version of secondary for hover states */
+    --accent-hover: #D5785C;      /* Darker version of accent for hover states */
+
+    /* Additional Variations */
+    --primary-light: #A8D1A8;     /* Lighter version of primary */
+    --primary-transparent: rgba(143, 188, 143, 0.9); /* Semi-transparent primary */
+    --background-transparent: rgba(245, 245, 220, 0.95); /* Semi-transparent background */
+}
+
+/* Usage Example:
+   .element {
+       background-color: var(--primary-color);
+       color: var(--text-color);
+   }
+*/ 
+
+/* same for all */
+@font-face {
+    font-family: "Rapier Zero";
+    src: url(Fonts/RapierZero-325M.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v22/pxiAyp8kv8JHgFVrJJLmE0tMMPKzSQ.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 200 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0OMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t3NeCAAFOvV9SNjBw3uBZFI.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    object-fit: cover; /* Ensures the whole video is visible */
+    z-index: -1;
+    background: var(--background-color); /* Optional background if video doesn't cover everything */
+}
+/* Navbar styles */
+.navbar {
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Navbar toggler (hamburger) icon */
+.navbar-toggler {
+    color: var(--earthy-brown);
+    border-color: var(--earthy-brown);
+    transition: all 0.3s ease;
+    border-width: 0.5px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    color: var(--white);
+    border-color: var(--white);
+    border-width: 0.5px !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(139, 91, 41, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    transition: background-image 0.3s ease;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(253, 246, 227, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    font-size: 0.95rem;
+}
+
+.container {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    border: none;
+    width: 700px;
+    background-color: white;
+    padding: 0px;
+    border-radius: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    opacity: 0.85;
+}
+.image {
+    border-radius: 30px 0px 0px 30px;
+    background: linear-gradient(135deg, #a8d5ba, #a7c6ed);
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.image > h1 {
+    font-family: "Rapier Zero", sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    color: var(--text-color);
+    text-align: center;
+    margin: 0px;
+}
+.input-box {
+    padding: 0px;
+    margin: 20px;
+    opacity: 1;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+}
+.input-box > h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: #a8d5ba;
+    transition: all 0.3s ease 0s;
+}
+a:hover {
+    color: #f2b2a1;
+    text-decoration: underline;
+}
+a:active {
+    color: #a8d5ba;
+}
+button, #submit {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #a8d5ba;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+button:hover, #submit:hover {
+    background-color: #f2b2a1;
+    color: white;
+}
+button:active, #submit:active {
+    opacity: 1;
+    background-color: #a8d5ba;
+}
+.home-page {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 80%;
+        max-width: 350px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+    }
+    .image {
+        border-radius: 30px 30px 0px 0px;
+    }
+    .image > h1 {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    .container {
+        width: 60%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+    }
+    .image {
+        border-radius: 30px 30px 0px 0px;
+    }
+    .image > h1 {
+        font-size: 3rem;
+    }
+}
+
+/* login form */
+.login-credentials > input {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 3px;
+    padding-left: 5px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: #f2b2a1 solid 1px;
+    margin-bottom: 3px;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+.login-credentials > input:focus {
+    outline: none;
+    border-bottom: #f2b2a1 solid 2px;
+}
+.login-credentials > p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+/* sign-up and forgot password form */
+#instruction {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+.input-group > input {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 3px;
+    padding-left: 5px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: #f2b2a1 solid 1px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+.input-group > input:focus {
+    outline: none;
+    border-bottom: #f2b2a1 solid 2px;
+}
+.input-group > p {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
