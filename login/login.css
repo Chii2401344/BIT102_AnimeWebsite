@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Magic Retro';
-    src: url('assets/fonts/Magic_Retro.ttf') format('truetype');
+    src: url('../assets/fonts/Magic_Retro.ttf') format('truetype');
 }
 
 body {
@@ -11,7 +11,18 @@ body {
     overflow-x: hidden;
 }
 
-#background-video {
+.login-container {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.background-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,6 +32,19 @@ body {
     z-index: 0;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(168, 213, 186, 0.3),
+        rgba(167, 198, 237, 0.3)
+    );
+    z-index: 1;
+}
 
 ul {
     display: flex;
@@ -242,6 +266,7 @@ main .home-page {
     gap: 10px;
 }
 
+/* LOGIN BUTTONS CONTAINER */
 .buttons-container > a {
     width: 100%;
     padding: 10px;

@@ -168,7 +168,6 @@ main {
     background: white;
     padding: 0.6rem;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -177,7 +176,7 @@ main {
 .form-label {
     color: var(--earthy-brown);
     font-weight: 500;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
 }
 
 .form-control, .form-select {

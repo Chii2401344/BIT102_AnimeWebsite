@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,13 @@
     <link rel="stylesheet" href="../assets/theme.css">
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">AniBox</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
@@ -39,28 +41,31 @@
         </div>
     </nav>
 
-    <video autoplay muted loop id="background-video">
-        <source src="../assets/homepage-broll.mp4" type="video/mp4">
-    </video>
 
     <main>
-        <div class="container">
-            <div class="image">
-                <h1>AniBox</h1>
-            </div>
-            <div class="input-box">
-                <h1>Login</h1>
-                <form action="user-login.html" method="get">
-                    <div class="login-credentials">
-                        <input type="text" name="username" placeholder="Username" required/><br>
-                        <p>New to AniBox? <a href="user-sign-up.html">Sign up</a> here</p>
-                    </div>
-                    <div class="login-credentials">
-                        <input type="password" name="password" placeholder="Password" required/><br>
-                        <p><a href="user-forgot-password.html">Forgot Password</a></p>
-                    </div>
-                    <button type="submit" id="login"><a href="../user/user-home.html"></a>Login</button>
-                </form>
+        <div class="login-container position-relative">
+            <video class="background-video" autoplay loop muted playsinline>
+                <source src="../assets/homepage-broll.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"> </div>
+            <div class="container">
+                <div class="image">
+                    <h1>AniBox</h1>
+                </div>
+                <div class="input-box">
+                    <h1>Login</h1>
+                    <form action="../user/user-home.html" method="get">
+                        <div class="login-credentials">
+                            <input type="text" name="username" placeholder="Username" required /><br>
+                            <p>New to AniBox? <a href="user-sign-up.html">Sign up</a> here</p>
+                        </div>
+                        <div class="login-credentials">
+                            <input type="password" name="password" placeholder="Password" required /><br>
+                            <p><a href="user-forgot-password.html">Forgot Password</a></p>
+                        </div>
+                        <button type="submit" id="login"><a href="../user/user-home.html"></a>Login</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
@@ -71,4 +76,5 @@
         </div>
     </footer>
 </body>
+
 </html>
