@@ -1,93 +1,26 @@
-/* Theme Color Variables */
-:root {
-    /* Primary Colors */
-    --soft-green: #A8D5BA;    /* Nature and nostalgia */
-    --sky-blue: #A7C6ED;      /* Open and inviting */
-    --warm-beige: #F5E1C2;    /* Comforting and soft */
 
-    /* Secondary Colors */
-    --peach-pink: #F2B2A1;    /* Playful and youthful */
-    --lavender-purple: #D8C4E0; /* Dreamy and creative */
-    --earthy-brown: #8B5B29;  /* Grounding and stable */
-
-    /* Hover/Active States */
-    --soft-green-hover: #8FC3A8;  /* Darker version of soft green */
-    --sky-blue-hover: #8DB3E6;    /* Darker version of sky blue */
-    --peach-pink-hover: #E5A090;  /* Darker version of peach pink */
-
-    /* Additional Variations */
-    --soft-green-transparent: rgba(168, 213, 186, 0.9);  /* Semi-transparent soft green */
-    --sky-blue-transparent: rgba(167, 198, 237, 0.9);    /* Semi-transparent sky blue */
-    --warm-beige-transparent: rgba(245, 225, 194, 0.95); /* Semi-transparent warm beige */
-}
-
-/* Typography */
-:root {
-    --heading-font: 'Poppins', sans-serif;    /* Modern, clean headings */
-    --body-font: 'Nunito Sans', sans-serif;   /* Warm, friendly body text */
-    --logo-font: 'Magic Retro', sans-serif;   /* Unique, decorative logo */
-}
-
-/* same for all */
-@font-face {
-    font-family: "Rapier Zero";
-    src: url(Fonts/RapierZero-325M.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap');
 
 @font-face {
-    font-family: "Magic Retro";
-    src: url(Fonts/Magic_Retro.ttf);
-}
-
-@font-face {
-    font-family: 'Poppins';
-    font-style: italic;
-    font-weight: 100;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/poppins/v22/pxiAyp8kv8JHgFVrJJLmE0tMMPKzSQ.woff2) format('woff2');
-    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-    font-family: 'Nunito Sans';
-    font-style: italic;
-    font-weight: 200 1000;
-    font-stretch: 100%;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0OMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t3NeCAAFOvV9SNjBw3uBZFI.woff2) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    font-family: 'Magic Retro';
+    src: url('assets/fonts/Magic_Retro.ttf') format('truetype');
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
 #background-video {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;  /* Full width */
-    height: 100vh; /* Full height */
-    object-fit: cover; /* Ensures the whole video is visible */
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 20px 8px 20px;
-    background: linear-gradient(135deg, #a8d5ba, #a7c6ed);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    color: var(--earthy-brown);
-    position: sticky;
-    top: 0;
-    font-family: var(--heading-font);
-    height: 40px;
-}
 
 ul {
     display: flex;
@@ -102,41 +35,6 @@ li a {
     font-size: 0.95rem;
 }
 
-.navbar-links li {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.navbar-brand a:link {
-    color: var(--earthy-brown);
-    text-decoration: none;
-    font-family: var(--logo-font);
-    font-size: 1.5rem;
-    font-weight: lighter;
-    transition: all 0.3s ease 0s;
-    text-shadow: 1px 1px 0 white;
-    margin: 0px;
-}
-
-.navbar-links a:link, .navbar-links a:visited {
-    color: var(--earthy-brown);
-    text-decoration: none;
-    margin: 0px;
-    transition: all 0.3s ease 0s;
-}
-
-.navbar-links a:hover {
-    color: whitesmoke;
-    background-color: var(--peach-pink);
-    border-radius: 40px;
-    -webkit-transform: translateY(-1px);
-	transform: translateY(-1px);
-}
-
-.navbar-links li:hover{
-    -webkit-transform: translateY(-1px);
-	transform: translateY(-1px);
-}
 
 /* main */
 main {
@@ -210,7 +108,6 @@ main a:link, a:visited {
 
 main a:hover {
     color: var(--peach-pink);
-    text-decoration: underline;
 }
 
 main a:active {
@@ -336,4 +233,19 @@ main .home-page {
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 0px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons-container > a {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: var(--earthy-brown);
 }
