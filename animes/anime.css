@@ -2,13 +2,14 @@
 .bocchi-the-rock {margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, white 40%), url(../img/banner-bocchi-the-rock.jpeg);
-    background-position: top;}
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, white 40%), url(../assets/img/banner-bocchi-the-rock.jpeg);
+    background-position: top;
+    }
 
 .kimi-no-na-wa {margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.) 0%, #F2B2A1 40%), url(../img/banner-bocchi-the-rock.jpeg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, white 40%), url(../assets/img/banner-kimi-no-na-wa.png);
     background-position: top;}
 
 h1 {color: white;
@@ -26,11 +27,19 @@ h2 {margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;}
 
-.genre {margin: 20px;
+.bocchi-genre {margin: 20px;
     color: orange;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border: 1px solid orange;
+    border-radius: 30px;
+    padding: 5px;}
+
+.kimi-genre {margin: 20px;
+    color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 1px solid pink;
     border-radius: 30px;
     padding: 5px;}
 
@@ -52,31 +61,36 @@ hr {border: 1px solid rgba(0, 0, 0, 0.5);
     top: 0%;
 }
 
-.btn.btn-default {
+.btn.btn-light {
     background:linear-gradient(
         135deg,
         rgba(168, 213, 186, 1),
         rgba(167, 198, 237, 1));
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 15px;
+    padding: 0px;
     margin-right: 20x;
     border: none;
     text-align: center;
     border-radius: 40px;
     text-align: center;
-    text-justify: inter-word;
     border-width: 10px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
     align-self: end;
+    border: 1px solid white;
+    line-height: 20px;
 }
 
-.btn.btn-primary {background-color: #A7C6ED;
-    border: 1px solid black;
+.btn.btn-light:hover {font-size:35px;
+    border: none;
+}
+
+.btn.btn-secondary {background-color: var(--sky-blue);
+    border: 1px solid white;
     margin-left: 25px;}
 
-.btn.btn-primary:hover {background-color: #8DB3E6;}
+.btn.btn-secondary:hover {background-color: var(--sky-blue-hover);}
 
 .anime-details {font-size: 20px;
     margin-left: 0%;
@@ -95,7 +109,7 @@ hr {border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .anime-synopsis {background-color: white;
-    color: #8B5B29;
+    color: var(--earthy-brown);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     padding: 10px;
@@ -107,15 +121,15 @@ hr {border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0);
 }
 
-.anime-synopsis h2 {color: #8B5B29;
+.anime-synopsis h2 {color: var(--earthy-brown);
     font-size: auto;
     margin: 20px;
     }
 
-.anime-synopsis p {color: #8B5B29;
+.anime-synopsis p {color: var(--earthy-brown);
     line-height: 30px;}
 
-.anime-review {background-color: #BEA17C;
+.anime-review {background-color: var(--earthy-brown);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -133,11 +147,12 @@ hr {border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 img {width: 250px;
+    height:350px;
     float: right;
     border-radius: 10px;
     border: 2px solid white;}
 
-.rating {background-color: #A7C6ED;
+.rating {background-color: var(--sky-blue);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -149,7 +164,7 @@ img {width: 250px;
     border-width: 30px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
 
-.popularity {background-color: #A7C6ED;
+.popularity {background-color: var(--sky-blue);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -160,7 +175,7 @@ img {width: 250px;
     text-justify: inter-word;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
 
-.date {background-color: #A7C6ED;
+.date {background-color: var(--sky-blue);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -171,7 +186,7 @@ img {width: 250px;
     text-justify: inter-word;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
 
-.creator {background-color: #A7C6ED;
+.creator {background-color: var(--sky-blue);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -197,11 +212,11 @@ input[type="text"] {background-color: white;
     height: 50px;
     width: 300px;}
 
-input::placeholder {color: #8B5B29;}
+input::placeholder {color: var(--earthy-brown);}
 
 input[type="text"]:hover {background-color: gainsboro;}
 
-button {background-color: #A8D5BA;
+button {background-color: var(--soft-green);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -214,7 +229,7 @@ button {background-color: #A8D5BA;
     text-justify: inter-word;
     height: 50px;}
     
-button:hover {background-color: #8FC3A8;}
+button:hover {background-color: var(--soft-green-hover);}
 
 .review-form {display: flex;
     flex-direction: row;}
@@ -247,7 +262,7 @@ button:hover {background-color: #8FC3A8;}
         top: 0%;
     }
 
-    .btn.btn-default {margin: 50px;
+    .btn.btn-primary {margin: 50px;
     margin-top: 10px;}
 
     img {float: left;
@@ -259,18 +274,17 @@ button:hover {background-color: #8FC3A8;}
     .review-form {display: flex;
     flex-direction: column;}
 
-    input[type="text"] {background-color: white;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        padding: 10px;
-        margin: 5px;
-        margin-left: 25px;
-        margin-top: 10px;
-        border-radius: 30px;
-        border: 1px solid black;
-        text-align: center;
-        text-justify: inter-word;
+    input[type="text"] {
         height: 50px;
-        width: 100px;}
+        width: 150px;}
+
+    button {height: 50px;
+        width: 150px;
+        margin-left: 25px;}
+
+        .bocchi-the-rock {margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, white 30%), url(../img/banner-bocchi-the-rock.jpeg);
+            background-position: top;}
 }
