@@ -149,18 +149,20 @@ main {
 }
 
 /* ==========================================================================
-   Trending Section
+   Browse Section
    ========================================================================== */
-.trending-section {
+.browse-section {
     padding: 6rem 4rem;
     position: relative;
     background: white;
 }
 
-.trending-section .section-title {
+.browse-section .section-title {
+    background: white;
+    padding: 1rem;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 0 white;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 15px;
 }
 
 /* Search and Filter Components */
@@ -264,8 +266,8 @@ main {
         min-width: auto;
     }
 
-    /* Trending Section */
-    .trending-section {
+    /* Browse Section */
+    .browse-section {
         padding: 4rem 2rem;
     }
 
@@ -295,7 +297,7 @@ main {
 }
 
 @media (max-width: 480px) {
-    .trending-section {
+    .browse-section {
         padding: 4rem 1rem;
     }
 }

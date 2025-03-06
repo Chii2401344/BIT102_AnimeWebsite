@@ -4,6 +4,7 @@
     --soft-green: #A8D5BA;   
     --sky-blue: #A7C6ED;     
     --warm-beige: #F5E1C2;    
+    --light-blue: #bddbff;
 
     /* Secondary Colors */
     --peach-pink: #F2B2A1;    
@@ -14,11 +15,13 @@
     --soft-green-hover: #8FC3A8;  
     --sky-blue-hover: #8DB3E6;   
     --peach-pink-hover: #E5A090;  
+    --light-blue-hover: #93c5ff;
 
     /* Additional Variations */
     --soft-green-transparent: rgba(168, 213, 186, 0.9); 
     --sky-blue-transparent: rgba(167, 198, 237, 0.9);   
     --warm-beige-transparent: rgba(245, 225, 194, 0.95); 
+    --peach-pink-transparent: rgba(242, 178, 161, 0.6);
 }
 
 /* Typography */
@@ -41,29 +44,31 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Button Styles */
 .btn-primary {
-    background-color: var(--soft-green);
+    border: none;
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     border-color: var(--soft-green);
     border-radius: 25px;
     transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: var(--soft-green-hover);
+    background: linear-gradient(135deg, var(--soft-green-hover), var(--sky-blue-hover));
     border-color: var(--soft-green-hover);
     transform: translateY(-2px);
 }
 
-.btn-outline-primary {
-    border: 2px solid var(--soft-green);
-    color: var(--earthy-brown);
+.btn-secondary {
+    border: none;
+    background: linear-gradient(135deg, var(--peach-pink), var(--light-blue));
+    border-color: var(--peach-pink-hover);
     border-radius: 25px;
     transition: all 0.3s ease;
 }
 
-.btn-outline-primary:hover {
-    background-color: var(--peach-pink);
-    border-color: var(--peach-pink);
-    color: var(--white);
+.btn-secondary:hover {
+    background: linear-gradient(135deg, var(--peach-pink-hover), var(--light-blue-hover));
+    border-color: var(--peach-pink-hover);
+    color: white;
     transform: translateY(-2px);
 }
 
