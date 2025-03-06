@@ -6,7 +6,7 @@
     <title>AniBox</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="../assets/theme.css">
     <link rel="stylesheet" href="User.css">
 </head>
 <body>
@@ -14,13 +14,13 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
-                <a class="navbar-brand" href="User_Home.html">AniBox</a>
+                <a class="navbar-brand" href="user-home.html">AniBox</a>
                 <div class="card-container d-lg-none ms-3"> 
-                    <img src="image/pfp3.jpg" alt="profile" class="user-icon" width="50px" height="50px">
+                    <img src="../assets/img/pfp3.jpg" alt="profile" class="user-icon" width="50px" height="50px">
                     <div class="profile-card">
-                        <a href="User_Profile_About.html">View Profile</a>
-                        <a href="Settings.html">Settings</a>
-                        <a href="User_Home.html">Logout</a>
+                        <a href="user-profile-about.html">View Profile</a>
+                        <a href="user-profile.html">Settings</a>
+                        <a href="../index.html">Logout</a>
                     </div>
                 </div>
             </div>
@@ -30,23 +30,23 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="User_Home.html">Home</a>
+                        <a class="nav-link" href="user-home.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="animes/browse.html">Browse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="User_Profile_About.html">Profile</a>
+                        <a class="nav-link" href="user-profile-about.html">Profile</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav d-none d-lg-flex">
                     <li class="nav-item">
                         <div class="card-container">
-                            <img src="image/pfp3.jpg" alt="profile" class="user-icon" width="50px" height="50px">
+                            <img src="../assets/img/pfp3.jpg" alt="profile" class="user-icon" width="50px" height="50px">
                             <div class="profile-card">
-                                <a href="User_Profile_About.html">View Profile</a>
-                                <a href="User_Profile.html">Settings</a>
-                                <a href="User_Home.html">Logout</a>
+                                <a href="user-profile-about.html">View Profile</a>
+                                <a href="user-profile.html">Settings</a>
+                                <a href="../index.html">Logout</a>
                             </div>
                         </div>
                     </li>
@@ -54,19 +54,22 @@
             </div>
         </div>
     </nav>
-</header> 
+</header>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <div class="profile">
         <div class="pfp">
-            <img src="image/pfp3.jpg" alt="profile" width="200px" height="200px">
+            <img src="../assets/img/pfp3.jpg" alt="profile" width="200px" height="200px">
         </div>
         <div class="profile_info">
             <h2 class="user" id="profileUsername">User1_Fein</h2>
             <h4 class="email" id="profileEmail">User_fein1@yohohoho.com</h4>
         </div>
+        <div class="edit_profile">
+            <button class="btn btn-primary" onclick="window.location.href='User_Profile.html'">Edit Profile</button>
+        </div>
     </div>
-
+    
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Load saved username
@@ -83,16 +86,30 @@
 
 <div class="lower_profile">
     <div class="lower_profile_nav">
-        <a href="User_Profile_About.html"><h5>About</h5></a>
-        <a href="User_Profile_AnimeList.html"><h5>Anime List</h5></a>
-        <a href="User_Review.html"><h5>Reviews</h5></a>
+        <a href="user-profile-about.html"><h5>About</h5></a>
+        <a href="user-profile-animelist.html"><h5>Anime List</h5></a>
+        <a href="user-review.html"><h5>Reviews</h5></a>
     </div>
 </div>
 
-<div class="AnimeList">
-    
+<div class="about">
+    <h2>About</h2>
+    <p>Hi! I'm User1_Fein. I'm a big fan of anime and I love to watch them in my free time. I'm a big fan of action and adventure anime. I also love to read manga and light novels. I'm always looking for new anime to watch and new manga to read. I'm also a big fan of anime conventions and I love to cosplay as my favorite characters. I'm always looking for new friends to talk about anime with. Feel free to send me a message if you want to chat!</p>
 </div>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
 <footer>
     <p>&copy; 2023 AniBox. All rights reserved.</p>

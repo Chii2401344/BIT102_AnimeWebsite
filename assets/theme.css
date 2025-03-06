@@ -1,26 +1,168 @@
 /* Theme Color Variables */
 :root {
-    /* Main Colors */
-    --primary-color: #8FBC8F;    /* Soft Green - Main brand color */
-    --secondary-color: #D2B48C;   /* Tan Beige - Secondary elements */
-    --accent-color: #E9967A;      /* Salmon Pink - Highlights and accents */
-    --background-color: #F5F5DC;  /* Cream White - Background color */
-    --text-color: #4B3D2A;        /* Deep Brown - Text color */
+    /* Primary Colors */
+    --soft-green: #A8D5BA;    /* Nature and nostalgia */
+    --sky-blue: #A7C6ED;      /* Open and inviting */
+    --warm-beige: #F5E1C2;    /* Comforting and soft */
+
+    /* Secondary Colors */
+    --peach-pink: #F2B2A1;    /* Playful and youthful */
+    --lavender-purple: #D8C4E0; /* Dreamy and creative */
+    --earthy-brown: #8B5B29;  /* Grounding and stable */
 
     /* Hover/Active States */
-    --primary-hover: #6B8E6B;     /* Darker version of primary for hover states */
-    --secondary-hover: #BEA17C;   /* Darker version of secondary for hover states */
-    --accent-hover: #D5785C;      /* Darker version of accent for hover states */
+    --soft-green-hover: #8FC3A8;  /* Darker version of soft green */
+    --sky-blue-hover: #8DB3E6;    /* Darker version of sky blue */
+    --peach-pink-hover: #E5A090;  /* Darker version of peach pink */
 
     /* Additional Variations */
-    --primary-light: #A8D1A8;     /* Lighter version of primary */
-    --primary-transparent: rgba(143, 188, 143, 0.9); /* Semi-transparent primary */
-    --background-transparent: rgba(245, 245, 220, 0.95); /* Semi-transparent background */
+    --soft-green-transparent: rgba(168, 213, 186, 0.9);  /* Semi-transparent soft green */
+    --sky-blue-transparent: rgba(167, 198, 237, 0.9);    /* Semi-transparent sky blue */
+    --warm-beige-transparent: rgba(245, 225, 194, 0.95); /* Semi-transparent warm beige */
 }
 
-/* Usage Example:
-   .element {
-       background-color: var(--primary-color);
-       color: var(--text-color);
-   }
-*/ 
+/* Typography */
+:root {
+    --heading-font: 'Poppins', sans-serif;    /* Modern, clean headings */
+    --body-font: 'Nunito Sans', sans-serif;   /* Warm, friendly body text */
+}
+
+/* Global Styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--warm-beige);
+    color: var(--earthy-brown);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--soft-green);
+    border-color: var(--soft-green);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--soft-green-hover);
+    border-color: var(--soft-green-hover);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--soft-green);
+    color: var(--earthy-brown);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--peach-pink);
+    border-color: var(--peach-pink);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar {
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Navbar toggler (hamburger) icon */
+.navbar-toggler {
+    color: var(--earthy-brown);
+    border-color: var(--earthy-brown);
+    transition: all 0.3s ease;
+    border-width: 0.5px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    color: var(--white);
+    border-color: var(--white);
+    border-width: 0.5px !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(139, 91, 41, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    transition: background-image 0.3s ease;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(253, 246, 227, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    font-size: 0.95rem;
+    border-radius: 25px;
+}
+
+.nav-link:hover {
+    background-color: var(--peach-pink);
+    transform: translateY(-2px);
+}
+
+/* Icon Styles */
+.icon {
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    background-color: var(--soft-green-transparent);
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 25px;
+    border: 2px solid var(--soft-green);
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--peach-pink);
+    box-shadow: 0 0 0 0.2rem rgba(242, 178, 161, 0.25);
+}
+
+/* Logo Style */
+.navbar-brand {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--earthy-brown) !important;
+    text-shadow: 1px 1px 0 var(--warm-beige);
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
+    padding: 1.5rem 0;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.08);
+}
