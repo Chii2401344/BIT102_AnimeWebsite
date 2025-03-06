@@ -1,24 +1,24 @@
 /* Theme Color Variables */
 :root {
     /* Primary Colors */
-    --soft-green: #A8D5BA;    /* Nature and nostalgia */
-    --sky-blue: #A7C6ED;      /* Open and inviting */
-    --warm-beige: #F5E1C2;    /* Comforting and soft */
+    --soft-green: #A8D5BA;   
+    --sky-blue: #A7C6ED;     
+    --warm-beige: #F5E1C2;    
 
     /* Secondary Colors */
-    --peach-pink: #F2B2A1;    /* Playful and youthful */
-    --lavender-purple: #D8C4E0; /* Dreamy and creative */
-    --earthy-brown: #8B5B29;  /* Grounding and stable */
+    --peach-pink: #F2B2A1;    
+    --lavender-purple: #D8C4E0; 
+    --earthy-brown: #8B5B29; 
 
     /* Hover/Active States */
-    --soft-green-hover: #8FC3A8;  /* Darker version of soft green */
-    --sky-blue-hover: #8DB3E6;    /* Darker version of sky blue */
-    --peach-pink-hover: #E5A090;  /* Darker version of peach pink */
+    --soft-green-hover: #8FC3A8;  
+    --sky-blue-hover: #8DB3E6;   
+    --peach-pink-hover: #E5A090;  
 
     /* Additional Variations */
-    --soft-green-transparent: rgba(168, 213, 186, 0.9);  /* Semi-transparent soft green */
-    --sky-blue-transparent: rgba(167, 198, 237, 0.9);    /* Semi-transparent sky blue */
-    --warm-beige-transparent: rgba(245, 225, 194, 0.95); /* Semi-transparent warm beige */
+    --soft-green-transparent: rgba(168, 213, 186, 0.9); 
+    --sky-blue-transparent: rgba(167, 198, 237, 0.9);   
+    --warm-beige-transparent: rgba(245, 225, 194, 0.95); 
 }
 
 /* Typography */
@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Navbar Styles */
 .navbar {
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     padding: 0.5rem;
@@ -84,10 +85,34 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
 }
 
+.navbar-brand {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--earthy-brown) !important;
+    text-shadow: 1px 1px 0 var(--warm-beige);
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.nav-link {
+    color: var(--earthy-brown) !important;
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    font-size: 0.95rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--peach-pink);
+    color: var(--earthy-brown) !important;
+    transform: translateY(-2px);
+}
+
 /* Navbar toggler (hamburger) icon */
 .navbar-toggler {
-    color: var(--earthy-brown);
-    border-color: var(--earthy-brown);
+    color: var(--earthy-brown) !important;
+    border-color: var(--earthy-brown) !important;
     transition: all 0.3s ease;
     border-width: 0.5px;
 }
@@ -95,8 +120,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-toggler:hover,
 .navbar-toggler:focus,
 .navbar-toggler:active {
-    color: var(--white);
-    border-color: var(--white);
+    color: var(--earthy-brown) !important;
+    border-color: var(--earthy-brown) !important;
     border-width: 0.5px !important;
     box-shadow: none !important;
     outline: none !important;
@@ -108,24 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-toggler:hover .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(253, 246, 227, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    padding: 0;
-}
-
-.nav-link {
-    padding: 0.5rem 1rem;
-    margin: 0 5px;
-    font-size: 0.95rem;
-    border-radius: 25px;
-}
-
-.nav-link:hover {
-    background-color: var(--peach-pink);
-    transform: translateY(-2px);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(139, 91, 41, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 /* Icon Styles */
@@ -151,14 +159,6 @@ h1, h2, h3, h4, h5, h6 {
 .form-control:focus {
     border-color: var(--peach-pink);
     box-shadow: 0 0 0 0.2rem rgba(242, 178, 161, 0.25);
-}
-
-/* Logo Style */
-.navbar-brand {
-    font-family: var(--heading-font);
-    font-weight: 700;
-    color: var(--earthy-brown) !important;
-    text-shadow: 1px 1px 0 var(--warm-beige);
 }
 
 /* Footer Styles */
