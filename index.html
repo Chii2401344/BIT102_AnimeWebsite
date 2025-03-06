@@ -77,7 +77,61 @@
 
         <section class="trending-section" id="trending">
             <div class="container">
-                <h2 class="section-title text-center mb-5">Trending Anime</h2>
+                <h2 class="section-title text-center mb-5">Browse Anime</h2>
+                
+                <!-- Search and Filter Section -->
+                <div class="search-filter-section mb-4">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="search-group">
+                                <label for="animeSearch" class="form-label">Search</label>
+                                <input type="text" class="form-control" id="animeSearch" placeholder="Search by title...">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="filter-group">
+                                <label for="genreFilter" class="form-label">Genres</label>
+                                <select class="form-select" id="genreFilter">
+                                    <option value="" selected>Any</option>
+                                    <option value="action">Action</option>
+                                    <option value="adventure">Adventure</option>
+                                    <option value="comedy">Comedy</option>
+                                    <option value="drama">Drama</option>
+                                    <option value="fantasy">Fantasy</option>
+                                    <option value="romance">Romance</option>
+                                    <option value="sci-fi">Sci-Fi</option>
+                                    <option value="slice-of-life">Slice of Life</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="filter-group">
+                                <label for="statusFilter" class="form-label">Status</label>
+                                <select class="form-select" id="statusFilter">
+                                    <option value="" selected>Any</option>
+                                    <option value="airing">Airing</option>
+                                    <option value="completed">Completed</option>
+                                    <option value="upcoming">Upcoming</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="filter-group">
+                                <label for="yearFilter" class="form-label">Year</label>
+                                <select class="form-select" id="yearFilter">
+                                    <option value="" selected>Any</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row g-4">
                     <div class="col-6 col-md-4">
                         <div class="anime-card">

@@ -1,7 +1,16 @@
-/* Import fonts */
+/* ==========================================================================
+   Import Fonts
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap');
 
-/* Reset and base styles */
+@font-face {
+    font-family: 'Magic Retro';
+    src: url('assets/fonts/Magic_Retro.ttf') format('truetype');
+}
+
+/* ==========================================================================
+   Base Styles & Reset
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +22,19 @@ body {
     overflow-x: hidden;
 }
 
-/* Hero section styles */
+main {
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Logo Font */
+.navbar-brand {
+    font-family: var(--logo-font);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
 .hero-section {
     min-height: 100vh;
     width: 100%;
@@ -25,6 +46,7 @@ body {
     margin: 0;
 }
 
+/* Hero Background & Overlay */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -49,6 +71,7 @@ body {
     z-index: 0;
 }
 
+/* Hero Content */
 .hero-content-wrapper {
     position: relative;
     width: 100%;
@@ -57,7 +80,7 @@ body {
 }
 
 .hero-content {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.65);
     padding: 3.5rem;
     border-radius: 25px;
     backdrop-filter: blur(10px);
@@ -68,6 +91,7 @@ body {
 }
 
 .hero-section h1 {
+    font-family: var(--logo-font);
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
@@ -79,6 +103,7 @@ body {
     line-height: 1.8;
 }
 
+/* Hero Buttons */
 .cta-buttons {
     display: flex;
     justify-content: center;
@@ -92,7 +117,9 @@ body {
     min-width: 180px;
 }
 
-/* About section styles */
+/* ==========================================================================
+   About Section
+   ========================================================================== */
 .about-section {
     min-height: 100vh;
     padding: 6rem 0;
@@ -126,19 +153,58 @@ body {
     line-height: 1.8;
 }
 
-/* Trending section styles */
+/* ==========================================================================
+   Trending Section
+   ========================================================================== */
 .trending-section {
     padding: 6rem 4rem;
     position: relative;
-    background: rgba(255, 255, 255, 0.95);
+    background: white;
 }
 
 .trending-section .section-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 0 white;
 }
 
+/* Search and Filter Components */
+.search-filter-section {
+    background: white;
+    padding: 0.6rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.form-label {
+    color: var(--earthy-brown);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    border: 2px solid var(--soft-green);
+    border-radius: 10px;
+    padding: 0.2rem 0.2rem;
+    color: var(--earthy-brown);
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--peach-pink);
+    box-shadow: 0 0 0 0.2rem rgba(242, 178, 161, 0.25);
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%238B5B29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    padding-right: 2.5rem;
+}
+
+/* Anime Cards */
 .anime-card {
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     border-radius: 15px;
@@ -180,8 +246,11 @@ body {
     text-align: center;
 }
 
-/* Responsive styles */
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
 @media (max-width: 768px) {
+    /* Hero Section */
     .hero-content {
         margin: 1rem;
         padding: 2rem;
@@ -191,6 +260,7 @@ body {
         font-size: 2.5rem;
     }
 
+    /* CTA Buttons */
     .cta-buttons {
         flex-direction: column;
     }
@@ -200,6 +270,7 @@ body {
         min-width: auto;
     }
 
+    /* Trending Section */
     .trending-section {
         padding: 4rem 2rem;
     }
@@ -211,15 +282,26 @@ body {
     .anime-card {
         max-width: 200px;
     }
+
+    .search-filter-section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* Search and Filter */
+    .search-filter-section .col-md-4,
+    .search-filter-section .col-md-3,
+    .search-filter-section .col-md-2 {
+        width: 100%;
+    }
+
+    .search-filter-section .form-control,
+    .search-filter-section .form-select {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
     .trending-section {
         padding: 4rem 1rem;
     }
-}
-
-main {
-    padding: 0;
-    overflow-x: hidden;
 }

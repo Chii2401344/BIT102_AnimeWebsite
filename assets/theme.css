@@ -23,8 +23,9 @@
 
 /* Typography */
 :root {
-    --heading-font: 'Poppins', sans-serif;    /* Modern, clean headings */
-    --body-font: 'Nunito Sans', sans-serif;   /* Warm, friendly body text */
+    --logo-font: 'Magic Retro', sans-serif;     /* Logo specific font */
+    --heading-font: 'Poppins', sans-serif;      /* Modern, clean headings */
+    --body-font: 'Nunito Sans', sans-serif;     /* Warm, friendly body text */
 }
 
 /* Global Styles */
@@ -86,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-brand {
-    font-family: var(--heading-font);
+    font-family: var(--logo-font);
     font-weight: 700;
     color: var(--earthy-brown) !important;
     text-shadow: 1px 1px 0 var(--warm-beige);
