@@ -4,6 +4,7 @@
    ========================================================================== */
    .browse-section {
     padding: 1rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
     position: relative;
     background: white;
@@ -82,6 +83,10 @@
 
 .anime-card:hover .anime-cover img {
     transform: scale(1.05);
+}
+
+.anime-card:hover {
+    transform: translateY(-7px);
 }
 
 .anime-caption {
