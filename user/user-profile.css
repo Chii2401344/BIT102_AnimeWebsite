@@ -1,0 +1,150 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 1) 100%), url('../assets/img/banner3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.user-icon {
+    border-radius: 50%;
+    border-color: var(--primary-hover);
+}
+
+.pfp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user {
+    color: var(--primary-light);
+}
+
+.profile_info {
+    align-items: center;
+    justify-content: center;
+}
+
+.edit_profile {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 10px; 
+}
+
+.btn-primary {
+    z-index: 10; 
+}
+
+.lower_profile {
+    padding: 1%;
+    background-color: darkslategrey;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.lower_profile_nav {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.user-icon {
+    border-radius: 50%;
+    border-color: var(--primary-hover);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.about {
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    padding: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/* Review */
+.Add_Review {
+    background-color: var(--secondary-hover);
+    border: none;
+    width: 70%;
+    margin-top: 5%;
+}
+
+.Add_Review:hover {
+    background-color: var(--text-color);
+}
+
+.review-container {
+    margin-top: 5%;
+}
+
+.col-lg-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: top;
+}
+
+
+.col-lg-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-hover);
+    padding-bottom: 100%;
+    border-radius: 5px;
+}
+
+.review-header {
+    border-radius: 5px;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.review-card {
+    width: 90%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.review-card-username {
+    white-space: nowrap;
+    font-weight: bold;
+}
