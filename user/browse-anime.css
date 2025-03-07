@@ -19,7 +19,6 @@
     border-radius: 15px;
 }
 
-/* Search and Filter Components */
 .search-filter-section {
     background: white;
     padding: 0.5rem;
@@ -54,7 +53,9 @@
     padding-right: 2.5rem;
 }
 
-/* Anime Cards */
+/* ==========================================================================
+   Anime Cards
+   ========================================================================== */
 .anime-card {
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     border-radius: 15px;
@@ -105,7 +106,9 @@
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
 }
 
-
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 @media (max-width: 768px) {
 
     .col-md-4 {
@@ -121,7 +124,6 @@
         margin-right: 0;
     }
     
-    /* Search and Filter */
     .search-filter-section .col-md-4,
     .search-filter-section .col-md-3,
     .search-filter-section .col-md-2 {
