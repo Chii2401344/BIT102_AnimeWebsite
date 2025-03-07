@@ -1,4 +1,16 @@
-/* Theme Color Variables */
+/* ==========================================================================
+   Import Fonts
+   ========================================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap');
+
+   @font-face {
+       font-family: 'Magic Retro';
+       src: url('../assets/fonts/Magic_Retro.ttf') format('truetype');
+   }
+   
+/* ==========================================================================
+   Theme Color Variables
+   ========================================================================== */
 :root {
     /* Primary Colors */
     --soft-green: #A8D5BA;   
@@ -24,14 +36,18 @@
     --peach-pink-transparent: rgba(242, 178, 161, 0.6);
 }
 
-/* Typography */
+/* ==========================================================================
+   Font Variables   
+   ========================================================================== */
 :root {
-    --logo-font: 'Magic Retro', sans-serif;     /* Logo specific font */
-    --heading-font: 'Poppins', sans-serif;      /* Modern, clean headings */
-    --body-font: 'Nunito Sans', sans-serif;     /* Warm, friendly body text */
+    --logo-font: 'Magic Retro', sans-serif; 
+    --heading-font: 'Poppins', sans-serif;  
+    --body-font: 'Nunito Sans', sans-serif;  
 }
 
-/* Global Styles */
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
 body {
     font-family: var(--body-font);
     background-color: var(--warm-beige);
@@ -42,7 +58,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
-/* Button Styles */
+
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+
+/* Primary Button */
 .btn-primary {
     border: none;
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
@@ -51,12 +72,14 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
 }
 
+/* Primary Button Hover */
 .btn-primary:hover {
     background: linear-gradient(135deg, var(--soft-green-hover), var(--sky-blue-hover));
     border-color: var(--soft-green-hover);
     transform: translateY(-2px);
 }
 
+/* Secondary Button */
 .btn-secondary {
     border: none;
     background: linear-gradient(135deg, var(--peach-pink), var(--light-blue));
@@ -65,6 +88,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
 }
 
+/* Secondary Button Hover */
 .btn-secondary:hover {
     background: linear-gradient(135deg, var(--peach-pink-hover), var(--light-blue-hover));
     border-color: var(--peach-pink-hover);
@@ -72,7 +96,10 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
 }
 
-/* Card Styles */
+
+/* ==========================================================================
+   Card Styles
+   ========================================================================== */
 .card {
     border-radius: 15px;
     border: none;
@@ -80,7 +107,12 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Navbar Styles */
+
+/* ==========================================================================
+   Navbar Styles
+   ========================================================================== */
+
+/* Navbar */
 .navbar {
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     padding: 0.5rem;
@@ -91,6 +123,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
 }
 
+/* Navbar Brand */
 .navbar-brand {
     font-family: var(--logo-font);
     font-weight: 700;
@@ -100,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+/* Navbar Links */
 .nav-link {
     color: var(--earthy-brown) !important;
     padding: 0.5rem 1rem;
@@ -109,13 +143,25 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
 }
 
+/* Navbar Links Hover */
 .nav-link:hover {
     background-color: var(--peach-pink);
     color: var(--earthy-brown) !important;
     transform: translateY(-2px);
 }
 
-/* Navbar toggler (hamburger) icon */
+/* Navbar Links Colours */
+.navbar-nav a {
+    color: inherit !important; /* Inherits the same color as text */
+    text-decoration: none !important; /* Removes any underline */
+}
+
+/* Navbar Icon Colors */
+.navbar-nav a i {
+    color: inherit !important;
+}
+
+/* Navbar Toggler (Hamburger) Icon */
 .navbar-toggler {
     color: var(--earthy-brown) !important;
     border-color: var(--earthy-brown) !important;
@@ -123,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 0.5px;
 }
 
+/* Navbar Toggler Hover */
 .navbar-toggler:hover,
 .navbar-toggler:focus,
 .navbar-toggler:active {
@@ -133,16 +180,21 @@ h1, h2, h3, h4, h5, h6 {
     outline: none !important;
 }
 
+/* Navbar Toggler Icon */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(139, 91, 41, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     transition: background-image 0.3s ease;
 }
 
+/* Navbar Toggler Hover Icon */    
 .navbar-toggler:hover .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(139, 91, 41, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-/* Icon Styles */
+
+/* ==========================================================================
+   Icon Styles
+   ========================================================================== */
 .icon {
     border-radius: 50%;
     padding: 0.5rem;
@@ -154,7 +206,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--soft-green-transparent);
 }
 
-/* Form Styles */
+
+/* ==========================================================================
+   Form Styles
+   ========================================================================== */
 .form-control {
     border-radius: 25px;
     border: 2px solid var(--soft-green);
@@ -167,7 +222,10 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 0 0.2rem rgba(242, 178, 161, 0.25);
 }
 
-/* Footer Styles */
+
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
 .footer {
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     padding: 1.5rem 0;
