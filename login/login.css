@@ -1,102 +1,277 @@
-/* Theme Color Variables */
-:root {
-    /* Main Colors */
-    --primary-color: #8FBC8F;    /* Soft Green - Main brand color */
-    --secondary-color: #D2B48C;   /* Tan Beige - Secondary elements */
-    --accent-color: #E9967A;      /* Salmon Pink - Highlights and accents */
-    --background-color: #F5F5DC;  /* Cream White - Background color */
-    --text-color: #4B3D2A;        /* Deep Brown - Text color */
 
-    /* Hover/Active States */
-    --primary-hover: #6B8E6B;     /* Darker version of primary for hover states */
-    --secondary-hover: #BEA17C;   /* Darker version of secondary for hover states */
-    --accent-hover: #D5785C;      /* Darker version of accent for hover states */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap');
 
-    /* Additional Variations */
-    --primary-light: #A8D1A8;     /* Lighter version of primary */
-    --primary-transparent: rgba(143, 188, 143, 0.9); /* Semi-transparent primary */
-    --background-transparent: rgba(245, 245, 220, 0.95); /* Semi-transparent background */
+@font-face {
+    font-family: 'Magic Retro';
+    src: url('../assets/fonts/Magic_Retro.ttf') format('truetype');
 }
 
-/* Usage Example:
-   .element {
-       background-color: var(--primary-color);
-       color: var(--text-color);
-   }
-*/ 
+body {
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
-html, body {
-    background-image: url(Images/Login\ Background4.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
+.login-container {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(168, 213, 186, 0.3),
+        rgba(167, 198, 237, 0.3)
+    );
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li a {
+    padding: 0.5rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+
+/* main */
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
-    color: var(--text-color);
+    width: 100vw;
+    height: 100vh;
 }
+
 .container {
+    font-family: var(--heading-font);
+    font-size: 0.8rem;
     border: none;
-    width: 300px;
+    width: 700px;
     background-color: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 20px 5px var(--text-color);
-    margin: 0;
+    padding: 0px;
+    border-radius: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin: 0px;
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    opacity: 0.85;
+    color: var(--earthy-brown);
 }
-h2 {
-    font-size: 20px;
+
+.image {
+    border-radius: 30px 0px 0px 30px;
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    text-shadow: 2px 2px 0 white;
+}
+
+.image > h1 {
+    font-family: var(--logo-font);
+    font-size: 4rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0px;
+}
+
+.input-box {
+    padding: 0px;
+    margin: 20px;
+    opacity: 1;
+}
+
+.input-box > h1 {
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-family: var(--heading-font);
 }
+
+main a:link, a:visited {
+    text-decoration: none;
+    color: var(--soft-green);
+    transition: all 0.3s ease 0s;
+}
+
+main a:hover {
+    color: var(--peach-pink);
+}
+
+main a:active {
+    color: var(--soft-green);
+}
+
+main button, #submit {
+    font-family: var(--heading-font);
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--soft-green);
+    margin-bottom: 0px;
+    margin-top: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+main button:hover, #submit:hover {
+    background-color: var(--peach-pink);
+    color: white;
+    -webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+}
+
+main button:active, #submit:active {
+    opacity: 1;
+    background-color: var(--soft-green);
+}
+
+main .home-page {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 80%;
+        max-width: 350px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+    }
+    .image {
+        border-radius: 30px 30px 0px 0px;
+    }
+    .image > h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    .container {
+        width: 60%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+    }
+    .image {
+        border-radius: 30px 30px 0px 0px;
+    }
+    .image > h1 {
+        font-size: 3rem;
+    }
+}
+
+/* login form */
 .login-credentials > input {
-    width: 93%;
-    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 3px;
+    padding-left: 5px;
     border-radius: 0px;
     border: none;
-    border-bottom: var(--secondary-color) solid 1px;
-    margin-bottom: 5px;
+    border-bottom: var(--peach-pink) solid 1px;
+    margin-bottom: 3px;
+    margin-top: 0px;
+    box-sizing: border-box;
 }
+
+.login-credentials > input:focus {
+    outline: none;
+    border-bottom: var(--peach-pink) solid 2px;
+}
+
 .login-credentials > p {
     margin-top: 0px;
     margin-bottom: 20px;
     margin-left: 5px;
 }
-a:link {
-    text-decoration: none;
-    color: var(--primary-color);
+
+/* sign-up and forgot password form */
+#instruction {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-top: 0px;
 }
-a:visited {
-    color: var(--primary-color);
-}
-a:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
-a:active {
-    color: var(--primary-color);
-}
-#login {
+
+.input-group > input {
+    font-family: var(--heading-font);
+    font-size: 0.8rem;
     width: 100%;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 3px;
+    padding-left: 5px;
+    border-radius: 0px;
     border: none;
-    background-color: var(--secondary-color);
+    border-bottom: var(--peach-pink) solid 1px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+
+.input-group > input:focus {
+    outline: none;
+    border-bottom: var(--peach-pink-hover) solid 2px;
+}
+
+.input-group > p {
+    margin-top: 5px;
+    margin-left: 5px;
     margin-bottom: 0px;
 }
-#login:hover {
-    background-color: var(--secondary-hover);
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-#login:active {
-    opacity: 1;
-    background-color: var(--secondary-color);
-}
-.home-page {
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 20px;
+
+/* LOGIN BUTTONS CONTAINER */
+.buttons-container > a {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: var(--earthy-brown);
 }

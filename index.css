@@ -1,12 +1,6 @@
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap');
-
-@font-face {
-    font-family: 'RapierZero';
-    src: url('assets/fonts/RapierZero-325M.ttf') format('truetype');
-}
-
-/* Reset and base styles */
+/* ==========================================================================
+   Base Styles & Reset
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +12,14 @@ body {
     overflow-x: hidden;
 }
 
-/* Hero section styles */
+main {
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
 .hero-section {
     min-height: 100vh;
     width: 100%;
@@ -30,6 +31,7 @@ body {
     margin: 0;
 }
 
+/* Hero Background & Overlay */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -54,6 +56,7 @@ body {
     z-index: 0;
 }
 
+/* Hero Content */
 .hero-content-wrapper {
     position: relative;
     width: 100%;
@@ -62,7 +65,7 @@ body {
 }
 
 .hero-content {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.65);
     padding: 3.5rem;
     border-radius: 25px;
     backdrop-filter: blur(10px);
@@ -73,6 +76,7 @@ body {
 }
 
 .hero-section h1 {
+    font-family: var(--logo-font);
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
@@ -84,6 +88,7 @@ body {
     line-height: 1.8;
 }
 
+/* Hero Buttons */
 .cta-buttons {
     display: flex;
     justify-content: center;
@@ -97,7 +102,9 @@ body {
     min-width: 180px;
 }
 
-/* About section styles */
+/* ==========================================================================
+   About Section
+   ========================================================================== */
 .about-section {
     min-height: 100vh;
     padding: 6rem 0;
@@ -131,67 +138,11 @@ body {
     line-height: 1.8;
 }
 
-/* Trending section styles */
-.trending-section {
-    padding: 6rem 4rem;
-    position: relative;
-    background: rgba(255, 255, 255, 0.95);
-}
-
-.trending-section .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-}
-
-.anime-card {
-    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 250px;
-    margin: 0 auto;
-}
-
-.anime-cover {
-    position: relative;
-    padding-top: 130%;
-    overflow: hidden;
-}
-
-.anime-cover img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.anime-card:hover .anime-cover img {
-    transform: scale(1.05);
-}
-
-.anime-caption {
-    padding: 1rem;
-}
-
-.anime-caption h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0;
-    text-align: center;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive styles */
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
 @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.3rem;
-    }
-
+    /* Hero Section */
     .hero-content {
         margin: 1rem;
         padding: 2rem;
@@ -201,6 +152,7 @@ body {
         font-size: 2.5rem;
     }
 
+    /* CTA Buttons */
     .cta-buttons {
         flex-direction: column;
     }
@@ -210,31 +162,4 @@ body {
         min-width: auto;
     }
 
-    .trending-section {
-        padding: 4rem 2rem;
-    }
-
-    .col-md-4 {
-        width: 50%;
-    }
-
-    .anime-card {
-        max-width: 200px;
-    }
-
-    .nav-link {
-        padding: 0.4rem 1rem;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .trending-section {
-        padding: 4rem 1rem;
-    }
-}
-
-main {
-    padding: 0;
-    overflow-x: hidden;
 }

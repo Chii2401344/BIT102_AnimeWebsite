@@ -1,33 +1,53 @@
-/* Theme Color Variables */
+/* ==========================================================================
+   Import Fonts
+   ========================================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap');
+
+   @font-face {
+       font-family: 'Magic Retro';
+       src: url('../assets/fonts/Magic_Retro.ttf') format('truetype');
+   }
+   
+/* ==========================================================================
+   Theme Color Variables
+   ========================================================================== */
 :root {
     /* Primary Colors */
-    --soft-green: #A8D5BA;    /* Nature and nostalgia */
-    --sky-blue: #A7C6ED;      /* Open and inviting */
-    --warm-beige: #F5E1C2;    /* Comforting and soft */
+    --soft-green: #A8D5BA;   
+    --sky-blue: #A7C6ED;     
+    --warm-beige: #F5E1C2;    
+    --light-blue: #bddbff;
 
     /* Secondary Colors */
-    --peach-pink: #F2B2A1;    /* Playful and youthful */
-    --lavender-purple: #D8C4E0; /* Dreamy and creative */
-    --earthy-brown: #8B5B29;  /* Grounding and stable */
+    --peach-pink: #F2B2A1;    
+    --lavender-purple: #D8C4E0; 
+    --earthy-brown: #8B5B29; 
 
     /* Hover/Active States */
-    --soft-green-hover: #8FC3A8;  /* Darker version of soft green */
-    --sky-blue-hover: #8DB3E6;    /* Darker version of sky blue */
-    --peach-pink-hover: #E5A090;  /* Darker version of peach pink */
+    --soft-green-hover: #8FC3A8;  
+    --sky-blue-hover: #8DB3E6;   
+    --peach-pink-hover: #E5A090;  
+    --light-blue-hover: #93c5ff;
 
     /* Additional Variations */
-    --soft-green-transparent: rgba(168, 213, 186, 0.9);  /* Semi-transparent soft green */
-    --sky-blue-transparent: rgba(167, 198, 237, 0.9);    /* Semi-transparent sky blue */
-    --warm-beige-transparent: rgba(245, 225, 194, 0.95); /* Semi-transparent warm beige */
+    --soft-green-transparent: rgba(168, 213, 186, 0.9); 
+    --sky-blue-transparent: rgba(167, 198, 237, 0.9);   
+    --warm-beige-transparent: rgba(245, 225, 194, 0.95); 
+    --peach-pink-transparent: rgba(242, 178, 161, 0.6);
 }
 
-/* Typography */
+/* ==========================================================================
+   Font Variables   
+   ========================================================================== */
 :root {
-    --heading-font: 'Poppins', sans-serif;    /* Modern, clean headings */
-    --body-font: 'Nunito Sans', sans-serif;   /* Warm, friendly body text */
+    --logo-font: 'Magic Retro', sans-serif; 
+    --heading-font: 'Poppins', sans-serif;  
+    --body-font: 'Nunito Sans', sans-serif;  
 }
 
-/* Global Styles */
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
 body {
     font-family: var(--body-font);
     background-color: var(--warm-beige);
@@ -38,35 +58,48 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
-/* Button Styles */
+
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+
+/* Primary Button */
 .btn-primary {
-    background-color: var(--soft-green);
+    border: none;
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     border-color: var(--soft-green);
     border-radius: 25px;
     transition: all 0.3s ease;
 }
 
+/* Primary Button Hover */
 .btn-primary:hover {
-    background-color: var(--soft-green-hover);
+    background: linear-gradient(135deg, var(--soft-green-hover), var(--sky-blue-hover));
     border-color: var(--soft-green-hover);
     transform: translateY(-2px);
 }
 
-.btn-outline-primary {
-    border: 2px solid var(--soft-green);
-    color: var(--earthy-brown);
+/* Secondary Button */
+.btn-secondary {
+    border: none;
+    background: linear-gradient(135deg, var(--peach-pink), var(--light-blue));
+    border-color: var(--peach-pink-hover);
     border-radius: 25px;
     transition: all 0.3s ease;
 }
 
-.btn-outline-primary:hover {
-    background-color: var(--peach-pink);
-    border-color: var(--peach-pink);
-    color: var(--white);
+/* Secondary Button Hover */
+.btn-secondary:hover {
+    background: linear-gradient(135deg, var(--peach-pink-hover), var(--light-blue-hover));
+    border-color: var(--peach-pink-hover);
+    color: white;
     transform: translateY(-2px);
 }
 
-/* Card Styles */
+
+/* ==========================================================================
+   Card Styles
+   ========================================================================== */
 .card {
     border-radius: 15px;
     border: none;
@@ -74,6 +107,12 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+/* ==========================================================================
+   Navbar Styles
+   ========================================================================== */
+
+/* Navbar */
 .navbar {
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     padding: 0.5rem;
@@ -81,53 +120,81 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    top: 0;
 }
 
-/* Navbar toggler (hamburger) icon */
+/* Navbar Brand */
+.navbar-brand {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    color: var(--earthy-brown) !important;
+    text-shadow: 1px 1px 0 var(--warm-beige);
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+/* Navbar Links */
+.nav-link {
+    color: var(--earthy-brown) !important;
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    font-size: 0.95rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Navbar Links Hover */
+.nav-link:hover {
+    background-color: var(--peach-pink);
+    color: var(--earthy-brown) !important;
+    transform: translateY(-2px);
+}
+
+/* Navbar Links Colours */
+.navbar-nav a {
+    color: inherit !important; /* Inherits the same color as text */
+    text-decoration: none !important; /* Removes any underline */
+}
+
+/* Navbar Icon Colors */
+.navbar-nav a i {
+    color: inherit !important;
+}
+
+/* Navbar Toggler (Hamburger) Icon */
 .navbar-toggler {
-    color: var(--earthy-brown);
-    border-color: var(--earthy-brown);
+    color: var(--earthy-brown) !important;
+    border-color: var(--earthy-brown) !important;
     transition: all 0.3s ease;
     border-width: 0.5px;
 }
 
+/* Navbar Toggler Hover */
 .navbar-toggler:hover,
 .navbar-toggler:focus,
 .navbar-toggler:active {
-    color: var(--white);
-    border-color: var(--white);
+    color: var(--earthy-brown) !important;
+    border-color: var(--earthy-brown) !important;
     border-width: 0.5px !important;
     box-shadow: none !important;
     outline: none !important;
 }
 
+/* Navbar Toggler Icon */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(139, 91, 41, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     transition: background-image 0.3s ease;
 }
 
+/* Navbar Toggler Hover Icon */    
 .navbar-toggler:hover .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(253, 246, 227, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(139, 91, 41, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
-    padding: 0;
-}
 
-.nav-link {
-    padding: 0.5rem 1rem;
-    margin: 0 5px;
-    font-size: 0.95rem;
-    border-radius: 25px;
-}
-
-.nav-link:hover {
-    background-color: var(--peach-pink);
-    transform: translateY(-2px);
-}
-
-/* Icon Styles */
+/* ==========================================================================
+   Icon Styles
+   ========================================================================== */
 .icon {
     border-radius: 50%;
     padding: 0.5rem;
@@ -139,7 +206,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--soft-green-transparent);
 }
 
-/* Form Styles */
+
+/* ==========================================================================
+   Form Styles
+   ========================================================================== */
 .form-control {
     border-radius: 25px;
     border: 2px solid var(--soft-green);
@@ -152,17 +222,13 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 0 0.2rem rgba(242, 178, 161, 0.25);
 }
 
-/* Logo Style */
-.navbar-brand {
-    font-family: var(--heading-font);
-    font-weight: 700;
-    color: var(--earthy-brown) !important;
-    text-shadow: 1px 1px 0 var(--warm-beige);
-}
 
-/* Footer Styles */
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
 .footer {
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     padding: 1.5rem 0;
     box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.08);
+    align-items: center;
 }
