@@ -1,0 +1,22 @@
+
+/* ==========================================================================
+   Profile Card top right in header
+   ========================================================================== */
+   .card-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user-icon {
+    border-radius: 50%; 
+    border-color: var(--primary-hover);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .card-container {
+        align-items: right;
+    }
+}
