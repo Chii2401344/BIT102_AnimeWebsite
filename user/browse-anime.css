@@ -3,7 +3,9 @@
    Browse Section
    ========================================================================== */
    .browse-section {
-    padding: 6rem 4rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
     position: relative;
     background: white;
 }
@@ -11,15 +13,16 @@
 .browse-section .section-title {
     background: white;
     padding: 1rem;
+    padding-bottom: 0;
     font-size: 2.5rem;
-    margin: 1rem 1rem 1rem 1rem;
+    margin-top: 1rem;
     border-radius: 15px;
 }
 
 /* Search and Filter Components */
 .search-filter-section {
     background: white;
-    padding: 0.6rem;
+    padding: 0.5rem;
     border-radius: 15px;
     margin-bottom: 2rem;
     margin-left: 2rem;
@@ -82,6 +85,10 @@
     transform: scale(1.05);
 }
 
+.anime-card:hover {
+    transform: translateY(-7px);
+}
+
 .anime-caption {
     padding: 1rem;
 }
@@ -93,12 +100,13 @@
     text-align: center;
 }
 
+.section-seperator {
+    height: 4rem;
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
+}
+
 
 @media (max-width: 768px) {
-    /* Browse Section */
-    .browse-section {
-        padding: 4rem 2rem;
-    }
 
     .col-md-4 {
         width: 50%;
@@ -127,7 +135,5 @@
 }
 
 @media (max-width: 480px) {
-    .browse-section {
-        padding: 4rem 1rem;
-    }
+
 }

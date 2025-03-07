@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/theme.css">
     <link rel="stylesheet" href="user-home.css">
     <link rel="stylesheet" href="browse-anime.css">
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,10 @@
                         <a class="nav-link" href="user-home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="user-browse.html">Browse</a>
+                        <a class="nav-link" href="user-home.html#browse">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user-profile-animelist.html">My List</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="user-profile-about.html">Profile</a>
@@ -43,10 +47,10 @@
                         <a class="nav-link d-block d-lg-none" href="user-profile.html">Settings</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../index.html" class="d-none d-lg-block me-3">
+                        <a href="#" id="logoutDesktop" class="d-none d-lg-block me-3">
                             <i class="fas fa-sign-out-alt"></i>
                         </a>
-                        <a class="nav-link d-block d-lg-none" href="../index.html">Logout</a>
+                        <a href="#" id="logoutMobile" class="nav-link d-block d-lg-none">Logout</a>
                     </li>
                 </ul>
 
@@ -79,6 +83,8 @@
                 <button class="nav-button" onclick="plusDivs(1)">&#10095;</button>
             </div>
         </div>
+
+        <div class="section-seperator"></div>
 
         <section class="browse-section" id="browse">
             <div class="container">
