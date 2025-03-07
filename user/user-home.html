@@ -80,46 +80,6 @@
             </div>
         </div>
 
-        <script>
-            var myIndex = 0;
-            var images = document.getElementsByClassName("slide");
-            var titles = ["One Piece", "Bocchi The Rock", "Your Name"];
-            var descriptions = [
-                "A young pirate, Luffy, sets sail with his crew to find the legendary One Piece treasure and become the Pirate King, facing powerful enemies and uncovering world-shaking secrets..",
-                "Hitori \"Bocchi\" Gotoh, a socially anxious girl who loves guitar, joins a band to make friends and overcome her shyness, leading to hilarious and heartfelt moments.",
-                "Two strangers, Taki and Mitsuha, mysteriously swap bodies across time, forming a deep connection and racing to change fate before disaster strikes."
-            ];
-            var interval = 4000;
-
-            function showDivs(n) {
-                for (let i = 0; i < images.length; i++) {
-                    images[i].classList.remove("active");
-                }
-                if (n >= images.length) { myIndex = 0; }
-                if (n < 0) { myIndex = images.length - 1; }
-                images[myIndex].classList.add("active");
-
-                // Update text
-                document.getElementById("slide-title").textContent = titles[myIndex];
-                document.getElementById("slide-description").textContent = descriptions[myIndex];
-            }
-
-            function plusDivs(n) {
-                myIndex += n;
-                showDivs(myIndex);
-            }
-
-            function autoSlide() {
-                myIndex++;
-                showDivs(myIndex);
-                setTimeout(autoSlide, interval);
-            }
-
-            images[0].classList.add("active");
-
-            autoSlide();
-        </script>
-
         <section class="browse-section" id="browse">
             <div class="container">
                 <h2 class="section-title text-center mb-5">Browse Anime</h2>
@@ -202,7 +162,10 @@
                     <div class="col-6 col-md-4">
                         <div class="anime-card">
                             <div class="anime-cover">
-                                <img src="../assets/img/cover-bocchi-the-rock.jpg" alt="Bocchi the Rock" class="img-fluid">
+                                <a href="../animes/bocchi-the-rock.html">
+                                    <img src="../assets/img/cover-bocchi-the-rock.jpg" alt="Bocchi the Rock"
+                                        class="img-fluid">
+                                </a>
                             </div>
                             <div class="anime-caption">
                                 <h3>Bocchi the Rock!</h3>
@@ -212,7 +175,9 @@
                     <div class="col-6 col-md-4">
                         <div class="anime-card">
                             <div class="anime-cover">
-                                <img src="../assets/img/cover-kimi-no-na-wa.jpg" alt="Your Name" class="img-fluid">
+                                <a href="../animes/kimi-no-na-wa.html">
+                                    <img src="../assets/img/cover-kimi-no-na-wa.jpg" alt="Your Name" class="img-fluid">
+                                </a>
                             </div>
                             <div class="anime-caption">
                                 <h3>Your Name</h3>
@@ -222,7 +187,9 @@
                     <div class="col-6 col-md-4">
                         <div class="anime-card">
                             <div class="anime-cover">
-                                <img src="../assets/img/cover-one-piece.jpg" alt="One Piece" class="img-fluid">
+                                <a href="../animes/one-piece.html">
+                                    <img src="../assets/img/cover-one-piece.jpg" alt="One Piece" class="img-fluid">
+                                </a>
                             </div>
                             <div class="anime-caption">
                                 <h3>One Piece</h3>
@@ -235,10 +202,53 @@
 
     </main>
 
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center mb-0">&copy; 2025 AniBox. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var myIndex = 0;
+        var images = document.getElementsByClassName("slide");
+        var titles = ["One Piece", "Bocchi The Rock", "Your Name"];
+        var descriptions = [
+            "A young pirate, Luffy, sets sail with his crew to find the legendary One Piece treasure and become the Pirate King, facing powerful enemies and uncovering world-shaking secrets..",
+            "Hitori \"Bocchi\" Gotoh, a socially anxious girl who loves guitar, joins a band to make friends and overcome her shyness, leading to hilarious and heartfelt moments.",
+            "Two strangers, Taki and Mitsuha, mysteriously swap bodies across time, forming a deep connection and racing to change fate before disaster strikes."
+        ];
+        var interval = 4000;
+
+        function showDivs(n) {
+            for (let i = 0; i < images.length; i++) {
+                images[i].classList.remove("active");
+            }
+            if (n >= images.length) { myIndex = 0; }
+            if (n < 0) { myIndex = images.length - 1; }
+            images[myIndex].classList.add("active");
+
+            // Update text
+            document.getElementById("slide-title").textContent = titles[myIndex];
+            document.getElementById("slide-description").textContent = descriptions[myIndex];
+        }
+
+        function plusDivs(n) {
+            myIndex += n;
+            showDivs(myIndex);
+        }
+
+        function autoSlide() {
+            myIndex++;
+            showDivs(myIndex);
+            setTimeout(autoSlide, interval);
+        }
+
+        images[0].classList.add("active");
+
+        autoSlide();
+    </script>
+
 </body>
 
-<footer class="footer">
-    <div class="container">
-        <p class="text-center mb-0">&copy; 2025 AniBox. All rights reserved.</p>
-    </div>
-</footer>
+</html>
