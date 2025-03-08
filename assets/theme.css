@@ -50,7 +50,7 @@
    ========================================================================== */
 body {
     font-family: var(--body-font);
-    background-color: var(--warm-beige);
+    background-color: white;
     color: var(--earthy-brown);
 }
 
