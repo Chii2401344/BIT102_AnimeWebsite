@@ -1,18 +1,3 @@
-
-.user-icon {
-    border-radius: 50%; 
-    border-color: var(--primary-hover);
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-
-@media (max-width: 768px) {
-    .card-container {
-        align-items: right;
-    }
-}
-
 .bocchi-the-rock {margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -66,6 +51,19 @@ h2 {margin: 1.25rem;
     border: 1px solid red;
     border-radius: 1.875rem;
     padding: 0.313rem;}
+
+.user-icon {
+    border-radius: 50%; 
+    border-color: var(--primary-hover);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        align-items: right;
+    }
+}
 
 p {margin: 1.25rem;
     color: white;
@@ -376,16 +374,16 @@ input::placeholder {color: var(--earthy-brown);}
 
 .individual-review p {line-height: 1.875rem;}
 
-@media (max-width:992px) {
-    .anime-info-container {display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 1.875rem;
-    margin-top: 5%;
-    margin-bottom: 5%; 
-    position: center;}
-}
 
-@media (max-width:768px) {
+
+@media (max-width:992px) {
+
+    .anime-info-container {display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0.313rem;
+        margin-bottom: 0.313rem; 
+        position: center;
+    }
 
     .bocchi-the-rock {margin: 0;
         padding: 0;
@@ -404,6 +402,10 @@ input::placeholder {color: var(--earthy-brown);}
         overflow-x: hidden;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 20%), url(../assets/img/banner-one-piece.jpg);
         background-position: top;}
+
+    .anime-review-container {margin: 0rem;}
+        .individual-review img {margin: 0rem;
+        float:left;}
 
     .container2 {margin:0.625rem;
             display: flex;
@@ -480,7 +482,7 @@ input::placeholder {color: var(--earthy-brown);}
 
     .lower-half-container {display: grid;
         grid-template-columns: 1fr;
-        margin: 2rem;
+        margin: 1.2rem;
         margin-bottom: 3em; 
         position: center;
         align-items: center;}
@@ -498,7 +500,7 @@ input::placeholder {color: var(--earthy-brown);}
 
         .recommendation-details {margin: 1rem;
         margin-top:0rem;
-        margin-left:0.5rem;
+        margin-left:0.2rem;
         margin-right:0.5rem;}
 
         .recommendation-details p {font-size: 1rem;}
@@ -517,12 +519,59 @@ input::placeholder {color: var(--earthy-brown);}
     .btn.btn-light {font-size: 0.8rem;}
 
     .btn.btn-light:hover {font-size:0.9rem;}
+   
+}
 
+@media (min-width:600px max-width:992px) {
 
+    .anime-info-container {display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1.875rem;
+        margin-top: 5%;
+        margin-bottom: 5%; 
+        position: center;}
 
+        .score {margin:1rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            width:15rem;}
+        .popularity {margin:1rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            width:15rem;}
+        .date {margin:1rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            width:15rem;}
+        .studio {margin:1rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            width:15rem;}
 
+        hr {margin:0.5rem}
 
-    
-    
-    
+        .anime-synopsis {margin:3rem;
+            margin-bottom: 0rem;}
+
+        .recommendation-container {margin: 2rem;
+            margin-bottom: 2rem;}
+
+        .anime-review-container {margin: 2rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;}
+
+        .individual-recommendation {margin-left: 1rem;
+            margin-right: 1rem;}
+
+}
+
+@media (max-width:450px) {
+
+    .individual-recommendation img {width:8rem;
+        height:10rem}
+
 }
