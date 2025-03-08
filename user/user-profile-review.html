@@ -77,29 +77,15 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Load saved username
-            if (localStorage.getItem("username")) {
-                document.getElementById("profileUsername").textContent = localStorage.getItem("username");
-            }
-
-            // Load saved email
-            if (localStorage.getItem("email")) {
-                document.getElementById("profileEmail").textContent = localStorage.getItem("email");
-            }
-        });
-    </script>
-
     <div class="lower_profile">
         <div class="lower_profile_nav">
-            <a href="user-profile-about.html">
+            <a class="lower_profile_nav_link" href="user-profile-about.html">
                 <h5>About</h5>
             </a>
-            <a href="user-profile-animelist.html">
-                <h5>Anime List</h5>
+            <a class="lower_profile_nav_link" href="user-profile-mybox.html">
+                <h5>My Box</h5>
             </a>
-            <a href="user-profile-review.html">
+            <a class="lower_profile_nav_link" href="user-profile-review.html">
                 <h5>Reviews</h5>
             </a>
         </div>
@@ -129,11 +115,34 @@
                             <p class="review-card-text">Review</p>
                         </div>
 
+                        <div class="review-card-header-text">
+                            <p class="review-card-date">Date</p>
+                        </div>
+
                     </div>
-                    <div class="review-card-header-text">
-                        <p class="review-card-date">Date</p>
-                    </div>
+                    
                 </div>
+
+                <div class="review-card">
+                    <div class="review-card-header">
+
+                        <div class="review-card-profile">
+                            <img src="../assets/img/pfp3.jpg" alt="profile" class="user-icon" width="50px" height="50px">
+                            <h4 class="review-card-username" id="profileUsername">User1_Fein</h4>
+                        </div>
+
+                        <div class="review-card-body">
+                            <p class="review-card-text">Review</p>
+                        </div>
+
+                        <div class="review-card-header-text">
+                            <p class="review-card-date">Date</p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
             </div>
         </div>
     </div>
