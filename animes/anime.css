@@ -34,7 +34,7 @@
     }
 
 h1 {color: white;
-    letter-spacing: 5px;
+    letter-spacing: 0.313rem;
     text-align: center;
     font-size: 1.25rem;}
 
@@ -43,37 +43,37 @@ h2 {margin: 1.25rem;
 
 .title {margin: 1.25rem;
     color: white;
-    font-size: 30px;}
+    font-size: 1.875rem;}
 
 .bocchi-genre {margin: 1.25rem;
     color: orange;
     font-size: 1.25rem;
     border: 1px solid orange;
-    border-radius: 30px;
-    padding: 5px;}
+    border-radius: 1.875rem;
+    padding: 0.313rem;}
 
 .kimi-genre {margin: 1.25rem;
     color: pink;
     font-size: 1.25rem;
     border: 1px solid pink;
-    border-radius: 30px;
-    padding: 5px;}
+    border-radius: 1.875rem;
+    padding: 0.313rem;}
 
 .piece-genre {margin: 1.25rem;
     color: red;
     font-size: 1.25rem;
     border: 1px solid red;
-    border-radius: 30px;
-    padding: 5px;}
+    border-radius: 1.875rem;
+    padding: 0.313rem;}
 
 p {margin: 1.25rem;
     color: white;
     font-size: 1.25rem;
-    line-height: 15px;}
+    line-height: 0.938rem;}
 
 hr {border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 30px;
-    margin: 30px;}
+    border-radius: 1.875rem;
+    margin: 1.875rem;}
 
 .container2 {margin:40px;
     align-items: center;
@@ -97,7 +97,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 0.625rem;
     margin-top: 8px;
     margin-left: 1.25rem;
-    margin-right: 30px;
+    margin-right: 1.875rem;
     border: none;
     text-align: center;
     border-radius: 40px;
@@ -107,7 +107,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     align-self: end;
     border: 1px solid white;
     line-height: 1.25rem;
-    width: 150px;
+    width: 9.375rem;
     transition: all 0.3s ease;
 }
 
@@ -117,7 +117,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 
 .btn.btn-secondary {background-color: var(--sky-blue);
     border: 1px solid white;
-    margin-left: 25px;
+    margin-left: 1.563rem;
     height: 3rem;}
 
 .btn.btn-secondary:hover {background-color: var(--sky-blue-hover);}
@@ -140,7 +140,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 
 .anime-synopsis {background-color: white;
     color: var(--earthy-brown);
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 0.625rem;
     margin: 3.125rem;
     border-radius: 0.625rem;
@@ -156,14 +156,14 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     }
 
 .anime-synopsis p {color: var(--earthy-brown);
-    line-height: 30px;}
+    line-height: 1.875rem;}
 
 .lower-half-container {display: grid;
     grid-template-columns: 45% 55%;
     margin: 0px;
     margin-left: 3.125rem;
     margin-right: 3.125rem;
-    margin-bottom: 100px; 
+    margin-bottom: 6.25rem; 
     position: center;
 }
 
@@ -172,7 +172,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 
 .recommendation-container {background-color: var(--peach-pink);
     color: white;
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 0.625rem;
     margin: 1.25rem;
     border-radius: 0.625rem;
@@ -184,7 +184,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 
 .anime-review-container {background-color: var(--earthy-brown);
     color: white;
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 0.625rem;
     margin: 1.25rem;
     border-radius: 0.625rem;
@@ -193,7 +193,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     text-justify: inter-word;}
 
 .individual-recommendation img {width: 140px;
-    height: 200px;
+    height: 12.5rem;
     float: left;
     border-radius: 0.625rem;
     border: 2px solid white;
@@ -215,8 +215,8 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .recommendation-details p {line-height: 1.25rem;
-    font-size: 15px;
-    margin-top: 5px;
+    font-size: 0.938rem;
+    margin-top: 0.313rem;
 }
 
 .btn.btn-light {
@@ -225,7 +225,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
         rgba(168, 213, 186, 1),
         rgba(167, 198, 237, 1));
     color: white;
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 0.625rem;
     margin-left: 1.25rem;
     border: none;
@@ -248,10 +248,10 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     margin-left: 0.625rem;}
 
 
-.anime-review p {line-height: 30px;}
+.anime-review p {line-height: 1.875rem;}
 
 .anime-review hr {border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 30px;
+    border-radius: 1.875rem;
     margin: 3.125rem;
 }
 
@@ -263,9 +263,9 @@ img {width: 15.625rem;
 
 .score {background-color: var(--sky-blue);
     color: white;
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 0.625rem;
-    margin: 30px;
+    margin: 1.875rem;
     border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
@@ -273,9 +273,9 @@ img {width: 15.625rem;
 
 .popularity {background-color: var(--sky-blue);
     color: white;
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 0.625rem;
-    margin: 30px;
+    margin: 1.875rem;
     border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
@@ -283,9 +283,9 @@ img {width: 15.625rem;
 
 .date {background-color: var(--sky-blue);
     color: white;
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 0.625rem;
-    margin: 30px;
+    margin: 1.875rem;
     border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
@@ -293,9 +293,9 @@ img {width: 15.625rem;
 
 .studio {background-color: var(--sky-blue);
     color: white;
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 0.625rem;
-    margin: 30px;
+    margin: 1.875rem;
     border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
@@ -306,37 +306,37 @@ img {width: 15.625rem;
     margin: 0px;
     margin-top: 0.625rem;}
 
-.review {line-height: 30px;
+.review {line-height: 1.875rem;
     margin-left: 1.25rem;
  }
 
-.rating-form {line-height: 30px;
-    margin-left: 30px;
+.rating-form {line-height: 1.875rem;
+    margin-left: 1.875rem;
     }
 
 input[type="text"] {background-color: white;
     color: var(--earthy-brown);
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 0.625rem;
     border-radius: 0.625rem;
     border: none;
     text-align: center;
     text-justify: inter-word;
     height: 40px;
-    width: 200px;}
+    width: 12.5rem;}
 
 input::placeholder {color: var(--earthy-brown);}
 
 .submit-button {background-color: var(--soft-green);
     color: white;
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 0.625rem;
     padding-top: 8px;
     margin-top: 8px;
     margin-left: 1.25rem;
-    margin-right: 30px;
+    margin-right: 1.875rem;
     border:none;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border: 1px solid white;
     text-align: center;
     height: 40px;
@@ -364,24 +364,24 @@ input::placeholder {color: var(--earthy-brown);}
     margin-left: 60px;
     padding: 7px;}
 
-.review-score {font-size: 30px;
-    margin-top: 30px;}
+.review-score {font-size: 1.875rem;
+    margin-top: 1.875rem;}
 
 .individual-review {
     padding: 0px;
     margin: 0.625rem;}
 
-.individual-review p {line-height: 30px;}
-/*
+.individual-review p {line-height: 1.875rem;}
+
 @media (max-width:992px) {
     .anime-info-container {display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 30px;
+    margin: 1.875rem;
     margin-top: 5%;
     margin-bottom: 5%; 
     position: center;}
 }
-*/
+
 @media (max-width:768px) {
 
     .bocchi-the-rock {margin: 0;
@@ -412,8 +412,8 @@ input::placeholder {color: var(--earthy-brown);}
 
     .anime-info-container {display: grid;
         grid-template-columns: 1fr;
-        margin-top: 5px;
-        margin-bottom: 5px; 
+        margin-top: 0.313rem;
+        margin-bottom: 0.313rem; 
         position: center;
         }
 
@@ -438,7 +438,7 @@ input::placeholder {color: var(--earthy-brown);}
         width: 14rem;
         height:20rem;}
 
-    .anime-details {margin-top: 30px;
+    .anime-details {margin-top: 1.875rem;
         margin-bottom: 0rem;}
 
     .anime-info-container{margin:0rem;
@@ -457,9 +457,9 @@ input::placeholder {color: var(--earthy-brown);}
         margin-bottom: 1rem;
         width:20rem;}
 
-    .rating-form {width: 100px;}
+    .rating-form {width: 6.25rem;}
 
-    .review {margin-left:30px;}
+    .review {margin-left:1.875rem;}
 
     .review-form {display: flex;
         flex-direction: column;
@@ -472,8 +472,8 @@ input::placeholder {color: var(--earthy-brown);}
         width: 15rem;}
 
     .submit-button {height: 3.125rem;
-        width: 150px;
-        margin-left: 30px;}
+        width: 9.375rem;
+        margin-left: 1.875rem;}
 
     .lower-half-container {display: grid;
         grid-template-columns: 1fr;
@@ -491,12 +491,12 @@ input::placeholder {color: var(--earthy-brown);}
             margin-bottom: 2rem;}
 
         .individual-recommendation img {margin:0px;
-        margin-left: 0.8rem}
+        margin-left: 0.5rem}
 
         .recommendation-details {margin: 1rem;
         margin-top:0rem;
         margin-left:0.5rem;
-        margin-right:0rem;}
+        margin-right:0.5rem;}
 
         .recommendation-details p {font-size: 1rem;}
 
