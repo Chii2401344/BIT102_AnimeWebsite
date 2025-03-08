@@ -1,0 +1,103 @@
+
+/* ==========================================================================
+   My List Container
+   ========================================================================== */
+.mylist-container {
+    padding: 2rem;
+    padding-bottom: 7rem;
+    background: white;
+    
+}
+
+.anime-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.anime-category {
+    flex: 1 1 100%;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+.anime-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.filter-container {
+    background-color: var(--soft-green-transparent);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .filter-container {
+        max-width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar { display: none; }
+    .filter-toggle { display: block; }
+}
+
+
+/* ==========================================================================
+   Browse Section
+   ========================================================================== */
+   .browse-section {
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+    position: relative;
+    background: white;
+}
+
+.browse-section .section-title {
+    background: white;
+    padding: 1rem;
+    padding-bottom: 0;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+}
+
+.search-filter-section {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.form-label {
+    color: var(--earthy-brown);
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+}
+
+.form-control, .form-select {
+    border: 2px solid var(--soft-green);
+    border-radius: 10px;
+    padding: 0.2rem 0.2rem;
+    color: var(--earthy-brown);
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--peach-pink);
+    box-shadow: 0 0 0 0.2rem rgba(242, 178, 161, 0.25);
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%238B5B29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    padding-right: 2.5rem;
+}
