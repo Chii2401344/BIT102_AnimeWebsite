@@ -1,7 +1,3 @@
-.card-container {
-    position: relative;
-    display: inline-block;
-}
 
 .user-icon {
     border-radius: 50%; 
@@ -40,44 +36,48 @@
 h1 {color: white;
     letter-spacing: 5px;
     text-align: center;
-    font-size: 20px;}
+    font-size: 1.25rem;}
 
-h2 {margin: 20px;
+h2 {margin: 1.25rem;
     color: white;}
 
-.title {margin: 20px;
+.title {margin: 1.25rem;
     color: white;
     font-size: 30px;}
 
-.bocchi-genre {margin: 20px;
+.bocchi-genre {margin: 1.25rem;
     color: orange;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: 1px solid orange;
     border-radius: 30px;
     padding: 5px;}
 
-.kimi-genre {margin: 20px;
+.kimi-genre {margin: 1.25rem;
     color: pink;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: 1px solid pink;
     border-radius: 30px;
     padding: 5px;}
 
-.piece-genre {margin: 20px;
+.piece-genre {margin: 1.25rem;
     color: red;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: 1px solid red;
     border-radius: 30px;
     padding: 5px;}
 
-p {margin: 20px;
+p {margin: 1.25rem;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 15px;}
 
 hr {border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 30px;
     margin: 30px;}
+
+.container2 {margin:40px;
+    align-items: center;
+    justify-content: center;}
 
 .anime-container {display: grid;
     grid-template-columns: 30% 40% 30%;
@@ -93,45 +93,46 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
         rgba(168, 213, 186, 1),
         rgba(167, 198, 237, 1));
     color: white;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.25rem;
+    padding: 0.625rem;
     margin-top: 8px;
-    margin-left: 20px;
+    margin-left: 1.25rem;
     margin-right: 30px;
     border: none;
     text-align: center;
     border-radius: 40px;
     text-align: center;
-    border-width: 10px;
+    border-width: 0.625rem;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
     align-self: end;
     border: 1px solid white;
-    line-height: 20px;
+    line-height: 1.25rem;
     width: 150px;
     transition: all 0.3s ease;
 }
 
-.btn.btn-primary:hover {font-size:20px;
+.btn.btn-primary:hover {font-size:1.25rem;
     translate: translateY(-5px);
 }
 
 .btn.btn-secondary {background-color: var(--sky-blue);
     border: 1px solid white;
-    margin-left: 25px;}
+    margin-left: 25px;
+    height: 3rem;}
 
 .btn.btn-secondary:hover {background-color: var(--sky-blue-hover);}
 
-.anime-details {font-size: 20px;
+.anime-details {font-size: 1.25rem;
     margin-left: 0%;
     margin-top: 20%;
     align-self: end;
     text-shadow: 2px 2px 2px 0.5 black;}
 
-.anime-info-container p {line-height: 20px;}
+.anime-info-container p {line-height: 1.25rem;}
 
 .anime-info-container {display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 50px;
+    margin: 3.125rem;
     margin-top: 5%;
     margin-bottom: 5%; 
     position: center;
@@ -140,18 +141,18 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 .anime-synopsis {background-color: white;
     color: var(--earthy-brown);
     font-size: 15px;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 10px;
+    padding: 0.625rem;
+    margin: 3.125rem;
+    border-radius: 0.625rem;
     text-align: justify;
     text-justify: inter-word;
-    line-height: 20px;
+    line-height: 1.25rem;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0);
 }
 
 .anime-synopsis h2 {color: var(--earthy-brown);
     font-size: auto;
-    margin: 20px;
+    margin: 1.25rem;
     }
 
 .anime-synopsis p {color: var(--earthy-brown);
@@ -160,18 +161,21 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 .lower-half-container {display: grid;
     grid-template-columns: 45% 55%;
     margin: 0px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
     margin-bottom: 100px; 
     position: center;
+}
+
+.lower-half-container h2 {text-align: left;
 }
 
 .recommendation-container {background-color: var(--peach-pink);
     color: white;
     font-size: 15px;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
+    padding: 0.625rem;
+    margin: 1.25rem;
+    border-radius: 0.625rem;
     text-align: justify;
     text-justify: inter-word;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
@@ -181,18 +185,19 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 .anime-review-container {background-color: var(--earthy-brown);
     color: white;
     font-size: 15px;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
+    padding: 0.625rem;
+    margin: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
     text-align: justify;
     text-justify: inter-word;}
 
-.recommendation-cover img {width: 140px;
+.individual-recommendation img {width: 140px;
     height: 200px;
     float: left;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: 2px solid white;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .individual-recommendation {display: grid;
@@ -200,16 +205,16 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 
 .recommendation-title {color: white;
     font-size: 1.875rem;
-    margin-left: 20px;
+    margin-left: 1.25rem;
     text-align: left;
 }
 
 .recommendation-container hr {background-color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
-.recommendation-details p {line-height: 20px;
+.recommendation-details p {line-height: 1.25rem;
     font-size: 15px;
     margin-top: 5px;
 }
@@ -221,48 +226,47 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
         rgba(167, 198, 237, 1));
     color: white;
     font-size: 15px;
-    padding: 10px;
-    margin-left: 20px;
+    padding: 0.625rem;
+    margin-left: 1.25rem;
     border: none;
     text-align: center;
     border-radius: 40px;
     text-align: center;
-    border-width: 10px;
+    border-width: 0.625rem;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
     align-self: end;
     border: 1px solid white;
-    line-height: 20px;
+    line-height: 1.25rem;
     width: auto;
     transition: all 0.3s ease;
 }
 
-.btn.btn-light:hover {font-size:18px;
-    translate: translateY(-5px);
+.btn.btn-light:hover {font-size:1rem;
 }
 
-.recommendation-details {margin-right: 10px;
-    margin-left: 10px;}
+.recommendation-details {margin-right: 0.625rem;
+    margin-left: 0.625rem;}
 
 
 .anime-review p {line-height: 30px;}
 
 .anime-review hr {border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 30px;
-    margin: 50px;
+    margin: 3.125rem;
 }
 
-img {width: 250px;
-    height:350px;
+img {width: 15.625rem;
+    height: 21.875rem;
     float: right;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: 2px solid white;}
 
 .score {background-color: var(--sky-blue);
     color: white;
     font-size: 15px;
-    padding: 10px;
+    padding: 0.625rem;
     margin: 30px;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
@@ -270,9 +274,9 @@ img {width: 250px;
 .popularity {background-color: var(--sky-blue);
     color: white;
     font-size: 15px;
-    padding: 10px;
+    padding: 0.625rem;
     margin: 30px;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
@@ -280,9 +284,9 @@ img {width: 250px;
 .date {background-color: var(--sky-blue);
     color: white;
     font-size: 15px;
-    padding: 10px;
+    padding: 0.625rem;
     margin: 30px;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
@@ -290,9 +294,9 @@ img {width: 250px;
 .studio {background-color: var(--sky-blue);
     color: white;
     font-size: 15px;
-    padding: 10px;
+    padding: 0.625rem;
     margin: 30px;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
@@ -300,10 +304,10 @@ img {width: 250px;
 .review-form {display: flex;
     flex-direction: row;
     margin: 0px;
-    margin-top: 10px;}
+    margin-top: 0.625rem;}
 
 .review {line-height: 30px;
-    margin-left: 20px;
+    margin-left: 1.25rem;
  }
 
 .rating-form {line-height: 30px;
@@ -313,8 +317,8 @@ img {width: 250px;
 input[type="text"] {background-color: white;
     color: var(--earthy-brown);
     font-size: 15px;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
     border: none;
     text-align: center;
     text-justify: inter-word;
@@ -326,10 +330,10 @@ input::placeholder {color: var(--earthy-brown);}
 .submit-button {background-color: var(--soft-green);
     color: white;
     font-size: 15px;
-    padding: 10px;
+    padding: 0.625rem;
     padding-top: 8px;
     margin-top: 8px;
-    margin-left: 20px;
+    margin-left: 1.25rem;
     margin-right: 30px;
     border:none;
     border-radius: 30px;
@@ -341,7 +345,7 @@ input::placeholder {color: var(--earthy-brown);}
 }
     
 .submit-button:hover {background-color: var(--soft-green-hover);
-    padding: 10px;
+    padding: 0.625rem;
     padding-top: 8px;
     transform: translateY(-2px);}
 
@@ -352,11 +356,11 @@ input::placeholder {color: var(--earthy-brown);}
     height: 2.5em;
     float: left;
     position: relative;
-    left: 20px;
+    left: 1.25rem;
     top: 0px;
 }
 
-.review-username {font-size: 20px;
+.review-username {font-size: 1.25rem;
     margin-left: 60px;
     padding: 7px;}
 
@@ -365,10 +369,10 @@ input::placeholder {color: var(--earthy-brown);}
 
 .individual-review {
     padding: 0px;
-    margin: 10px;}
+    margin: 0.625rem;}
 
 .individual-review p {line-height: 30px;}
-
+/*
 @media (max-width:992px) {
     .anime-info-container {display: grid;
     grid-template-columns: 1fr 1fr;
@@ -377,16 +381,41 @@ input::placeholder {color: var(--earthy-brown);}
     margin-bottom: 5%; 
     position: center;}
 }
-
+*/
 @media (max-width:768px) {
+
+    .bocchi-the-rock {margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 20%), url(../assets/img/banner-bocchi-the-rock.jpeg);
+        background-position: top;}
+
+    .kimi-no-na-wa {margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 20%), url(../assets/img/banner-kimi-no-na-wa.png);
+        background-position: top;}
+
+    .one-piece {margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 20%), url(../assets/img/banner-one-piece.jpg);
+        background-position: top;}
+
+    .container2 {margin:0.625rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right:0rem;
+    }
 
     .anime-info-container {display: grid;
         grid-template-columns: 1fr;
         margin-top: 5px;
         margin-bottom: 5px; 
-        margin-left: 30px;
-        margin-right: 30px;
-        position: center;}
+        position: center;
+        }
 
     .anime-container {display: grid;
         grid-template-columns: 1fr;
@@ -398,21 +427,35 @@ input::placeholder {color: var(--earthy-brown);}
         top: 0%;
     }
 
-    .container {margin:0px;
-    align-items: center;}
-
-    .bocchi-genre {text-shadow: ;}
-
     .anime-container hr {color:black}
 
-    .btn.btn-primary {margin: 20px;
-        margin-top: 0px;}
+    .btn.btn-primary {margin: 1.25rem;
+        margin-top: 0rem;}
 
     img {float: left;
-        margin-top: 50px;}
+        margin-top: 3.125rem;
+        margin-left: 1.5rem;
+        width: 14rem;
+        height:20rem;}
 
     .anime-details {margin-top: 30px;
-        margin-bottom: 20px;}
+        margin-bottom: 0rem;}
+
+    .anime-info-container{margin:0rem;
+        margin-bottom: 1rem;}
+
+    .score {margin:0rem;
+        margin-bottom: 1rem;
+        width:20rem;}
+    .popularity {margin:0rem;
+        margin-bottom: 1rem;
+        width:20rem;}
+    .date {margin:0rem;
+        margin-bottom: 1rem;
+        width:20rem;}
+    .studio {margin:0rem;
+        margin-bottom: 1rem;
+        width:20rem;}
 
     .rating-form {width: 100px;}
 
@@ -422,24 +465,61 @@ input::placeholder {color: var(--earthy-brown);}
         flex-direction: column;
     }
 
-    input[type="text"] {
-        height: 50px;
-        width: 200px;}
+    .anime-synopsis {margin:1rem;}
 
-    .submit-button {height: 50px;
+    input[type="text"] {
+        height: 3.125rem;
+        width: 15rem;}
+
+    .submit-button {height: 3.125rem;
         width: 150px;
         margin-left: 30px;}
 
-    .bocchi-the-rock {margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, white 20%), url(../assets/img/banner-bocchi-the-rock.jpeg);
-        background-position: top;}
-
     .lower-half-container {display: grid;
         grid-template-columns: 1fr;
-        margin-bottom: 20px; 
+        margin: 2rem;
+        margin-bottom: 3em; 
         position: center;
         align-items: center;}
+
+    .recommendation-container {margin: 0rem;
+        margin-bottom: 2rem;}
+
+        .individual-recommendation {display: flex;
+            flex-direction: row;
+            margin: 0rem;
+            margin-bottom: 2rem;}
+
+        .individual-recommendation img {margin:0px;
+        margin-left: 0.8rem}
+
+        .recommendation-details {margin: 1rem;
+        margin-top:0rem;
+        margin-left:0.5rem;
+        margin-right:0rem;}
+
+        .recommendation-details p {font-size: 1rem;}
+
+        .recommendation-title {margin-right:0rem;
+        font-size:1.5rem;}
+
+        .recommendation-container hr {margin-top:0rem;
+        margin-bottom:1rem;}
+
+    .anime-review-container {margin: 0rem;}
+
+        .individual-review img {margin: 0rem;
+        float:left;}
+
+    .btn.btn-light {font-size: 0.8rem;}
+
+    .btn.btn-light:hover {font-size:0.9rem;}
+
+
+
+
+
+    
+    
     
 }
