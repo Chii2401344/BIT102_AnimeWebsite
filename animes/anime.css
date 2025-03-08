@@ -43,7 +43,8 @@ h2 {margin: 1.25rem;
 
 .title {margin: 1.25rem;
     color: white;
-    font-size: 1.875rem;}
+    font-size: 1.875rem;
+    font-family: var(--heading-font);}
 
 .bocchi-genre {margin: 1.25rem;
     color: orange;
@@ -269,7 +270,8 @@ img {width: 15.625rem;
     border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+}
 
 .popularity {background-color: var(--sky-blue);
     color: white;
@@ -365,7 +367,8 @@ input::placeholder {color: var(--earthy-brown);}
     padding: 7px;}
 
 .review-score {font-size: 1.875rem;
-    margin-top: 1.875rem;}
+    margin-top: 1.875rem;
+    font-family: var(--heading-font);}
 
 .individual-review {
     padding: 0px;

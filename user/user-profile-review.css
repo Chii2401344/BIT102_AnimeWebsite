@@ -13,6 +13,7 @@
 .review-container {
     margin-top: 5%;
     margin-bottom: 3%;
+    margin-right:5%;
 }
 
 .col-lg-3 {
@@ -20,6 +21,7 @@
     flex-direction: column;
     align-items: center;
     justify-self: top;
+    margin:0rem;
 }
 
 .col-lg-9 {
@@ -29,6 +31,7 @@
     background: linear-gradient(75deg, var(--sky-blue), var(--soft-green), var(--sky-blue));
     padding-bottom: 100%;
     border-radius: 20px;
+    margin:0rem;
 }
 
 .review-header {
@@ -36,16 +39,30 @@
     width: 100%;
     padding: 1%;
     text-align: center;
+    margin:20px;
     margin-bottom: 10px;
 }
 
 .review-card {
     width: 90%;
-    background: var(--sky-blue);
+    background: white;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.review-anime-cover img {width: 8rem;
+    height:11rem;
+    border: none;
+    border-radius:0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0rem;}
+
+.review-card-header {margin-left:2rem;
+    margin-right: 1rem;
 }
 
 .review-card-profile {
@@ -57,4 +74,37 @@
 .review-card-username {
     white-space: nowrap;
     font-weight: bold;
+    margin-top:0.7rem;
+    margin-right: 1rem;
+}
+
+.review-card-score {font-size: 2rem;
+    margin-top:0.5rem;
+    margin-bottom:0.2rem;
+    font-family: var(--heading-font);}
+
+.review-card-text {font-size:1rem;
+    line-height:1rem}
+
+.review-card-date {font-size: 0.8rem;
+    margin-top:0.5rem;
+}
+
+@media (max-width:768px) {
+
+    .review-container {
+        margin-top: 5%;
+        margin-bottom: 3%;
+        margin-right:5%;
+        margin-left:5%;
+    }
+
+    .review-card-header {margin-left:1rem;
+        margin-right: 0.5rem;}
+
+    .review-anime-cover img {
+    margin-left: 0.5rem;}
+
+    .review-card-header {margin-bottom:}
+
 }
