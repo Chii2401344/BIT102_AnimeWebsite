@@ -91,93 +91,96 @@
         </div>
     </div>
 
-    <!-- ---------------------------------------------------------- Anime List ---------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------- Anime List ------------------------------------------------------------>
     <div class="mybox-container mt-3">
         <div class="row mt-3">
             <div class="filter-container col-md-3">
-                <div class="d-flex justify-content-between align-items-center">
-                    <input type="text" class="form-control" placeholder="Search Anime...">
-                    <button class="btn btn-secondary d-md-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#filters">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </button>
-                </div>
-                <div class="sidebar collapse d-md-block" id="filters">
-                    <h6 class="mt-2">Filters</h6>
-                    <select class="form-select mt-2">
-                        <option>All</option>
-                        <option>Watching</option>
-                        <option>Completed</option>
-                        <option>Planning</option>
-                    </select>
-                    <select class="form-select mt-2">
-                        <option value="" selected>Status</option>
-                        <option value="airing">Airing</option>
-                        <option value="completed">Completed</option>
-                        <option value="upcoming">Upcoming</option>
-                    </select>
-                    <select class="form-select mt-2">
-                        <option value="" selected>Genre</option>
-                        <option value="action">Action</option>
-                        <option value="adventure">Adventure</option>
-                        <option value="comedy">Comedy</option>
-                        <option value="drama">Drama</option>
-                        <option value="fantasy">Fantasy</option>
-                        <option value="romance">Romance</option>
-                        <option value="sci-fi">Sci-Fi</option>
-                    </select>
-                    <select class="form-select mt-2">
-                        <option value="" selected>Year</option>
-                        <option value="2024">2024</option>
-                        <option value="2023">2023</option>
-                        <option value="2022">2022</option>
-                        <option value="2021">2021</option>
-                        <option value="2020">2020</option>
-                        <option value="2019">2019</option>
-                        <option value="2018">2018</option>
-                        <option value="2017">2017</option>
-                        <option value="2016">2016</option>
-                        <option value="2015">2015</option>
-                        <option value="2014">2014</option>
-                        <option value="2013">2013</option>
-                        <option value="2012">2012</option>
-                        <option value="2011">2011</option>
-                        <option value="2010">2010</option>
-                        <option value="2009">2009</option>
-                        <option value="2008">2008</option>
-                        <option value="2007">2007</option>
-                        <option value="2006">2006</option>
-                        <option value="2005">2005</option>
-                        <option value="2004">2004</option>
-                        <option value="2003">2003</option>
-                        <option value="2002">2002</option>
-                        <option value="2001">2001</option>
-                        <option value="2000">2000</option>
-                        <option value="1999">1999</option>
-                    </select>
+                <div class="filter-container2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <input type="text" class="form-control" placeholder="Search Anime...">
+                        <button class="btn btn-secondary d-md-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filters">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar collapse d-md-block" id="filters">
+                        <h6 class="mt-2">Filters</h6>
+                        <select class="form-select mt-2">
+                            <option>All</option>
+                            <option>Watching</option>
+                            <option>Completed</option>
+                            <option>Planning</option>
+                        </select>
+                        <select class="form-select mt-2">
+                            <option value="" selected>Status</option>
+                            <option value="airing">Airing</option>
+                            <option value="completed">Completed</option>
+                            <option value="upcoming">Upcoming</option>
+                        </select>
+                        <select class="form-select mt-2">
+                            <option value="" selected>Genre</option>
+                            <option value="action">Action</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="drama">Drama</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="romance">Romance</option>
+                            <option value="sci-fi">Sci-Fi</option>
+                        </select>
+                        <select class="form-select mt-2">
+                            <option value="" selected>Year</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-9 anime-list-container">
+            <div class="col-1 anime-list-container">
+    <!-- ------------------------------------------------------------ Watching ------------------------------------------------------------->
                 <div class="anime-category">
                     <h4>Watching</h4>
                 </div>
-                <div class="anime-card"><img src="anime1.jpg" width="100%"> Anime Title 1</div>
-                <div class="anime-card"><img src="anime2.jpg" width="100%"> Anime Title 2</div>
-
+                <div class="anime-card" href="../animes/one-piece.html"><img src="../assets/img/cover-one-piece.jpg" width="5%"> One Piece</div>
+    <!-- ------------------------------------------------------------ Completed ------------------------------------------------------------->
                 <div class="anime-category">
                     <h4>Completed</h4>
                 </div>
-                <div class="anime-card"><img src="anime3.jpg" width="100%"> Anime Title 3</div>
+                <div class="anime-card" href="../animes/bocchi-the-rock.html"><img src="../assets/img/cover-bocchi-the-rock.jpg" width="5%"> Bocchi the Rock</div>
 
+    <!-- ------------------------------------------------------------ Planning ------------------------------------------------------------->
                 <div class="anime-category">
                     <h4>Planning</h4>
                 </div>
-                <div class="anime-card"><img src="anime4.jpg" width="100%"> Anime Title 4</div>
+                <div class="anime-card" href="../animes/kimi-no-na-wa.html"><img src="../assets/img/cover-kimi-no-na-wa.jpg" width="5%"> Kimi no Na wa</div>
             </div>
         </div>
     </div>
-    <!-- ---------------------------------------------------------- Anime List ---------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------- Anime List ------------------------------------------------------------>
 
     <footer class="footer">
         <div class="container">
