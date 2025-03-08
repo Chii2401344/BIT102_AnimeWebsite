@@ -127,10 +127,20 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-brand {
     font-family: var(--logo-font);
     font-weight: 700;
+    text-align: center;
     color: var(--earthy-brown) !important;
-    text-shadow: 1px 1px 0 var(--warm-beige);
+    text-shadow: 1px 1px 0 white;
+    width: 6rem;
     font-size: 1.5rem;
     padding: 0;
+    transition: all 0.3s ease;
+}
+
+/* Navbar Brand glows when hovered */
+.navbar-brand:hover {
+    background-color: var(--peach-pink);
+    transform: translateY(-2px);
+    border-radius: 25px;
 }
 
 /* Navbar Links */
@@ -152,13 +162,24 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar Links Colours */
 .navbar-nav a {
-    color: inherit !important; /* Inherits the same color as text */
-    text-decoration: none !important; /* Removes any underline */
+    color: inherit !important;  
+    text-decoration: none !important; 
 }
 
 /* Navbar Icon Colors */
 .navbar-nav a i {
     color: inherit !important;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Navbar Icon Hover */
+.navbar-nav a i:hover {
+    background-color: var(--peach-pink);
+    color: var(--earthy-brown) !important;
+    transform: translateY(-2px);
 }
 
 /* Navbar Toggler (Hamburger) Icon */
