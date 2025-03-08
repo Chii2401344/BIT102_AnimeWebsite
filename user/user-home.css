@@ -87,6 +87,10 @@
     background: linear-gradient(135deg, var(--soft-green-hover), var(--sky-blue-hover));
 }
 
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 @media (max-width: 768px) {
     .text-box {
         max-width: 100%;
