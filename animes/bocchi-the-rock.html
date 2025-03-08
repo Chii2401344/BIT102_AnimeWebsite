@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bocchi the Rock</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/theme.css">
     <link rel="stylesheet" href="anime.css">
@@ -12,103 +13,237 @@
 <body class="bocchi-the-rock">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">AniBox</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="user-home.html">AniBox</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="user-home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#trending">Browse</a>
+                        <a class="nav-link" href="user-home.html#browse">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user-profile-animelist.html">My List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user-profile-about.html">Profile</a>
                     </li>
                 </ul>
                 <hr class="d-lg-none my-2 text-dark-50">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="user/user-login.html">Login</a>
+                        <a href="user-settings.html" class="d-none d-lg-block me-3">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                        <a class="nav-link d-block d-lg-none" href="user-settings.html">Settings</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="user/user-sign-up.html">Sign Up</a>
+                        <a href="#" id="logoutDesktop" class="d-none d-lg-block me-3">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                        <a href="#" id="logoutMobile" class="nav-link d-block d-lg-none">Logout</a>
                     </li>
                 </ul>
+
+                <!-- Profile Picture -->
+                <a href="user-profile-about.html" class="card-container d-none d-lg-block">
+                    <img src="../assets/img/pfp3.jpg" alt="profile" class="user-icon">
+                </a>
+
             </div>
         </div>
     </nav>
+
     <div class="container">
-        <div class="top-half">
                 <div class=anime-container>
                     <div class="anime-cover">
-                        <img src="../assets/img/cover-bocchi-the-rock.jpg" alt="Bocchi the Rock">
+                        <img src="../assets/img/cover-bocchi-the-rock.jpg" alt="Bocchi the Rock Cover">
                     </div>
                     <div class="anime-details">
                         <span class="title"><strong>Bocchi the Rock</strong></p>
                         <span class="bocchi-genre">Comedy</span>
-                        <p class="detail1"><strong>Episodes:</strong> 4</p>
-                        <p class="detail2"><strong>Status:</strong> On-going</p>
+                        <p class="detail1"><strong>Episodes:</strong> 12</p>
+                        <p class="detail2"><strong>Status:</strong> Finished</p>
                     </div>
-                    <button class="btn btn-light"><strong>+ Add to List</strong></button>
+                    <button class="btn btn-primary"><strong>+ Add to List</strong></button>
                 </div>
-        </div>
+
         <br>
         <hr>
-        <div class="lower-half">
+        
             <div class="anime-info-container">
-                <div class="rating">
+
+                <div class="score">
                     <p>Rating<p>
-                    <h3>83%</h3>
+                    <h3>87%</h3>
                 </div>
+
                 <div class="popularity">
                     <p>Popularity<p>
-                    <h3>1000</h3>
+                    <h3>184669</h3>
                 </div>
+
                 <div class="date">
                     <p>Release Date<p>
-                    <h3>Nov 3, 2024</h3>
+                    <h3>Oct 8, 2022</h3>
                 </div>
-                <div class="creator">
-                    <p>Creator<p>
-                    <h3>Keiichiro Saito</h3>
+
+                <div class="studio">
+                    <p>Studio<p>
+                    <h3>CloverWorks</h3>
                 </div>
+
             </div>
+
             <div class="anime-synopsis">
-                <h2><strong>Synopsis ୭ ˚. ᵎᵎ</strong></h2>
-                <p>Bocchi the Rock is a comedy anime about a rock that wants to be a comedian. It follows the rock's journey as it tries to make people laugh and become the greatest comedian in the world.</p>
+                <h2><strong>✦ Synopsis ୭ ˚. ᵎᵎ</strong></h2>
+                <p>Hitori "Bocchi" Gotoh, a socially anxious girl who loves guitar, joins a band to make friends and overcome her shyness, leading to hilarious and heartfelt moments.
+                </p>
             </div>
-            <div class="anime-review">
-                <h2><strong>Reviews ✶⋆.˚</strong></h2>
-                <div class="review-container">
-                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#hiddenContent">
-                        Leave a Review
-                    </button>
-                    <div id="hiddenContent" class="review-form">
-                            <input type="text" placeholder="Write a review..."></input>
-                            <button>Submit</button>
+
+            
+
+
+            <div class="lower-half-container">
+
+                <div class="recommendation-container">
+                    <h2><strong>✦ More Like This ₊˚⊹⋆</strong></h2>
+                    <br>
+                    <div class="recommendation">
+                        <div class="individual-recommendation">
+                            <div class="recommendation-cover">
+                                <img src="../assets/img/cover-k-on.jpg" alt="K-On!">
+                            </div>
+
+                            <div class="recommendation-details">
+                                <h4 class="recommendation-title"><strong>K-On!</strong></h4>
+                                <p class="recommendation-synopsis">Yui Hirasawa
+                                enrolls in high school, but she is without a band and is unable to read music. This will soon change when she discovers the Light Music Club.</p>
+                                <button class="btn btn-light"><strong>+ Add to List</strong></button>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+                        <br>
+
+                        <div class="individual-recommendation">
+                            <div class="recommendation-cover">
+                                <img src="../assets/img/cover-k-on.jpg" alt="K-On!">
+                            </div>
+
+                            <div class="recommendation-details">
+                                <h4 class="recommendation-title"><strong>something else</strong></h4>
+                                <p class="recommendation-synopsis">something else something else something else something else something else something else something else something else </p>
+                                <button class="btn btn-light"><strong>+ Add to List</strong></button>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+                        <br>
+
+                        <div class="individual-recommendation">
+                            <div class="recommendation-cover">
+                                <img src="../assets/img/cover-k-on.jpg" alt="K-On!">
+                            </div>
+
+                            <div class="recommendation-details">
+                                <h4 class="recommendation-title"><strong>something else</strong></h4>
+                                <p class="recommendation-synopsis">something else something else something else something else something else something else something else something else </p>
+                                <button class="btn btn-light"><strong>+ Add to List</strong></button>
+                            </div>
+                        </div>
+
+                        <br>
+                            
                     </div>
-                    <hr>
-                    <p>★★★★★</p>
-                    <p>So funny I peed myself</p>
-                    <p class="username"><em>ikinespurr</em></p>
-                    <hr>
-                    <p>★★★☆☆</p>
-                    <p>I thought it was going to be about a rock.</p>
-                    <p class="username"><em>thefeinguy</em></p>
-                    <hr>
-                    <p>★★★★☆</p>
-                    <p>I don't watch anime but my friend told me to give this anime a good review</p>
-                    <p class="username"><em>yummyluvr</em></p>
+                </div>
+                
+                <div class="anime-review-container">
+                    <h2><strong>✦ Reviews ✶⋆.˚</strong></h2>
                     <br>
-                    <br>
-                    <br>
-                    <br>
+
+                    <div class="review-container">
+
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#hiddenContent">
+                            Leave a Review !
+                        </button>
+                    
+                        <div id="hiddenContent" class="review-form">
+                    
+                            <div class="rating-form">
+                                <label for="rating">Rating:</label><br>
+                                <select class="form-select" id="rating" name="rating">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+
+                            <div class="review">
+                                <label>Review:</label><br>
+                                <input type="text" placeholder="Write a review...">
+                            </div>
+
+                            <div class="submisson-button">
+                                <br>
+                                <button class="submit-button">Submit</button>
+                            </div>
+
+                            <br>
+                        </div>
+
+                    <div class="review-comments">
+                        <hr>
+                        <div class="individual-review">
+                            <img src="../assets/img/icon-espurr.jpg" alt="profile" class="review-user-icon" width="50px" height="50px">
+                            <h4 class="review-username" id="profileUsername">ikinespurr</h4>
+                            <p class="review-score"><strong>10/10</strong></p>
+                            <p>So funny I peed myself</p>
+                        </div>
+                        
+                        <hr>
+                        <div class="individual-review">
+                            <img src="../assets/img/pfp3.jpg" alt="profile" class="review-user-icon" width="50px" height="50px">
+                            <h4 class="review-username" id="profileUsername">User1_Fein</h4>
+                            <p class="review-score"><strong>6/10</strong></p>
+                            <p>I thought it was going to be about a rock</p>
+                        </div>
+
+                        <hr>
+                        <div class="individual-review">
+                            <img src="../assets/img/icon-puppy.jpg" alt="profile" class="review-user-icon" width="50px" height="50px">
+                            <h4 class="review-username" id="profileUsername">yummyluvr</h4>
+                            <p class="review-score"><strong>8/10</strong></p>
+                            <p>I don't watch anime but my friend told me to give this anime a good review</p>
+                        </div>
+
+                        <br>
+                    </div>
+
                 </div>  
             </div>
-        <footer>
-            <br>
-            <p>&copy; 2025 AniBox</p>
-        </footer>
+        
     </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center mb-0">&copy; 2025 AniBox. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html></section></html>
