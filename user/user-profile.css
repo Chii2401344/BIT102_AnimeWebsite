@@ -8,7 +8,7 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 5%;
-    text-align: center;
+    text-align: left;
 }
 
 .pfp {
@@ -59,15 +59,17 @@
 }
 
 .lower_profile {
-    padding: 1%;
-    background-color: darkslategrey;
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
+    padding: 0.9rem;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
 }
 
 .lower_profile_nav_link {
-    color: white;
+    color: var(--earthy-brown);
     text-decoration: none;
 }
-
 
 .lower_profile_nav {
     display: flex;
@@ -92,6 +94,10 @@
     .profile_info .email {
         font-size: 0.6rem;
     }
+
+    .profile {
+        margin-top: 8%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -108,4 +114,7 @@
         font-size: 0.6rem;
     }
     
+    .profile {
+        margin-top: 8%;
+    }
 }
