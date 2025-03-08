@@ -33,7 +33,7 @@
                         <a class="nav-link" href="user-home.html#browse">Browse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="user-profile-animelist.html">My List</a>
+                        <a class="nav-link" href="user-profile-mybox.html">My Box</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="user-profile-about.html">Profile</a>
@@ -77,27 +77,13 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Load saved username
-            if (localStorage.getItem("username")) {
-                document.getElementById("profileUsername").textContent = localStorage.getItem("username");
-            }
-
-            // Load saved email
-            if (localStorage.getItem("email")) {
-                document.getElementById("profileEmail").textContent = localStorage.getItem("email");
-            }
-        });
-    </script>
-
     <div class="lower_profile">
         <div class="lower_profile_nav">
             <a class="lower_profile_nav_link" href="user-profile-about.html">
                 <h5>About</h5>
             </a>
-            <a class="lower_profile_nav_link" href="user-profile-animelist.html">
-                <h5>Anime List</h5>
+            <a class="lower_profile_nav_link" href="user-profile-mybox.html">
+                <h5>My Box</h5>
             </a>
             <a class="lower_profile_nav_link" href="user-profile-review.html">
                 <h5>Reviews</h5>
@@ -134,7 +120,7 @@
             <p class="text-center mb-0">&copy; 2025 AniBox. All rights reserved.</p>
         </div>
     </footer>
-
+    
 </body>
 
 </html>
