@@ -18,7 +18,7 @@
     padding-left: 4px;
 }
 
-#saveUserBtn, #saveEmailBtn, #savePasswordBtn, #confirmPasswordBtn {
+#saveUserBtn, #saveEmailBtn, #savePasswordBtn, #confirmPasswordBtn, #saveAboutBtn {
     display: none;
     margin-top: 2%;
 }
@@ -35,7 +35,7 @@
     margin-top: 0.5%;
 }
 
-.username, .email, .currentPassword, .newPassword, .confirmPassword {
+.username, .email, .currentPassword, .newPassword, .confirmPassword, .aboutText {
     color: var(--text-color);
     margin-top: 20px;
 }

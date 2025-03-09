@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showSaveButton("email", "saveEmailBtn");
     showSaveButton("newPassword", "savePasswordBtn");
     showSaveButton("confirmPassword", "confirmPasswordBtn");
+    showSaveButton("aboutText", "saveAboutBtn");
 
     // ------------------ Save Username & Email ------------------
     function saveData(inputId, buttonId, storageKey, displayId, alertMessage) {
