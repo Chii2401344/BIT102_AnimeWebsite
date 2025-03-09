@@ -199,7 +199,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 
 .individual-recommendation img {width: 140px;
     height: 12.5rem;
-    float: left;
+    float: right;
     border-radius: 0.625rem;
     border: 2px solid white;
     margin-left: 1.25rem;
