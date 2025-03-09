@@ -40,43 +40,51 @@
         </div>
     </nav>
     <main>
-        <div class="login-container position-relative">
+        <section class="login-section position-relative">
             <video class="background-video" autoplay loop muted playsinline>
                 <source src="../assets/homepage-broll.mp4" type="video/mp4">
             </video>
-            <div class="overlay"> </div>
-            <div class="container">
-                <div class="image">
-                    <h1>AniBox</h1>
-                </div>
-                <div class="input-box">
-                    <h1>Sign Up</h1>
-                    <p>Please fill out the following details:</p>
-                    <form action="user-login.html" method="get">
-                        <div class="input-group">
-                            <input type="text" name="username" placeholder="Username" required /><br>
+            <div class="login-overlay"></div>
+            <div class="login-content-wrapper">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="login-content">
+                                <div class="logo">
+                                    <h1>AniBox</h1>
+                                </div>
+                                <div class="input-box">
+                                    <h1>Sign Up</h1>
+                                    <p>Please fill out the following details.</p>
+                                    <form action="../user/user-home.html" method="get">
+                                        <div class="input-group">
+                                            <input type="text" name="username" placeholder="Username" required /><br>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="email" name="email" placeholder="Email" required /><br>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="password" name="password" placeholder="Password" minlength="8" required /><br>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="password" name="confirm-password" placeholder="Confirm Password" minlength="8" required /><br>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="terms-and-policy" value="terms-and-policy" required>
+                                            <p>I agree to the<a href="#"> Terms and Policy</a> of AniBox</p>
+                                        </div>
+                                        <div class="input-group">
+                                            <button type="submit" id="sign-up"><a href="../user/user-home.html"></a>Sign Up</button>
+                                        </div>
+                                        <p>Already have an account? <a href="user-login.html">Login</a> here</p>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <div class="input-group">
-                            <input type="email" name="email" placeholder="Email" required /><br>
-                        </div>
-                        <div class="input-group">
-                            <input type="password" name="password" placeholder="Password" minlength="8" required /><br>
-                        </div>
-                        <div class="input-group">
-                            <input type="password" name="confirm-password" placeholder="Confirm Password" minlength="8" required /><br>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" name="terms-and-policy" value="terms-and-policy" required>
-                            <p>I agree to the<a href="#"> Terms and Policy</a> of AniBox</p>
-                        </div>
-                        <div class="input-group">
-                            <button type="submit" id="sign-up"><a href="user-login.html"></a>Sign Up</button>
-                        </div>
-                        <p>Already have an account? <a href="user-login.html">Login</a> here</p>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-container">
