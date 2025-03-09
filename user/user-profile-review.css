@@ -28,10 +28,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(75deg, var(--sky-blue), var(--soft-green), var(--sky-blue));
+    background: var(--earthy-brown);
     padding-bottom: 100%;
     border-radius: 20px;
     margin:0rem;
+}
+
+.review-header h2 {
+    color: white;
 }
 
 .review-header {
@@ -45,7 +49,7 @@
 
 .review-card {
     width: 90%;
-    background: white;
+    background: var(--warm-beige);
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -105,6 +109,6 @@
     .review-anime-cover img {
     margin-left: 0.5rem;}
 
-    .review-card-header {margin-bottom:}
+    .review-card-header {margin-bottom: 1rem;}
 
 }

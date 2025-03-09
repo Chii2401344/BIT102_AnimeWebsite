@@ -2,7 +2,6 @@
     display: none;
 }
 
-
 .about-header {
     justify-content: center;
     align-items: center;
@@ -29,6 +28,13 @@
     color: var(--peach-pink);
 }
 
+.about-text {
+    background-color: var(--warm-beige);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .fav-anime-cover img {
     width: 4rem;
     height: 6rem;
@@ -45,6 +51,36 @@
 
 .about-container {
     padding-top: 2rem;
+}
+
+.FavoriteAnime {
+    background-color: var(--warm-beige);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+.FavoriteAnime h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.Interests h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.Interests {
+    background-color: var(--warm-beige);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 8%;
+    margin-left: 8%;
 }
 
 @media (max-width: 992px) {
@@ -70,6 +106,16 @@
 
     .row hr {
         display: block;
+    }
+
+    .Interests {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .FavoriteAnime {
+        margin-right: 5%;
+        margin-left: 5%;
     }
 }
 
@@ -97,6 +143,16 @@
     .row hr {
         display: block;
     }
+
+    .Interests {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .FavoriteAnime {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -122,5 +178,15 @@
 
     .row hr {
         display: block;
+    }
+
+    .Interests {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .FavoriteAnime {
+        margin-right: 5%;
+        margin-left: 5%;
     }
 }
