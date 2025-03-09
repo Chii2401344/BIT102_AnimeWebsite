@@ -171,6 +171,7 @@ input::placeholder {
     }
     .image > h1 {
         font-size: 3rem;
+	margin-top: 12px;
     }
 }
 
@@ -186,6 +187,7 @@ input::placeholder {
     }
     .image > h1 {
         font-size: 3rem;
+	margin-top: 12px;
     }
 }
 
@@ -201,6 +203,7 @@ input::placeholder {
     }
     .image > h1 {
         font-size: 3rem;
+	margin-top: 12px;
     }
 }
 
