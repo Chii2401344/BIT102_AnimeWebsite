@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap');
-
-@font-face {
-    font-family: 'Magic Retro';
-    src: url('../assets/fonts/Magic_Retro.ttf') format('truetype');
+/* ==========================================================================
+   Base Styles & Reset
+   ========================================================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,7 +12,15 @@ body {
     overflow-x: hidden;
 }
 
-.login-container {
+main {
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Login Section
+   ========================================================================== */
+.login-section {
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -21,17 +31,8 @@ body {
     margin: 0;
 }
 
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.overlay {
+/* Login Background & Overlay */
+.login-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -45,51 +46,52 @@ body {
     z-index: 1;
 }
 
-/* main */
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
-.container {
-    font-family: var(--heading-font);
-    font-size: 0.8rem;
-    border: none;
-    width: 700px;
-    background-color: white;
-    padding: 0px;
-    border-radius: 30px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+/* Login Content */
+.login-content-wrapper {
     position: relative;
-    justify-content: center;
-    z-index: 1;
+    width: 100%;
+    z-index: 2;
+    padding: 2rem 0;
+}
+
+.login-content {
+    background: rgba(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(168, 213, 186, 0.3);
+    margin: 2rem auto;
+    max-width: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     opacity: 0.85;
-    color: var(--earthy-brown);
 }
 
-.image {
-    border-radius: 30px 0px 0px 30px;
+.logo {
+    border-radius: 25px 0px 0px 25px;
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     background-size: cover;
     padding: 0px;
-    margin: 0px;
+    margin: -1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
     text-shadow: 2px 2px 0 white;
 }
 
-.image > h1 {
+.logo > h1 {
     font-family: var(--logo-font);
     font-size: 4rem;
-    font-weight: lighter;
+    font-weight: normal;
     text-align: center;
     margin: 0px;
 }
@@ -97,11 +99,11 @@ main {
 .input-box {
     padding: 0px;
     margin: 20px;
-    opacity: 1;
+    display: block;
 }
 
 .input-box > h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     margin-top: 0px;
@@ -109,21 +111,62 @@ main {
     font-family: var(--heading-font);
 }
 
-main a:link, a:visited {
+/* share same styles */
+.login-credentials > input, .input-group > input {
+    font-family: var(--heading-font);
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 0px;
+    padding-left: 5px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: var(--peach-pink) solid 1px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    transition: all 0.3s ease 0s;
+}
+
+.login-credentials > input {
+    margin-bottom: 0px;
+}
+
+/* share same styles */
+.login-credentials > input:focus, .input-group> input:focus {
+    outline: none;
+    border-bottom: var(--sky-blue) solid 1.5px;
+}
+
+/* share same styles */
+.login-credentials > input::placeholder, .input-group > input::placeholder {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+/* share same styles */
+.login-credentials > p, .input-box > p {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+/* share same styles */
+.input-box a:link, .input-box a:visited {
     text-decoration: none;
     color: var(--soft-green);
     transition: all 0.3s ease 0s;
 }
 
-main a:hover {
+.input-box a:hover {
     color: var(--peach-pink);
 }
 
-main a:active {
+.input-box a:active {
     color: var(--sky-blue);
 }
 
-main button {
+.input-box button {
     font-family: var(--heading-font);
     font-size: 0.8rem;
     font-weight: bold;
@@ -139,103 +182,49 @@ main button {
     transition: all 0.3s ease 0s;
 }
 
-#sign-up {
-    margin-top: 20px;
-}
-
-main button:hover {
+.input-box button:hover {
     background-color: var(--peach-pink);
     -webkit-transform: translateY(-1px);
 	transform: translateY(-1px);
 }
 
-main button:active {
-    opacity: 1;
+.input-box button:active {
     background-color: var(--sky-blue);
     color: white;
 }
 
-input::placeholder {
-    color: var(--earthy-brown);
-    opacity: 0.5;
-}
-
-/* login form */
-.login-credentials > input, .input-group > input {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
-    width: 100%;
-    padding: 3px;
-    padding-left: 5px;
-    border-radius: 0px;
-    border: none;
-    border-bottom: var(--peach-pink) solid 1px;
-    margin-top: 0px;
-    box-sizing: border-box;
-    transition: all 0.3s ease 0s;
-    opacity: 1;
-}
-
-.login-credentials input {
-    margin-bottom: 3px;
-}
-
-.login-credentials > input:focus, .input-group > input:focus {
-    outline: none;
-    border-bottom: var(--sky-blue) solid 1.5px;
-}
-
-.login-credentials > p {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-left: 5px;
-}
-
-/* sign-up and forgot password form */
-.input-box > p {
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 5px;
-    margin-top: 0px;
-}
+/* sign-up */
 
 .input-group > input {
     margin-bottom: 20px;
 }
 
+/* checkbox > */
 .checkbox {
     display: grid;
+    gap: 5px;
     grid-template-columns: 20px 1fr;
     margin-left: 5px;
+    margin-bottom: 10px;
 }
-
-.checkbox > p {
-    margin-top: 0px;
-}
-
-/* Default (Before Checked) */
-.checkbox input {
+.checkbox > input {
     width: 15px;
     height: 15px;
-    appearance: none; /* Removes default styling */
-    border: 2px solid var(--peach-pink); /* Peach Pink Border */
+    appearance: none;
+    border: 2px solid var(--peach-pink);
     border-radius: 2px;
-    background-color: white; /* Default background */
+    background-color: white;
     cursor: pointer;
     position: relative;
     margin: 0px;
 }
-
-/* After Checked */
-.checkbox input:checked {
-    background-color: var(--peach-pink); /* Peach Pink Background */
-    border: none; /* Remove border */
+.checkbox > input:checked {
+    background-color: var(--peach-pink);
+    border: none;
     position: relative;
 }
-  
-/* Tick (✓) */
-.checkbox input::after {
-    content: ""; /* Initially empty */
+.checkbox > input::after {
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -243,189 +232,82 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    color: white; /* White tick */
+    color: white;
     font-weight: bold;
-    visibility: hidden; /* Hide tick initially */
+    visibility: hidden;
 }
-  
-input[type="checkbox"]:checked::after {
-    content: "✓"; /* Show tick when checked */
+.checkbox > input:checked::after {
+    content: "✓";
     visibility: visible;
 }
-  
-input[type="checkbox"]:checked::after {
-    content: "✓"; /* Show tick when checked */
-    visibility: visible;
+.checkbox > p {
+    margin-bottom: 0px;
+    font-size: 0.8rem;
+}
+.checkbox a:link, .checkbox a:visited {
+    text-decoration: none;
+    color: var(--soft-green);
+    transition: all 0.3s ease 0s;
+}
+.checkbox a:hover {
+    color: var(--peach-pink);
+}
+.checkbox a:active {
+    color: var(--sky-blue);
+}
+/* < checkbox */
+
+#send-otp {
+    border-radius: 20px;
 }
 
-form p {
+form > p {
+    font-size: 0.8rem;
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 0px;
 }
 
-.email-for-otp {
-    display: flex;
-    justify-content: space-between;
-}
-
-.email-for-otp input {
-    width: 73%;
-    margin-bottom: 20px;
-}
-
-#send-otp {
-    font-family: var(--heading-font);
-    font-size: 0.8rem;
-    font-weight: normal;
-    width: 25%;
-    padding: 3px;
-    border-radius: 10px;
-    border: var(--soft-green) solid 1pt;
-    margin-bottom: 22px;
-    margin-top: 0px;
-    box-sizing: border-box;
-    box-shadow: none;
-    background-color: white;
-    color: var(--earthy-brown);
-}
-
-#send-otp:hover {
-    background-color: var(--peach-pink);
-    border: none;
-    color: white;
-}
-
-#send-otp:active {
-    background-color: var(--sky-blue);
-    color: white;
-}
-
 @media only screen and (max-width: 480px) {
-    .container {
+    .login-content {
         width: 90%;
         grid-template-columns: 1fr;
         grid-template-rows: 60px 1fr;
-        font-size: 0.7rem;
     }
-    .input-box > h1{
-        margin-bottom: 20px;
-        font-size: 1rem;
+    .logo {
+        border-radius: 25px 25px 0px 0px;
     }
-    .login-credentials > input, .input-group > input {
-        padding: 0px;
-        padding-left: 5px;
-        border-bottom: 0.8px var(--peach-pink) solid;
-    }
-    .login-credentials > input::placeholder, .input-group > input::placeholder {
-        font-size: 0.7rem;
-    }
-    .image {
-        border-radius: 30px 30px 0px 0px;
-    }
-    .image > h1 {
+    .logo > h1 {
+        margin-top: 10px;
         font-size: 1.8rem;
-        margin-top: 12px;
-    }
-    .login-credentials > p {
-        margin-top: 0px;
-        margin-bottom: 10px;
-        margin-left: 5px;
-    }
-    .input-box > p {
-        margin-bottom: 10px;
-    }
-    .input-group > input {
-        margin-bottom: 12px;
-    }
-    .checkbox {
-        margin-top: 5px;
-    }
-    main button {
-        font-size: 0.7rem;
-        padding: 8px;
-    }
-    #send-otp {
-        font-size: 0.7rem;
-        margin-bottom: 12px;
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .container {
-        width: 70%;
-        max-width: 400px;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .login-content {
         grid-template-columns: 1fr;
         grid-template-rows: 60px 1fr;
-        font-size: 0.8rem;
     }
-    .input-box > h1{
-        margin-bottom: 20px;
-        font-size: 1rem;
+    .logo {
+        border-radius: 25px 25px 0px 0px;
     }
-    .login-credentials > input, .input-group > input {
-        padding: 0px;
-        padding-left: 5px;
-    }
-    .login-credentials > input::placeholder, .input-group > input::placeholder {
-        font-size: 0.8rem;
-    }
-    .image {
-        border-radius: 30px 30px 0px 0px;
-    }
-    .image > h1 {
-        font-size: 1.8rem;
-        margin-top: 12px;
-    }
-    .login-credentials > p {
-        margin-top: 0px;
-        margin-bottom: 10px;
-        margin-left: 5px;
-    }
-    .input-box > p {
-        margin-bottom: 10px;
-    }
-    .input-group > input {
-        margin-bottom: 12px;
-    }
-    .checkbox {
-        margin-top: 5px;
-    }
-    main button {
-        font-size: 0.8rem;
-        padding: 8px;
-    }
-    #send-otp {
-        margin-bottom: 12px;
+    .logo > h1 {
+        margin-top: 10px;
+        font-size: 2rem;
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-    .container {
-        width: 70%;
-        max-width: 550px;
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    .login-content {
+        width: 90%;
         grid-template-columns: 1fr;
         grid-template-rows: 80px 1fr;
     }
-    .image {
-        border-radius: 30px 30px 0px 0px;
+    .logo {
+        border-radius: 25px 25px 0px 0px;
     }
-    .image > h1 {
+    .logo > h1 {
+        margin-top: 10px;
         font-size: 3rem;
-        margin-top: 12px;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-    .container {
-        width: 65%;
-        max-width: 700px;
-    }
-}
-
-@media screen and (min-width: 1367px) {
-    .container{
-        width: 50%;
-        max-width: 800px;
     }
 }
