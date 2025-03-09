@@ -1,5 +1,5 @@
 .Add_Review {
-    background-color: var(--secondary-hover);
+    
     border: none;
     width: 70%;
     margin-top: 3%;
@@ -56,6 +56,15 @@
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
+}
+
+.review-card a {
+    text-decoration: none;
+    color: var(--earthy-brown)
+}
+
+.review-card a:hover {
+    text-decoration: underline var(--earthy-brown);
 }
 
 .review-anime-cover img {width: 8rem;
