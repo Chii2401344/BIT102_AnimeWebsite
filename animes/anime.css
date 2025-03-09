@@ -80,7 +80,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 1.875rem;
     margin: 1.875rem;}
 
-.container2 {margin:40px;
+.container2 {margin:2rem;
     align-items: center;
     justify-content: center;}
 
@@ -469,14 +469,13 @@ input::placeholder {color: var(--earthy-brown);}
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            margin-right:0rem;
+            justify-content: center;;
     }
 
     .anime-container {display: grid;
         grid-template-columns: 1fr;
         margin-top: 0px;
-        padding-top: 10%;
+        padding-top: 20%;
         margin: 0px;
         position: relative;
         left: 5%;
