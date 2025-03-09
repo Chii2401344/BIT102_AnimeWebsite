@@ -63,7 +63,7 @@ main {
     padding: 0px;
     border-radius: 30px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    margin: 0px;
+    margin: 10px;
     position: relative;
     justify-content: center;
     z-index: 1;
@@ -158,67 +158,6 @@ main button:active {
 input::placeholder {
     color: var(--earthy-brown);
     opacity: 0.5;
-}
-
-@media only screen and (max-width: 480px) {
-    .container {
-        width: 90%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 80px 1fr;
-    }
-    .image {
-        border-radius: 30px 30px 0px 0px;
-    }
-    .image > h1 {
-        font-size: 3rem;
-	margin-top: 12px;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .container {
-        width: 70%;
-        max-width: 400px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 80px 1fr;
-    }
-    .image {
-        border-radius: 30px 30px 0px 0px;
-    }
-    .image > h1 {
-        font-size: 3rem;
-	margin-top: 12px;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-    .container {
-        width: 70%;
-        max-width: 550px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 80px 1fr;
-    }
-    .image {
-        border-radius: 30px 30px 0px 0px;
-    }
-    .image > h1 {
-        font-size: 3rem;
-	margin-top: 12px;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-    .container {
-        width: 65%;
-        max-width: 700px;
-    }
-}
-
-@media screen and (min-width: 1367px) {
-    .container{
-        width: 50%;
-        max-width: 800px;
-    }
 }
 
 /* login form */
@@ -328,7 +267,6 @@ form p {
 .email-for-otp {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .email-for-otp input {
@@ -361,4 +299,133 @@ form p {
 #send-otp:active {
     background-color: var(--sky-blue);
     color: white;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 1fr;
+        font-size: 0.7rem;
+    }
+    .input-box > h1{
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    .login-credentials > input, .input-group > input {
+        padding: 0px;
+        padding-left: 5px;
+        border-bottom: 0.8px var(--peach-pink) solid;
+    }
+    .login-credentials > input::placeholder, .input-group > input::placeholder {
+        font-size: 0.7rem;
+    }
+    .image {
+        border-radius: 30px 30px 0px 0px;
+    }
+    .image > h1 {
+        font-size: 1.8rem;
+        margin-top: 12px;
+    }
+    .login-credentials > p {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    .input-box > p {
+        margin-bottom: 10px;
+    }
+    .input-group > input {
+        margin-bottom: 12px;
+    }
+    .checkbox {
+        margin-top: 5px;
+    }
+    main button {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+    #send-otp {
+        font-size: 0.7rem;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 70%;
+        max-width: 400px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 1fr;
+        font-size: 0.8rem;
+    }
+    .input-box > h1{
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    .login-credentials > input, .input-group > input {
+        padding: 0px;
+        padding-left: 5px;
+    }
+    .login-credentials > input::placeholder, .input-group > input::placeholder {
+        font-size: 0.8rem;
+    }
+    .image {
+        border-radius: 30px 30px 0px 0px;
+    }
+    .image > h1 {
+        font-size: 1.8rem;
+        margin-top: 12px;
+    }
+    .login-credentials > p {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    .input-box > p {
+        margin-bottom: 10px;
+    }
+    .input-group > input {
+        margin-bottom: 12px;
+    }
+    .checkbox {
+        margin-top: 5px;
+    }
+    main button {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+    #send-otp {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .container {
+        width: 70%;
+        max-width: 550px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 1fr;
+    }
+    .image {
+        border-radius: 30px 30px 0px 0px;
+    }
+    .image > h1 {
+        font-size: 3rem;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    .container {
+        width: 65%;
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .container{
+        width: 50%;
+        max-width: 800px;
+    }
 }
