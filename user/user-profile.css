@@ -60,7 +60,7 @@
 }
 
 .lower_profile {
-    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
+    background: linear-gradient(135deg, var(--soft-green-transparent), var(--sky-blue-transparent));
     padding: 0.9rem;
     width: 100%;
     z-index: 1000;
@@ -72,6 +72,7 @@
     text-decoration: none;
     transition: all 0.3s ease;
     padding: 0.3rem;
+    border-radius: 25px;
 }
 
 .lower_profile_nav {
@@ -87,7 +88,6 @@
     transform: translateY(-2px);
     border-radius: 25px;
 }
-
 
 
 @media (max-width: 768px) {
@@ -113,7 +113,7 @@
     }
 
     .lower_profile_nav_link > h5{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 
