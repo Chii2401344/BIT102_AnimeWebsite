@@ -58,6 +58,15 @@
     flex-direction: row;
 }
 
+.review-card a {
+    text-decoration: none;
+    color: var(--earthy-brown)
+}
+
+.review-card a:hover {
+    text-decoration: underline var(--earthy-brown);
+}
+
 .review-anime-cover img {width: 8rem;
     height:11rem;
     border: none;
