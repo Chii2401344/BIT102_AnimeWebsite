@@ -18,7 +18,7 @@
     padding-left: 4px;
 }
 
-#saveUserBtn, #saveEmailBtn {
+#saveUserBtn, #saveEmailBtn, #savePasswordBtn, #confirmPasswordBtn {
     display: none;
     margin-top: 2%;
 }
@@ -35,16 +35,30 @@
     margin-top: 0.5%;
 }
 
-.username, .email {
+.username, .email, .currentPassword, .newPassword, .confirmPassword {
     color: var(--text-color);
-}
-
-.email {
     margin-top: 20px;
 }
 
-.edit_profile {
-    position: absolute;
-    padding-left: 500%;   
-    cursor: pointer;
+.editPassword {
+    border: none; 
+    background: none; 
+    cursor: pointer; 
+    padding: 5px; 
+}
+
+.editPassword i{
+    font-size: 1.2rem; /* Adjust icon size if needed */
+}
+
+.passwordDisplay {
+    background-color: var(--soft-green);
+    color: var(--earthy-brown);
+    border-radius: 7px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.currentPassword {
+    display: block;
 }
