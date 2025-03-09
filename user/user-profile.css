@@ -60,7 +60,7 @@
 }
 
 .lower_profile {
-    background: linear-gradient(135deg, var(--soft-green-transparent), var(--sky-blue-transparent));
+    background-color: var(--soft-green-transparent);
     padding: 0.9rem;
     width: 100%;
     z-index: 1000;
@@ -81,6 +81,12 @@
     justify-content: center;
     align-items: center;
     color: white;
+    max-height: 2rem;
+}
+
+.lower_profile_nav_link > h5 {
+    font-size: 0.95rem;
+    text-decoration: none;
 }
 
 .lower_profile_nav_link:hover {
@@ -109,11 +115,11 @@
     }
     
     .lower_profile_nav {
-        max-height: 15px;
+        max-height: 1.5rem;
     }
 
     .lower_profile_nav_link > h5{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -136,7 +142,7 @@
     }
     
     .lower_profile_nav {
-        max-height: 10px;
+        max-height: 1rem;
     }
 
     .lower_profile_nav_link > h5{
