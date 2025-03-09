@@ -7,6 +7,7 @@
     <title>AniBox</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/theme.css">
     <link rel="stylesheet" href="user-settings.css">
@@ -92,6 +93,7 @@
     <div class="account-settings">
         <h3>Account Settings</h3>
         <form action="" id="account-form">
+
             <div class="form-group">
                 <label for="username" class="username">Username</label>
                 <input type="text" class="form-control" id="username" placeholder="Enter new username"
@@ -104,6 +106,24 @@
                     value="User_fein1@yohohoho.com">
                 <div><button class="btn btn-primary" id="saveEmailBtn" style="display: none;" type="button">Save
                         Changes</button></div>
+
+                <label for="currentPassword" class="currentPassword">Current Password</label>
+                <span id="currentPassword" class="passwordDisplay">********</span>
+                <button type="button" class="editPassword" id="togglePassword">
+                    <i class="bi bi-eye"></i>
+                </button>
+                <br>
+
+                <label for="newPassword" class="newPassword">New Password</label>
+                <input type="password" class="form-control" id="newPassword" placeholder="Enter new password" value="">
+                <div><button class="btn btn-primary" id="savePasswordBtn" style="display: none;" type="button">Save
+                        Changes</button></div>
+
+                <label for="confirmPassword" class="confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Enter confirmed password" value="">
+                <div><button class="btn btn-primary" id="confirmPasswordBtn" style="display: none;" type="button">Save
+                        Changes</button></div>
+
             </div>
         </form>
     </div>
@@ -120,6 +140,8 @@
                 document.getElementById("email").value = localStorage.getItem("email"); // Settings input
                 document.getElementById("profileEmail").textContent = localStorage.getItem("email"); // Profile display
             }
+
+
         });
 
         // Show save button when user types
@@ -129,6 +151,14 @@
 
         document.getElementById("email").addEventListener("input", function () {
             document.getElementById("saveEmailBtn").style.display = "inline-block";
+        });
+
+        document.getElementById("newPassword").addEventListener("input", function () {
+            document.getElementById("savePasswordBtn").style.display = "inline-block";
+        });
+
+        document.getElementById("confirmPassword").addEventListener("input", function () {
+            document.getElementById("confirmPasswordBtn").style.display = "inline-block";
         });
 
         // Save username & update profile section
@@ -147,6 +177,22 @@
             document.getElementById("profileEmail").textContent = newEmail; // Update profile display
             alert("Email saved!");
             this.style.display = "none"; // Hide button after saving
+        });
+
+        document.getElementById("togglePassword").addEventListener("click", function () {
+            let passwordSpan = document.getElementById("currentPassword");
+            let eyeIcon = this.querySelector("i");
+            let actualPassword = "Zoro1234"; // Replace with actual stored password
+
+            if (passwordSpan.dataset.visible === "false") {
+                passwordSpan.textContent = actualPassword; // Show actual password
+                passwordSpan.dataset.visible = "true";
+                eyeIcon.classList.replace("bi-eye", "bi-eye-slash");
+            } else {
+                passwordSpan.textContent = "*".repeat(actualPassword.length); // Hide password with same length of "*"
+                passwordSpan.dataset.visible = "false";
+                eyeIcon.classList.replace("bi-eye-slash", "bi-eye");
+            }
         });
     </script>
 
