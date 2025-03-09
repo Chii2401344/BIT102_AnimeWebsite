@@ -1,20 +1,20 @@
 .bocchi-the-rock {margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, white 40%), url(../assets/img/banner-bocchi-the-rock.jpeg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 45%), url(../assets/img/banner-bocchi-the-rock.jpeg);
     background-position: top;
     }
 
 .kimi-no-na-wa {margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, white 40%), url(../assets/img/banner-kimi-no-na-wa.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 45%), url(../assets/img/banner-kimi-no-na-wa.png);
     background-position: top;}
 
 .one-piece {margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, white 40%), url(../assets/img/banner-one-piece.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 45%), url(../assets/img/banner-one-piece.jpg);
     background-position: top;
     }
 
@@ -26,12 +26,13 @@ h1 {color: white;
 h2 {margin: 1.25rem;
     color: white;}
 
-.title {margin: 1.25rem;
+.title {margin:1rem;
     color: white;
     font-size: 1.875rem;
     font-family: var(--heading-font);}
 
 .bocchi-genre {margin: 1.25rem;
+    margin-left:1rem;
     color: orange;
     font-size: 1.25rem;
     border: 1px solid orange;
@@ -39,6 +40,7 @@ h2 {margin: 1.25rem;
     padding: 0.313rem;}
 
 .kimi-genre {margin: 1.25rem;
+    margin-left:1rem;
     color: pink;
     font-size: 1.25rem;
     border: 1px solid pink;
@@ -46,11 +48,15 @@ h2 {margin: 1.25rem;
     padding: 0.313rem;}
 
 .piece-genre {margin: 1.25rem;
+    margin-left:1rem;
     color: red;
     font-size: 1.25rem;
     border: 1px solid red;
     border-radius: 1.875rem;
     padding: 0.313rem;}
+
+.detail1 {margin-left:1rem;}
+.detail2 {margin-left:1rem;}
 
 .user-icon {
     border-radius: 50%; 
@@ -78,13 +84,21 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     align-items: center;
     justify-content: center;}
 
-.anime-container {display: grid;
-    grid-template-columns: 30% 40% 30%;
-    margin-top: 20%;
+.container1 {display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 15%;
     position: relative;
     left: 5%;
     top: 0%;
 }
+
+.anime-container {display: flex;
+    flex-direction: row;
+    margin:1rem
+}
+
+.add-button {align-self: end;
+    margin-right:20%}
 
 .btn.btn-primary {
     background:linear-gradient(
@@ -92,26 +106,22 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
         rgba(168, 213, 186, 1),
         rgba(167, 198, 237, 1));
     color: white;
-    font-size: 1.25rem;
+    width: 60%;
+    border: 1px solid white;
+    text-align: center; 
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    font-size: 100%;
+    line-height: 1.25rem;
     padding: 0.625rem;
     margin-top: 8px;
     margin-left: 1.25rem;
     margin-right: 1.875rem;
-    border: none;
-    text-align: center;
-    border-radius: 40px;
-    text-align: center;
-    border-width: 0.625rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
-    align-self: end;
-    border: 1px solid white;
-    line-height: 1.25rem;
-    width: 9.375rem;
     transition: all 0.3s ease;
 }
 
-.btn.btn-primary:hover {font-size:1.25rem;
-    translate: translateY(-5px);
+.btn.btn-primary:hover {translate: translateY(-10px);
 }
 
 .btn.btn-secondary {background-color: var(--sky-blue);
@@ -123,7 +133,8 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 
 .anime-details {font-size: 1.25rem;
     margin-left: 0%;
-    margin-top: 20%;
+    margin-top: 15%;
+    margin-left:2%;
     align-self: end;
     text-shadow: 2px 2px 2px 0.5 black;}
 
@@ -137,8 +148,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     position: center;
 }
 
-.anime-synopsis {background-color: white;
-    color: var(--earthy-brown);
+.anime-synopsis {color: var(--earthy-brown);
     font-size: 0.938rem;
     padding: 0.625rem;
     margin: 3.125rem;
@@ -169,8 +179,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 .lower-half-container h2 {text-align: left;
 }
 
-.recommendation-container {background-color: var(--peach-pink);
-    color: white;
+.recommendation-container {background-color: var(--warm-beige);
     font-size: 0.938rem;
     padding: 0.625rem;
     margin: 1.25rem;
@@ -191,6 +200,8 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     text-align: justify;
     text-justify: inter-word;}
 
+.recommendation-container h2 {color: var(--earthy-brown);}
+
 .individual-recommendation img {width: 140px;
     height: 12.5rem;
     float: left;
@@ -202,18 +213,19 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 .individual-recommendation {display: grid;
     grid-template-columns: 30% 70%;}
 
-.recommendation-title {color: white;
+.recommendation-title {color: var(--earthy-brown);
     font-size: 1.875rem;
     margin-left: 1.25rem;
-    text-align: left;
+
 }
 
-.recommendation-container hr {background-color: white;
+.recommendation-container hr {border: 1px solid var(--earthy-brown);
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
 
-.recommendation-details p {line-height: 1.25rem;
+.recommendation-details p {color:var(--earthy-brown);
+    line-height: 1.25rem;
     font-size: 0.938rem;
     margin-top: 0.313rem;
 }
@@ -256,7 +268,6 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 
 img {width: 15.625rem;
     height: 21.875rem;
-    float: right;
     border-radius: 0.625rem;
     border: 2px solid white;}
 
@@ -269,6 +280,7 @@ img {width: 15.625rem;
     text-align: center;
     text-justify: inter-word;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    width:80%;
 }
 
 .popularity {background-color: var(--sky-blue);
@@ -279,7 +291,8 @@ img {width: 15.625rem;
     border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    width:80%;}
 
 .date {background-color: var(--sky-blue);
     color: white;
@@ -289,7 +302,8 @@ img {width: 15.625rem;
     border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    width:80%;}
 
 .studio {background-color: var(--sky-blue);
     color: white;
@@ -299,7 +313,8 @@ img {width: 15.625rem;
     border-radius: 0.625rem;
     text-align: center;
     text-justify: inter-word;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);}
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    width:80%;}
 
 .review-form {display: flex;
     flex-direction: row;
@@ -307,11 +322,13 @@ img {width: 15.625rem;
     margin-top: 0.625rem;}
 
 .review {line-height: 1.875rem;
-    margin-left: 1.25rem;
+    margin-left: 0.5rem;
+    width:100%;
  }
 
 .rating-form {line-height: 1.875rem;
     margin-left: 1.875rem;
+    width:20%;
     }
 
 input[type="text"] {background-color: white;
@@ -323,7 +340,7 @@ input[type="text"] {background-color: white;
     text-align: center;
     text-justify: inter-word;
     height: 40px;
-    width: 12.5rem;}
+    width: 100%;}
 
 input::placeholder {color: var(--earthy-brown);}
 
@@ -333,7 +350,7 @@ input::placeholder {color: var(--earthy-brown);}
     padding: 0.625rem;
     padding-top: 8px;
     margin-top: 8px;
-    margin-left: 1.25rem;
+    margin-left: 0.5rem;
     margin-right: 1.875rem;
     border:none;
     border-radius: 1.875rem;
@@ -341,6 +358,7 @@ input::placeholder {color: var(--earthy-brown);}
     text-align: center;
     height: 40px;
     transition: all 0.3s ease;
+    width:70%
 
 }
     
@@ -374,38 +392,78 @@ input::placeholder {color: var(--earthy-brown);}
 
 .individual-review p {line-height: 1.875rem;}
 
+.footer-container p {color: var(--earthy-brown);
+    font-size:1rem;
+    margin: 0rem;
+    margin-top:0.2rem;
+    padding-bottom: 0.3rem;}
 
-
-@media (max-width:992px) {
+@media (max-width:1300px) {
 
     .anime-info-container {display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 0.313rem;
-        margin-bottom: 0.313rem; 
+        grid-template-columns: 1fr 1fr;
+        margin: 0rem;
+        margin-top: 5%;
+        margin-bottom: 5%; 
         position: center;
-    }
+}
+
+        .score {margin:1rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;}
+        .popularity {margin:1rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;}
+        .date {margin:1rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;}
+        .studio {margin:1rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;}
 
     .bocchi-the-rock {margin: 0;
         padding: 0;
         overflow-x: hidden;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 20%), url(../assets/img/banner-bocchi-the-rock.jpeg);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 30%), url(../assets/img/banner-bocchi-the-rock.jpeg);
         background-position: top;}
 
     .kimi-no-na-wa {margin: 0;
         padding: 0;
         overflow-x: hidden;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 20%), url(../assets/img/banner-kimi-no-na-wa.png);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 30%), url(../assets/img/banner-kimi-no-na-wa.png);
         background-position: top;}
 
     .one-piece {margin: 0;
         padding: 0;
         overflow-x: hidden;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 20%), url(../assets/img/banner-one-piece.jpg);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 30%), url(../assets/img/banner-one-piece.jpg);
         background-position: top;}
 
+    .anime-cover img {width:11rem;
+        height:16rem;
+        margin-left:5%;}
+
+    .title {margin-left:0rem;}
+    .bocchi-genre {margin-left:0rem;}
+    .kimi-genre {margin-left:0rem;}
+    .piece-genre {margin-left:0rem;}
+    .detail1 {margin-left:0rem;}
+    .detail2 {margin-left:0rem;}
+
+    .add-button {width: 80%;}
+    
     .anime-review-container {margin: 0rem;}
+
         .individual-review img {margin: 0rem;
         float:left;}
+
+    .container1 {margin-left: 0%;
+        margin-right: 5%;
+        margin-top:10%;}
 
     .container2 {margin:0.625rem;
             display: flex;
@@ -414,13 +472,6 @@ input::placeholder {color: var(--earthy-brown);}
             justify-content: center;
             margin-right:0rem;
     }
-
-    .anime-info-container {display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 0.313rem;
-        margin-bottom: 0.313rem; 
-        position: center;
-        }
 
     .anime-container {display: grid;
         grid-template-columns: 1fr;
@@ -438,51 +489,32 @@ input::placeholder {color: var(--earthy-brown);}
         margin-top: 0rem;}
 
     img {float: left;
-        margin-top: 3.125rem;
-        margin-left: 1.5rem;
+        margin-top: 0rem;
+        margin-left: 15%;
         width: 14rem;
         height:20rem;}
 
-    .anime-details {margin-top: 1.875rem;
-        margin-bottom: 0rem;}
+    .anime-details {display:flex;
+        flex-direction:column;
+        margin-top: 1.875rem;
+        margin-bottom: 0rem;
+        margin-left:5%}
 
-    .anime-info-container{margin:0rem;
-        margin-bottom: 1rem;}
+    .rating-form {width: 25%;
+        margin-left:0.8rem;}
 
-    .score {margin:0rem;
-        margin-bottom: 1rem;
-        width:20rem;}
-    .popularity {margin:0rem;
-        margin-bottom: 1rem;
-        width:20rem;}
-    .date {margin:0rem;
-        margin-bottom: 1rem;
-        width:20rem;}
-    .studio {margin:0rem;
-        margin-bottom: 1rem;
-        width:20rem;}
-
-    .rating-form {width: 6.25rem;}
-
-    .review {margin-left:1.875rem;}
+    .submit-button {width:80%;
+        margin-right:0.5rem;}
 
     .review-form {display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .anime-synopsis {margin:1rem;}
 
-    input[type="text"] {
-        height: 3.125rem;
-        width: 15rem;}
-
-    .submit-button {height: 3.125rem;
-        width: 9.375rem;
-        margin-left: 1.875rem;}
-
     .lower-half-container {display: grid;
         grid-template-columns: 1fr;
-        margin: 1.2rem;
+        margin: 1rem;
         margin-bottom: 3em; 
         position: center;
         align-items: center;}
@@ -498,12 +530,12 @@ input::placeholder {color: var(--earthy-brown);}
         .individual-recommendation img {margin:0px;
         margin-left: 0.5rem}
 
-        .recommendation-details {margin: 1rem;
+        .recommendation-details {margin: 0.5rem;
         margin-top:0rem;
-        margin-left:0.2rem;
-        margin-right:0.5rem;}
+        margin-left:0rem;
+        margin-right:0rem;}
 
-        .recommendation-details p {font-size: 1rem;}
+        .recommendation-details p {font-size: 0.8rem;}
 
         .recommendation-title {margin-right:0rem;
         font-size:1.5rem;}
@@ -522,51 +554,32 @@ input::placeholder {color: var(--earthy-brown);}
    
 }
 
-@media (min-width:600px max-width:992px) {
+@media (max-width:650px) {
+
+    .container1 {display: grid;
+        grid-template-columns: 1fr;}
+
+    .add-button {width:50%;
+    margin-left: 5%;}
 
     .anime-info-container {display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 1.875rem;
-        margin-top: 5%;
-        margin-bottom: 5%; 
-        position: center;}
-
-        .score {margin:1rem;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-            margin-bottom: 1rem;
-            width:15rem;}
-        .popularity {margin:1rem;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-            margin-bottom: 1rem;
-            width:15rem;}
-        .date {margin:1rem;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-            margin-bottom: 1rem;
-            width:15rem;}
-        .studio {margin:1rem;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-            margin-bottom: 1rem;
-            width:15rem;}
-
-        hr {margin:0.5rem}
-
-        .anime-synopsis {margin:3rem;
-            margin-bottom: 0rem;}
-
-        .recommendation-container {margin: 2rem;
-            margin-bottom: 2rem;}
-
-        .anime-review-container {margin: 2rem;
-            margin-bottom: 2rem;
-            margin-top: 1rem;}
-
-        .individual-recommendation {margin-left: 1rem;
-            margin-right: 1rem;}
-
+        grid-template-columns: 1fr;
+        margin-top: 0.313rem;
+        margin-bottom: 1rem; 
+        position: center;
+    }
+    .score {margin:0rem;
+        margin-bottom: 1rem;
+        width:100%}
+    .popularity {margin:0rem;
+        margin-bottom: 1rem;
+        width:100%}
+    .date {margin:0rem;
+        margin-bottom: 1rem;
+        width:100%;}
+    .studio {margin:0rem;
+        margin-bottom: 1rem;
+        width:100%}
 }
 
 @media (max-width:450px) {
