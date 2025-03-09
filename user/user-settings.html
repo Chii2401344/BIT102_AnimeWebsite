@@ -127,75 +127,7 @@
             </div>
         </form>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Load saved username & email into BOTH settings & profile sections
-            if (localStorage.getItem("username")) {
-                document.getElementById("username").value = localStorage.getItem("username"); // Settings input
-                document.getElementById("profileUsername").textContent = localStorage.getItem("username"); // Profile display
-            }
-
-            if (localStorage.getItem("email")) {
-                document.getElementById("email").value = localStorage.getItem("email"); // Settings input
-                document.getElementById("profileEmail").textContent = localStorage.getItem("email"); // Profile display
-            }
-
-
-        });
-
-        // Show save button when user types
-        document.getElementById("username").addEventListener("input", function () {
-            document.getElementById("saveUserBtn").style.display = "inline-block";
-        });
-
-        document.getElementById("email").addEventListener("input", function () {
-            document.getElementById("saveEmailBtn").style.display = "inline-block";
-        });
-
-        document.getElementById("newPassword").addEventListener("input", function () {
-            document.getElementById("savePasswordBtn").style.display = "inline-block";
-        });
-
-        document.getElementById("confirmPassword").addEventListener("input", function () {
-            document.getElementById("confirmPasswordBtn").style.display = "inline-block";
-        });
-
-        // Save username & update profile section
-        document.getElementById("saveUserBtn").addEventListener("click", function () {
-            let newUsername = document.getElementById("username").value;
-            localStorage.setItem("username", newUsername);
-            document.getElementById("profileUsername").textContent = newUsername; // Update profile display
-            alert("Username saved!");
-            this.style.display = "none"; // Hide button after saving
-        });
-
-        // Save email & update profile section
-        document.getElementById("saveEmailBtn").addEventListener("click", function () {
-            let newEmail = document.getElementById("email").value;
-            localStorage.setItem("email", newEmail);
-            document.getElementById("profileEmail").textContent = newEmail; // Update profile display
-            alert("Email saved!");
-            this.style.display = "none"; // Hide button after saving
-        });
-
-        document.getElementById("togglePassword").addEventListener("click", function () {
-            let passwordSpan = document.getElementById("currentPassword");
-            let eyeIcon = this.querySelector("i");
-            let actualPassword = "Zoro1234"; // Replace with actual stored password
-
-            if (passwordSpan.dataset.visible === "false") {
-                passwordSpan.textContent = actualPassword; // Show actual password
-                passwordSpan.dataset.visible = "true";
-                eyeIcon.classList.replace("bi-eye", "bi-eye-slash");
-            } else {
-                passwordSpan.textContent = "*".repeat(actualPassword.length); // Hide password with same length of "*"
-                passwordSpan.dataset.visible = "false";
-                eyeIcon.classList.replace("bi-eye-slash", "bi-eye");
-            }
-        });
-    </script>
-
+    
     <footer class="footer">
         <div class="container">
             <p class="text-center mb-0">&copy; 2025 AniBox. All rights reserved.</p>

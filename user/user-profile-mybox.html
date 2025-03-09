@@ -88,6 +88,9 @@
         </div>
     </div>
 
+
+    
+    <main>
     <!-- ---------------------------------------------------------- Anime List ------------------------------------------------------------>
     <div class="mybox-container mt-3">
         <div class="row mt-3">
@@ -100,7 +103,7 @@
                             <i class="fas fa-ellipsis-h"></i>
                         </button>
                     </div>
-                    <div class="sidebar collapse d-md-block" id="filters">
+                    <div class="collapse d-md-block" id="filters">
                         <h6 class="mt-2">Filters</h6>
                         <select class="form-select mt-2">
                             <option>All</option>
@@ -158,26 +161,172 @@
             </div>
 
             <div class="col-1 anime-list-container">
-    <!-- ------------------------------------------------------------ Watching ------------------------------------------------------------->
+                <!-- ------------------------------------------------------------ Watching ------------------------------------------------------------->
                 <div class="anime-category">
                     <h4>Watching</h4>
+                    <table class="watching-table table table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width: 10%;"> </th>
+                                <th style="width: 50%;">
+                                    <p class="anime-card-th">Title</p>
+                                </th>
+                                <th style="width: 20%;">
+                                    <p class="anime-card-th">Score</p>
+                                </th>
+                                <th style="width: 20%;">
+                                    <p class="anime-card-th">Edit</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="anime-card">
+                                <td>
+                                    <img src="../assets/img/cover-one-piece.jpg" alt="One Piece" width="5%">
+                                </td>
+                                <td>
+                                    <a class="anime-card-title" href="../animes/one-piece.html">One Piece</a>
+                                </td>
+                                <td>
+                                    <p class="anime-card-score">10</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#edit-watchlist">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="anime-card" href="../animes/one-piece.html"><img src="../assets/img/cover-one-piece.jpg" width="5%"> One Piece</div>
-    <!-- ------------------------------------------------------------ Completed ------------------------------------------------------------->
+                <!-- ------------------------------------------------------------ Completed ------------------------------------------------------------->
                 <div class="anime-category">
                     <h4>Completed</h4>
+                    <table class="completed-table table table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width: 10%;"> </th>
+                                <th style="width: 50%;">
+                                    <p class="anime-card-th">Title</p>
+                                </th>
+                                <th style="width: 20%;">
+                                    <p class="anime-card-th">Score</p>
+                                </th>
+                                <th style="width: 20%;">
+                                    <p class="anime-card-th">Edit</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="anime-card">
+                            <tr>
+                                <td>
+                                    <img src="../assets/img/cover-bocchi-the-rock.jpg" alt="Bocchi the Rock" width="5%">
+                                </td>
+                                <td>
+                                    <a class="anime-card-title" href="../animes/bocchi-the-rock.html">Bocchi the
+                                        Rock</a>
+                                </td>
+                                <td>
+                                    <p class="anime-card-score">10</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#edit-watchlist">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="anime-card" href="../animes/bocchi-the-rock.html"><img src="../assets/img/cover-bocchi-the-rock.jpg" width="5%"> Bocchi the Rock</div>
 
-    <!-- ------------------------------------------------------------ Planning ------------------------------------------------------------->
+                <!-- ------------------------------------------------------------ Planning ------------------------------------------------------------->
                 <div class="anime-category">
                     <h4>Planning</h4>
+                    <table class="planning-table table table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width: 10%;"> </th>
+                                <th style="width: 50%;">
+                                    <p class="anime-card-th">Title</p>
+                                </th>
+                                <th style="width: 20%;">
+                                    <p class="anime-card-th">Score</p>
+                                </th>
+                                <th style="width: 20%;">
+                                    <p class="anime-card-th">Edit</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="anime-card">
+                                <td>
+                                    <img src="../assets/img/cover-kimi-no-na-wa.jpg" alt="Kimi no Na wa" width="5%">
+                                </td>
+                                <td>
+                                    <a class="anime-card-title" href="../animes/kimi-no-na-wa.html">Kimi no Na wa</a>
+                                </td>
+                                <td>
+                                    <p class="anime-card-score">10</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#edit-watchlist">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="anime-card" href="../animes/kimi-no-na-wa.html"><img src="../assets/img/cover-kimi-no-na-wa.jpg" width="5%"> Kimi no Na wa</div>
             </div>
         </div>
     </div>
     <!-- ---------------------------------------------------------- Anime List ------------------------------------------------------------>
+
+    <div class="modal fade" id="edit-watchlist" tabindex="-1" aria-labelledby="edit-watchlist" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="edit-watchlist">Edit Watchlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="status" class="form-label">Status</label>
+                            <select class="form-select mt-2" id="status">
+                                <option>Watching</option>
+                                <option>Completed</option>
+                                <option>Planning</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="score" class="form-label">Score</label>
+                            <select class="form-select mt-2" id="score">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
 
     <footer class="footer">
         <div class="container">

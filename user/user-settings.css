@@ -62,3 +62,39 @@
 .currentPassword {
     display: block;
 }
+
+@media (max-width: 992px) {
+    .account-settings {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .settings-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .account-settings {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .settings-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .account-settings {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .settings-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}

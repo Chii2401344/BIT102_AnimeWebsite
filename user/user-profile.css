@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     padding: 5%;
     text-align: left;
+    margin-top: 20px;
 }
 
 .pfp {
@@ -59,7 +60,7 @@
 }
 
 .lower_profile {
-    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
+    background-color: var(--soft-green-transparent);
     padding: 0.9rem;
     width: 100%;
     z-index: 1000;
@@ -69,6 +70,9 @@
 .lower_profile_nav_link {
     color: var(--earthy-brown);
     text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.3rem;
+    border-radius: 25px;
 }
 
 .lower_profile_nav {
@@ -77,8 +81,19 @@
     justify-content: center;
     align-items: center;
     color: white;
+    max-height: 2rem;
 }
 
+.lower_profile_nav_link > h5 {
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.lower_profile_nav_link:hover {
+    background-color: var(--sky-blue);
+    transform: translateY(-2px);
+    border-radius: 25px;
+}
 
 
 @media (max-width: 768px) {
@@ -98,6 +113,14 @@
     .profile {
         margin-top: 8%;
     }
+    
+    .lower_profile_nav {
+        max-height: 1.5rem;
+    }
+
+    .lower_profile_nav_link > h5{
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -115,6 +138,14 @@
     }
     
     .profile {
-        margin-top: 8%;
+        margin-top: 12%;
+    }
+    
+    .lower_profile_nav {
+        max-height: 1rem;
+    }
+
+    .lower_profile_nav_link > h5{
+        font-size: 0.8rem;
     }
 }
