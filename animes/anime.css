@@ -58,13 +58,6 @@ h2 {margin: 1.25rem;
 .detail1 {margin-left:1rem;}
 .detail2 {margin-left:1rem;}
 
-.user-icon {
-    border-radius: 50%; 
-    border-color: var(--primary-hover);
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
 @media (max-width: 768px) {
     .card-container {
         align-items: right;
@@ -80,13 +73,14 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 1.875rem;
     margin: 1.875rem;}
 
-.container2 {margin:40px;
+.container2 {margin:2rem;
     align-items: center;
     justify-content: center;}
 
 .container1 {display: grid;
     grid-template-columns: 70% 30%;
     margin-top: 15%;
+    margin-right:3%;
     position: relative;
     left: 5%;
     top: 0%;
@@ -94,7 +88,8 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 
 .anime-container {display: flex;
     flex-direction: row;
-    margin:1rem
+    margin:1rem;
+    margin-left:10%
 }
 
 .add-button {align-self: end;
@@ -216,6 +211,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 .recommendation-title {color: var(--earthy-brown);
     font-size: 1.875rem;
     margin-left: 1.25rem;
+    text-align: left;
 
 }
 
@@ -463,20 +459,20 @@ input::placeholder {color: var(--earthy-brown);}
 
     .container1 {margin-left: 0%;
         margin-right: 5%;
-        margin-top:10%;}
+        margin-top:10%;
+        grid-template-columns: 65% 35%;}
 
     .container2 {margin:0.625rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            margin-right:0rem;
+            justify-content: center;;
     }
 
     .anime-container {display: grid;
         grid-template-columns: 1fr;
         margin-top: 0px;
-        padding-top: 10%;
+        padding-top: 20%;
         margin: 0px;
         position: relative;
         left: 5%;
@@ -535,7 +531,8 @@ input::placeholder {color: var(--earthy-brown);}
         margin-left:0rem;
         margin-right:0rem;}
 
-        .recommendation-details p {font-size: 0.8rem;}
+        .recommendation-details p {font-size: 1.2rem;
+            line-height:1.5rem;}
 
         .recommendation-title {margin-right:0rem;
         font-size:1.5rem;}
