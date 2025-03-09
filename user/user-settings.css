@@ -62,3 +62,15 @@
 .currentPassword {
     display: block;
 }
+
+@media (max-width: 768px) {
+    .account-settings {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .settings-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
