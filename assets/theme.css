@@ -30,9 +30,9 @@
     --light-blue-hover: #93c5ff;
 
     /* Additional Variations */
-    --soft-green-transparent: rgba(168, 213, 186, 0.9); 
-    --sky-blue-transparent: rgba(167, 198, 237, 0.9);   
-    --warm-beige-transparent: rgba(245, 225, 194, 0.95); 
+    --soft-green-transparent: rgba(168, 213, 186, 0.6); 
+    --sky-blue-transparent: rgba(167, 198, 237, 0.6);   
+    --warm-beige-transparent: rgba(245, 225, 194, 0.6); 
     --peach-pink-transparent: rgba(242, 178, 161, 0.6);
 }
 
