@@ -1,7 +1,13 @@
 /* ==========================================================================
    My Box Container
    ========================================================================== */
-.mybox-container {
+
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+   .mybox-container {
     padding: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 7rem;
@@ -68,7 +74,13 @@ table thead tr th, table tbody tr td {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
+    main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .sidebar {
         display: none;
     }
@@ -82,6 +94,16 @@ table thead tr th, table tbody tr td {
     }
 }
 
+@media (max-width: 1023px) {
+    main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
 
 /* ==========================================================================
    Browse Section
