@@ -74,10 +74,6 @@
     margin-bottom: 1rem;
 }
 
-.about-container p h4 {
-    color: var(--lavender-purple)
-}
-
 @media (max-width: 992px) {
     .about-header {
         margin-left: 5%;
