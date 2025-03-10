@@ -142,6 +142,8 @@
 
     .review-card-header {margin-right: 5%;}
 
+    .review-card-text {line-height:1.3rem;}
+
     .add-review-button {margin-top:5%}
 
 }
