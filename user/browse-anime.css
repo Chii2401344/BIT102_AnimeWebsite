@@ -138,4 +138,8 @@
 
 @media (max-width: 480px) {
 
+    .browse-section .section-title {
+        font-size: 2rem;
+    }
+
 }

@@ -162,3 +162,11 @@ main {
     }
 
 }
+ 
+@media (max-width: 480px) {
+
+    .about-section .section-title {
+        font-size: 2rem;
+    }
+
+}
