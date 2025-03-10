@@ -39,7 +39,7 @@
 .about-text {
     background-color: var(--warm-beige);
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 25px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -64,7 +64,7 @@
 .fav-anime-card {
     background-color: var(--warm-beige);
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 25px;
     margin-bottom: 0.5rem;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -99,10 +99,6 @@
         display: block;
     }
 
-    .FavoriteAnime {
-        margin-right: 5%;
-        margin-left: 5%;
-    }
 
     body {
         width: 100%;
@@ -135,11 +131,6 @@
         display: block;
     }
 
-    .FavoriteAnime {
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-
     body {
         width: 100%;
         overflow-x: hidden;
@@ -169,11 +160,6 @@
 
     .row hr {
         display: block;
-    }
-
-    .FavoriteAnime {
-        margin-right: 5%;
-        margin-left: 5%;
     }
 
     body {
