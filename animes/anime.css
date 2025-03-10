@@ -96,10 +96,6 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     margin-right:20%}
 
 .btn.btn-primary {
-    background:linear-gradient(
-        135deg,
-        rgba(168, 213, 186, 1),
-        rgba(167, 198, 237, 1));
     color: white;
     width: 60%;
     border: 1px solid white;
@@ -193,7 +189,14 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 0.625rem;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
     text-align: justify;
-    text-justify: inter-word;}
+    text-justify: inter-word;
+}
+
+.review-comments {align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin:0%;}
 
 .recommendation-container h2 {color: var(--earthy-brown);}
 
@@ -364,8 +367,8 @@ input::placeholder {color: var(--earthy-brown);}
     transform: translateY(-2px);}
 
 .review-user-icon {
-    border-radius: 50%; 
-    border-color: var(--primary-hover);
+    border: none;
+    border-radius: 50%;
     width: 2.5em;
     height: 2.5em;
     float: left;
@@ -374,25 +377,45 @@ input::placeholder {color: var(--earthy-brown);}
     top: 0px;
 }
 
-.review-username {font-size: 1.25rem;
+.review-username {font-weight: bold;
+    font-size: 1.25rem;
     margin-left: 60px;
     padding: 7px;}
 
-.review-score {font-size: 1.875rem;
-    margin-top: 1.875rem;
-    font-family: var(--heading-font);}
-
-.individual-review {
+.review-card {
     padding: 0px;
-    margin: 0.625rem;}
+    margin: 1%;
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2%;
+}
 
-.individual-review p {line-height: 1.875rem;}
+.review-card p {color: var(--earthy-brown);
+    line-height: 1.875rem;
+    margin-bottom:0.5rem;
+    margin-top:0rem;}
+
+.review-card h4 {color: var(--earthy-brown);}
+
+.review-card h5 {color:var(--earthy-brown);
+    font-size: 1.875rem;
+    margin-top: 1.2rem;
+    font-family: var(--heading-font);
+    margin-left:1.2rem;}
 
 .footer-container p {color: var(--earthy-brown);
     font-size:1rem;
     margin: 0rem;
     margin-top:0.2rem;
     padding-bottom: 0.3rem;}
+
+.review-date {font-size: 0.8rem;
+    margin-top:0.2rem}
+
+
 
 @media (max-width:1300px) {
 
@@ -454,7 +477,7 @@ input::placeholder {color: var(--earthy-brown);}
     
     .anime-review-container {margin: 0rem;}
 
-        .individual-review img {margin: 0rem;
+        .review-card img {margin: 0rem;
         float:left;}
 
     .container1 {margin-left: 0%;
@@ -542,7 +565,7 @@ input::placeholder {color: var(--earthy-brown);}
 
     .anime-review-container {margin: 0rem;}
 
-        .individual-review img {margin: 0rem;
+        .review-card img {margin: 0rem;
         float:left;}
 
     .btn.btn-light {font-size: 0.8rem;}
@@ -583,5 +606,7 @@ input::placeholder {color: var(--earthy-brown);}
 
     .individual-recommendation img {width:8rem;
         height:10rem}
+
+    .review-card p {line-height: 1.5rem;}
 
 }

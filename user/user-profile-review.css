@@ -4,34 +4,54 @@
     width: 70%;
     margin-top: 3%;
     margin-bottom: 5%;
+    align-items: center;
+    
 }
 
 .Add_Review:hover {
     background-color: var(--text-color);
 }
 
+.review {margin:3%;}
+
 .review-container {
+    background:linear-gradient(
+        135deg,
+        rgba(168, 213, 186, 1),
+        rgba(167, 198, 237, 1));
     margin-top: 5%;
     margin-bottom: 3%;
-    margin-right:5%;
+    padding-bottom: 100%;
+    border-radius: 20px;
+    margin:0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
 }
 
-.col-lg-3 {
+.add-review-button {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-self: top;
-    margin:0rem;
+    margin:0%;
 }
 
-.col-lg-9 {
-    display: flex;
-    flex-direction: column;
+.row {width:100%;
     align-items: center;
-    background: var(--earthy-brown);
-    padding-bottom: 100%;
-    border-radius: 20px;
-    margin:0rem;
+    justify-content: center;
+    margin:0%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .review-header h2 {
@@ -49,11 +69,11 @@
 
 .review-card {
     width: 90%;
-    background: var(--warm-beige);
+    background: white;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
+    margin-bottom: 3%;
     display: flex;
     flex-direction: row;
 }
@@ -89,6 +109,7 @@
     font-weight: bold;
     margin-top:0.7rem;
     margin-right: 1rem;
+    font-size: 1.25rem;
 }
 
 .review-card-score {font-size: 2rem;
@@ -96,12 +117,13 @@
     margin-bottom:0.2rem;
     font-family: var(--heading-font);}
 
-.review-card-text {font-size:1rem;
+.review-card-text {font-size:1.2rem;
     line-height:1rem}
 
 .review-card-date {font-size: 0.8rem;
     margin-top:0.5rem;
 }
+
 
 @media (max-width:768px) {
 
@@ -119,5 +141,7 @@
     margin-left: 2%;}
 
     .review-card-header {margin-right: 5%;}
+
+    .container {margin-top: 5%;}
 
 }
