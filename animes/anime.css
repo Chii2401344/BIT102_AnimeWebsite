@@ -208,8 +208,8 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     margin-left: 1.25rem;
 }
 
-.individual-recommendation {display: grid;
-    grid-template-columns: 30% 70%;}
+.individual-recommendation {display: flex;
+    flex-direction: row;}
 
 .recommendation-title {color: var(--earthy-brown);
     font-size: 1.875rem;
@@ -265,10 +265,11 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     margin: 3.125rem;
 }
 
-img {width: 15.625rem;
+.anime-cover img {width: 15.625rem;
     height: 21.875rem;
     border-radius: 0.625rem;
-    border: 2px solid white;}
+    border: 2px solid white;
+    }
 
 .score {background-color: var(--sky-blue);
     color: white;
@@ -317,7 +318,7 @@ img {width: 15.625rem;
 
 .review-form {display: flex;
     flex-direction: row;
-    margin: 0px;
+    margin: 1%;
     margin-top: 0.625rem;}
 
 .review {line-height: 1.875rem;
@@ -417,7 +418,7 @@ input::placeholder {color: var(--earthy-brown);}
 
 
 
-@media (max-width:1300px) {
+@media (max-width:1200px) {
 
     .anime-info-container {display: grid;
         grid-template-columns: 1fr 1fr;
@@ -507,7 +508,7 @@ input::placeholder {color: var(--earthy-brown);}
     .btn.btn-primary {margin: 1.25rem;
         margin-top: 0rem;}
 
-    img {float: left;
+    .anime-cover img {float: left;
         margin-top: 0rem;
         margin-left: 15%;
         width: 14rem;
@@ -519,8 +520,8 @@ input::placeholder {color: var(--earthy-brown);}
         margin-bottom: 0rem;
         margin-left:5%}
 
-    .rating-form {width: 25%;
-        margin-left:0.8rem;}
+    .rating-form {width: 20%;
+        margin-left:1rem;}
 
     .submit-button {width:80%;
         margin-right:0.5rem;}
