@@ -37,10 +37,14 @@
 }
 
 .about-text {
-    background: linear-gradient(90deg, var(--sky-blue), var(--soft-green));
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     padding: 1rem;
     border-radius: 25px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.FavoriteAnime {
+    margin-top: 2rem;
 }
 
 .fav-anime-cover img {
@@ -62,7 +66,7 @@
 }
 
 .fav-anime-card {
-    background: linear-gradient(90deg, var(--sky-blue), var(--soft-green));
+    background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     padding: 1rem;
     border-radius: 25px;
     margin-bottom: 0.5rem;
