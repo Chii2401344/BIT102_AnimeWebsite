@@ -20,8 +20,7 @@
         rgba(168, 213, 186, 1),
         rgba(167, 198, 237, 1));
     margin-top: 5%;
-    margin-bottom: 3%;
-    padding-bottom: 100%;
+    padding-bottom: 10%;
     border-radius: 20px;
     margin:0rem;
     width: 100%;
@@ -44,6 +43,7 @@
     align-items: center;
     justify-content: center;
     margin:0%;
+    margin-bottom:10%;
 }
 
 .container {
@@ -142,6 +142,6 @@
 
     .review-card-header {margin-right: 5%;}
 
-    .container {margin-top: 5%;}
+    .add-review-button {margin-top:5%}
 
 }
