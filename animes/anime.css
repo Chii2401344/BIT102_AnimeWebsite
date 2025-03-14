@@ -4,7 +4,7 @@
 .bocchi-the-rock {margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 45%), url(../assets/img/banner-bocchi-the-rock.jpeg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 45%), url(../assets/img/banner-bocchi-the-rock.png);
     background-position: top;}
 
 .kimi-no-na-wa {margin: 0;
@@ -45,10 +45,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 .container1 {display: grid;
     grid-template-columns: 70% 30%;
     margin-top: 15%;
-    margin-right:3%;
-    position: relative;
-    left: 5%;
-    top: 0%;}
+    margin-left: 5%}
 
 /* ==========================================================================
    Main Anime Display + Add to Box Button
@@ -56,7 +53,7 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 .anime-container {display: flex;
     flex-direction: row;
     margin:1rem;
-    margin-left:10%}
+    margin-left:10%;}
 
 .anime-cover img {width: 15.625rem;
     height: 21.875rem;
@@ -68,7 +65,8 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     margin-top: 15%;
     margin-bottom:4%;
     align-self: end;
-    text-shadow: 2px 2px 2px 0.5 black;}
+    text-shadow: 2px 2px 2px 0.5 black;
+    width:100vw}
     
 .title {margin:1rem;
     color: white;
@@ -419,34 +417,33 @@ input::placeholder {color: var(--earthy-brown);}
     .bocchi-the-rock {margin: 0;
         padding: 0;
         overflow-x: hidden;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 30%), url(../assets/img/banner-bocchi-the-rock.jpeg);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 30%), url(../assets/img/banner-bocchi-the-rock-small.png);
         background-position: top;}
 
     .kimi-no-na-wa {margin: 0;
         padding: 0;
         overflow-x: hidden;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 30%), url(../assets/img/banner-kimi-no-na-wa.png);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 30%), url(../assets/img/banner-kimi-no-na-wa-small.webp);
         background-position: top;}
 
     .one-piece {margin: 0;
         padding: 0;
         overflow-x: hidden;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 30%), url(../assets/img/banner-one-piece.jpg);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, white 30%), url(../assets/img/banner-one-piece-small.jpg);
         background-position: top;}
 
     .container1 {margin-left: 0%;
-        margin-right: 5%;
         margin-top:10%;
-        grid-template-columns: 65% 35%;}
+        grid-template-columns: 65% 35%;
+        width:80%;
+        padding-top: 1.5rem;}
 
     .anime-container {display: grid;
         grid-template-columns: 1fr;
         margin-top: 0px;
         padding-top: 20%;
         margin: 0px;
-        position: relative;
-        left: 5%;
-        top: 0%;}
+        margin-left: 5%;}
 
     .anime-cover img {float: left;
         width:11rem;
@@ -474,7 +471,7 @@ input::placeholder {color: var(--earthy-brown);}
       
     .btn.btn-primary {margin: 1.25rem;
         margin-top: 0rem;
-        width:70%;}
+        width:90%;}
 
     .container2 {margin:0.625rem;
         display: flex;
