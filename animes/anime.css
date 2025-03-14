@@ -29,7 +29,8 @@ h2 {margin: 1.25rem;
 .title {margin:1rem;
     color: white;
     font-size: 1.875rem;
-    font-family: var(--heading-font);}
+    font-family: var(--heading-font);
+    margin-bottom:3rem;}
 
 .bocchi-genre {margin: 1.25rem;
     margin-left:1rem;
@@ -37,7 +38,8 @@ h2 {margin: 1.25rem;
     font-size: 1.25rem;
     border: 1px solid orange;
     border-radius: 1.875rem;
-    padding: 0.313rem;}
+    padding: 0.313rem;
+    width:fit-content;}
 
 .kimi-genre {margin: 1.25rem;
     margin-left:1rem;
@@ -45,7 +47,8 @@ h2 {margin: 1.25rem;
     font-size: 1.25rem;
     border: 1px solid pink;
     border-radius: 1.875rem;
-    padding: 0.313rem;}
+    padding: 0.313rem;
+    width:fit-content;}
 
 .piece-genre {margin: 1.25rem;
     margin-left:1rem;
@@ -53,7 +56,8 @@ h2 {margin: 1.25rem;
     font-size: 1.25rem;
     border: 1px solid red;
     border-radius: 1.875rem;
-    padding: 0.313rem;}
+    padding: 0.313rem;
+    width:fit-content;}
 
 .detail1 {margin-left:1rem;}
 .detail2 {margin-left:1rem;}
@@ -123,9 +127,9 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
 .btn.btn-secondary:hover {background-color: var(--sky-blue-hover);}
 
 .anime-details {font-size: 1.25rem;
-    margin-left: 0%;
-    margin-top: 15%;
     margin-left:2%;
+    margin-top: 15%;
+    margin-bottom:4%;
     align-self: end;
     text-shadow: 2px 2px 2px 0.5 black;}
 
@@ -467,11 +471,12 @@ input::placeholder {color: var(--earthy-brown);}
         height:16rem;
         margin-left:5%;}
 
-    .title {margin-left:0rem;}
+    .title {margin-left:0rem;
+        margin-bottom: 1rem;}
     .bocchi-genre {margin-left:0rem;}
     .kimi-genre {margin-left:0rem;}
     .piece-genre {margin-left:0rem;}
-    .detail1 {margin-left:0rem;}
+    .detail1 {margin:0rem;}
     .detail2 {margin-left:0rem;}
 
     .add-button {width: 80%;}
@@ -506,7 +511,8 @@ input::placeholder {color: var(--earthy-brown);}
     .anime-container hr {color:black}
 
     .btn.btn-primary {margin: 1.25rem;
-        margin-top: 0rem;}
+        margin-top: 0rem;
+        width:70%;}
 
     .anime-cover img {float: left;
         margin-top: 0rem;
