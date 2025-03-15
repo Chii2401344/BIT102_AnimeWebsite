@@ -1,7 +1,6 @@
-.row hr {
-    display: none;
-}
-
+/* ==========================================================================
+   User About Box
+   ========================================================================== */
 .about-header {
     justify-content: center;
     align-items: center;
@@ -19,25 +18,14 @@
     margin-top: 3%;
 }
 
-.Interests a {
-    text-decoration: none;
-    color: var(--text-color);
+.about-container {
+    padding-top: 2rem;
 }
 
-h4 {
-    font-size: 1.2rem;
-}
-.Interests a:hover {
-    color: var(--peach-pink);
-}
-
-.fav-anime-title a {
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-.fav-anime-title a:hover {
-    color: var(--peach-pink);
+.about-text p {
+    margin:0rem;
+    font-size:1.2rem;
+    color:white;
 }
 
 .about-text {
@@ -47,10 +35,25 @@ h4 {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-text p {
-    margin:0rem;
-    font-size:1.2rem;
-    color:white;
+.about-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   User Favourite Anime
+   ========================================================================== */
+h4 {
+    font-size: 1.2rem;
+}
+
+.fav-anime-title a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.fav-anime-title a:hover {
+    color: var(--peach-pink);
 }
 
 .FavoriteAnime {
@@ -78,10 +81,6 @@ h4 {
     padding:1rem;
 }
 
-.about-container {
-    padding-top: 2rem;
-}
-
 .fav-anime-card {
     background: linear-gradient(135deg, var(--soft-green), var(--sky-blue));
     padding: 1rem;
@@ -93,11 +92,9 @@ h4 {
     justify-content: center;
 }
 
-.about-container h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 @media (max-width: 1100px) {
     .fav-anime-cover img {
         width:12rem;

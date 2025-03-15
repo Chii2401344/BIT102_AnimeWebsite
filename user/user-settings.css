@@ -1,4 +1,6 @@
-
+/* ==========================================================================
+   User Setting Container
+   ========================================================================== */
 .account-settings {
     gap: 50px;
     align-items: center;
@@ -10,17 +12,6 @@
     background-color: var(--secondary-hover);
     border-radius: 7px;
     padding-bottom: 50%;
-}
-
-.account {
-    background-color: var(--text-color);
-    border-radius: 7px;
-    padding-left: 4px;
-}
-
-#saveUserBtn, #saveEmailBtn, #savePasswordBtn, #confirmPasswordBtn, #saveAboutBtn {
-    display: none;
-    margin-top: 2%;
 }
 
 .settings-container {
@@ -35,6 +26,17 @@
     margin-top: 0.5%;
 }
 
+/* ==========================================================================
+   User Setting Buttons
+   ========================================================================== */
+#saveUserBtn, #saveEmailBtn, #savePasswordBtn, #confirmPasswordBtn, #saveAboutBtn {
+    display: none;
+    margin-top: 2%;
+}
+
+/* ==========================================================================
+   User Settings Form
+   ========================================================================== */
 .username, .email, .currentPassword, .newPassword, .confirmPassword, .aboutText {
     color: var(--text-color);
     margin-top: 20px;
@@ -63,6 +65,9 @@
     display: block;
 }
 
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 @media (max-width: 992px) {
     .account-settings {
         margin-left: 5%;
