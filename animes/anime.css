@@ -72,7 +72,8 @@ hr {border: 1px solid rgba(255, 255, 255, 0.5);
     color: white;
     font-size: 1.875rem;
     font-family: var(--heading-font);
-    margin-bottom:3rem;}
+    margin-bottom:3rem;
+    line-height: 2rem;}
     
 .bocchi-genre {margin: 1.25rem;
     margin-left:1rem;
@@ -433,9 +434,9 @@ input::placeholder {color: var(--earthy-brown);}
         background-position: top;}
 
     .container1 {margin-left: 0%;
-        margin-top:10%;
+        margin-top:5%;
         grid-template-columns: 65% 35%;
-        width:80%;
+        width:100%;
         padding-top: 1.5rem;}
 
     .anime-container {display: grid;
@@ -443,13 +444,16 @@ input::placeholder {color: var(--earthy-brown);}
         margin-top: 0px;
         padding-top: 20%;
         margin: 0px;
-        margin-left: 5%;}
+        margin-left: 10%;}
+
+    .anime-cover {margin-left:10%;
+        margin-top:5%;
+        width:100%}
 
     .anime-cover img {float: left;
         width:11rem;
         height:100rem;
         margin-top: 0rem;
-        margin-left: 5%;
         width: 14rem;
         height:20rem;}
 
@@ -457,7 +461,8 @@ input::placeholder {color: var(--earthy-brown);}
         flex-direction:column;
         margin-top: 1.875rem;
         margin-bottom: 0rem;
-        margin-left:5%}
+        margin-left:10%;
+        width:100%}
 
     .title {margin-left:0rem;
         margin-bottom: 1rem;}
@@ -471,7 +476,7 @@ input::placeholder {color: var(--earthy-brown);}
       
     .btn.btn-primary {margin: 1.25rem;
         margin-top: 0rem;
-        width:90%;}
+        width:70%;}
 
     .container2 {margin:0.625rem;
         display: flex;
@@ -573,10 +578,22 @@ input::placeholder {color: var(--earthy-brown);}
 @media (max-width:650px) {
 
     .container1 {display: grid;
-        grid-template-columns: 1fr;}
+        grid-template-columns: 1fr;
+        width:90%;
+        margin-left: 5%}
 
-    .add-button {width:50%;
-    margin-left: 5%;}
+    .anime-container {margin-left: 0%}
+
+    .anime-cover {width:80%}
+
+    .anime-details {width:80%;
+        margin-top:5%;}
+
+    .title {margin-bottom: 0%}
+
+    .add-button {width:80%;
+        margin-top: 5%;
+        margin-left: 5%;}
 
     .container2 {margin-top: 0rem;}
 
