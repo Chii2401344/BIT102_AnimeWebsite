@@ -56,7 +56,7 @@ main {
     z-index: 0;
 }
 
-/* Login Content */
+/* Content */
 .login-content-wrapper {
     position: relative;
     width: 100%;
@@ -111,7 +111,7 @@ main {
     font-family: var(--heading-font);
 }
 
-/* share same styles */
+/* Share same styles */
 .login-credentials > input, .input-group > input {
     font-family: var(--heading-font);
     font-size: 0.8rem;
@@ -126,23 +126,24 @@ main {
     transition: all 0.3s ease 0s;
 }
 
+/* Different margin-bottom for login page input */
 .login-credentials > input {
     margin-bottom: 0px;
 }
 
-/* share same styles */
+/* Share same styles */
 .login-credentials > input:focus, .input-group> input:focus {
     outline: none;
     border-bottom: var(--sky-blue) solid 1.5px;
 }
 
-/* share same styles */
+/* Share same styles */
 .login-credentials > input::placeholder, .input-group > input::placeholder {
     font-size: 0.8rem;
     opacity: 0.5;
 }
 
-/* share same styles */
+/* Share same styles */
 .login-credentials > p, .input-box > p {
     font-size: 0.8rem;
     text-align: left;
@@ -151,13 +152,14 @@ main {
     margin-left: 5px;
 }
 
-/* share same styles */
+/* Share same styles */
 .input-box a:link, .input-box a:visited {
     text-decoration: none;
     color: var(--soft-green);
     transition: all 0.3s ease 0s;
 }
 
+/* Links */
 .input-box a:hover {
     color: var(--peach-pink);
 }
@@ -166,6 +168,7 @@ main {
     color: var(--sky-blue);
 }
 
+/* Buttons */
 .input-box button {
     font-family: var(--heading-font);
     font-size: 0.8rem;
@@ -193,13 +196,12 @@ main {
     color: white;
 }
 
-/* sign-up */
-
+/* sign-up, forgot password input margin-bottom */
 .input-group > input {
     margin-bottom: 20px;
 }
 
-/* checkbox > */
+/* checkbox */
 .checkbox {
     display: grid;
     gap: 5px;
@@ -255,8 +257,8 @@ main {
 .checkbox a:active {
     color: var(--sky-blue);
 }
-/* < checkbox */
 
+/* Forgot Password */
 #send-otp {
     border-radius: 20px;
 }
@@ -268,6 +270,7 @@ form > p {
     margin-bottom: 0px;
 }
 
+/* Media Query */
 @media only screen and (max-width: 480px) {
     .login-content {
         width: 90%;
