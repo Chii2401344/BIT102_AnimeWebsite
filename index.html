@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,15 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="user/browse-anime.css">
 </head>
+
 <body>
+
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">AniBox</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
@@ -42,6 +47,8 @@
     </nav>
 
     <main>
+
+        <!-- Hero Section -->
         <section class="hero-section position-relative">
             <video class="background-video" autoplay loop muted playsinline>
                 <source src="assets/homepage-broll.mp4" type="video/mp4">
@@ -65,33 +72,40 @@
             </div>
         </section>
 
+        <!-- About Section -->
         <section class="about-section position-relative" id="about">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="about-card">
                             <h2 class="section-title">✦ About AniBox</h2>
-                            <p>AniBox is your personal anime companion, designed to help you discover, track, and share your favorite anime. Join our community of anime enthusiasts and start your AniBox collection now!</p>
+                            <p>AniBox is your personal anime companion, designed to help you discover, track, and share
+                                your favorite anime. Join our community of anime enthusiasts and start your AniBox
+                                collection now!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Browse Section -->
         <section class="browse-section" id="browse">
             <div class="container">
                 <h2 class="section-title text-center mb-5">✦ Browse Anime ✦</h2>
-                
+
                 <!-- Search and Filter Section -->
                 <div class="search-filter-section mb-4">
                     <div class="row g-3">
                         <div class="col-md-4">
+                            <!-- Search bar -->
                             <div class="search-group">
                                 <label for="animeSearch" class="form-label">Search</label>
-                                <input type="text" class="form-control" id="animeSearch" placeholder="Search by title...">
+                                <input type="text" class="form-control" id="animeSearch"
+                                    placeholder="Search by title...">
                             </div>
                         </div>
                         <div class="col-md-3">
+                            <!-- Genre filter dropdown -->
                             <div class="filter-group">
                                 <label for="genreFilter" class="form-label">Genres</label>
                                 <select class="form-select" id="genreFilter">
@@ -108,6 +122,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
+                            <!-- Status filter dropdown -->
                             <div class="filter-group">
                                 <label for="statusFilter" class="form-label">Status</label>
                                 <select class="form-select" id="statusFilter">
@@ -119,6 +134,7 @@
                             </div>
                         </div>
                         <div class="col-md-2">
+                            <!-- Year filter dropdown -->
                             <div class="filter-group">
                                 <label for="yearFilter" class="form-label">Year</label>
                                 <select class="form-select" id="yearFilter">
@@ -155,6 +171,7 @@
                     </div>
                 </div>
 
+                <!-- Anime Listings Section -->
                 <div class="row g-4">
                     <div class="col-6 col-md-4">
                         <div class="anime-card">
@@ -191,10 +208,12 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p class="text-center mb-0">&copy; 2025 AniBox. All rights reserved.</p>
         </div>
     </footer>
 </body>
+
 </html>

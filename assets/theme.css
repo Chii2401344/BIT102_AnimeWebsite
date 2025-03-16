@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 0.5px;
 }
 
-/* Navbar Toggler Hover */
+/* Effect when the toggler is hovered over, focused, or active */
 .navbar-toggler:hover,
 .navbar-toggler:focus,
 .navbar-toggler:active {

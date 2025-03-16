@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
 
 <body>
 
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="user-home.html">AniBox</a>
@@ -65,6 +67,7 @@
     </nav>
 
     <main>
+        <!-- Slideshow Section -->
         <div class="slideshow-container">
             <img class="slide active" src="../assets/img/poster-onepiece.jpg">
             <img class="slide" src="../assets/img/poster-bocchi.webp">
@@ -78,15 +81,17 @@
                 </div>
             </div>
 
-            <!-- Navigation Buttons -->
+            <!-- Slideshow Buttons -->
             <div class="button-container">
                 <button class="nav-button" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="nav-button" onclick="plusDivs(1)">&#10095;</button>
             </div>
         </div>
 
+        <!-- Section Seperator to seperate the slideshow with the rest of the page -->
         <div class="section-seperator"></div>
 
+        <!-- Browse Section -->
         <section class="browse-section" id="browse">
             <div class="container">
                 <h2 class="section-title text-center mb-5">✦ Browse Anime ✦</h2>
@@ -95,6 +100,7 @@
                 <div class="search-filter-section mb-4">
                     <div class="row g-3">
                         <div class="col-md-4">
+                            <!-- Search bar -->
                             <div class="search-group">
                                 <label for="animeSearch" class="form-label">Search</label>
                                 <input type="text" class="form-control" id="animeSearch"
@@ -102,6 +108,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
+                            <!-- Genre filter dropdown -->
                             <div class="filter-group">
                                 <label for="genreFilter" class="form-label">Genres</label>
                                 <select class="form-select" id="genreFilter">
@@ -118,6 +125,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
+                            <!-- Status filter dropdown -->
                             <div class="filter-group">
                                 <label for="statusFilter" class="form-label">Status</label>
                                 <select class="form-select" id="statusFilter">
@@ -129,6 +137,7 @@
                             </div>
                         </div>
                         <div class="col-md-2">
+                            <!-- Year filter dropdown -->
                             <div class="filter-group">
                                 <label for="yearFilter" class="form-label">Year</label>
                                 <select class="form-select" id="yearFilter">
@@ -165,6 +174,7 @@
                     </div>
                 </div>
 
+                <!-- Anime Listings Section -->
                 <div class="row g-4">
                     <div class="col-6 col-md-4">
                         <div class="anime-card">
@@ -210,12 +220,14 @@
     </main>
 
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p class="text-center mb-0">&copy; 2025 AniBox. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Scripts for the slideshow -->
     <script>
         var myIndex = 0;
         var images = document.getElementsByClassName("slide");
